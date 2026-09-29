@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Silvana Saldaña · Portafolio</title>
+<meta name="description" content="Portafolio de Silvana Saldaña Espinoza, especialista en paid media: Meta Ads, Google Ads y TikTok Ads para servicios de alto ticket.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;500;600;700&family=Federo&family=Monofett&display=swap">
+<style>
+img{max-width:100%}
+/* Escritorio retro estilo Windows 98. Una sola versión clara, a propósito. */
+:root{
+  color-scheme:light;
+  --sky:#D7EFFF;        /* Cool Blue: fondo */
+  --cloud:#FFFFFF;
+  --face:#E4E8DD;       /* cara de las ventanas (Vert Sauge muy claro) */
+  --sage:#AEB8A0;       /* Vert Sauge */
+  --shade:#7E876F;      /* sombra del bisel */
+  --paper:#FFFFFF;
+  --ink:#351E28;        /* Cassis */
+  --ink-soft:#6A5560;
+  --wasabi:#E9F056;
+  --accent:#FF5C34;     /* Orange Topaze */
+  --bar-a:#351E28; --bar-b:#8E5670;   /* barra de título activa: degradé Cassis */
+  --title:"Monofett", "Courier New", monospace;
+  --sub:"Federo", Georgia, serif;
+  --body:"Alumni Sans", "Arial Narrow", system-ui, sans-serif;
+  --tb-h:48px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); font-family:var(--body); font-weight:500; font-size:20px; line-height:1.4;
+  background-color:var(--sky);
+  background-image:
+    radial-gradient(ellipse 260px 90px at 12% 18%, rgba(255,255,255,.85), transparent 70%),
+    radial-gradient(ellipse 340px 110px at 78% 10%, rgba(255,255,255,.75), transparent 70%),
+    radial-gradient(ellipse 300px 100px at 60% 55%, rgba(255,255,255,.6), transparent 70%),
+    radial-gradient(ellipse 380px 120px at 18% 80%, rgba(255,255,255,.65), transparent 70%),
+    radial-gradient(ellipse 280px 90px at 88% 88%, rgba(255,255,255,.7), transparent 70%);
+  background-attachment:fixed;
+  padding-block-end:calc(var(--tb-h) + env(safe-area-inset-bottom,0px) + 8px);
+}
+a{color:inherit}
+:focus-visible{outline:3px dashed var(--accent); outline-offset:3px}
+p{margin:0}
+.wrap{max-width:1180px; margin:0 auto; padding-inline:18px}
+h1,h2{font-family:var(--title); font-weight:400; line-height:1; margin:0; letter-spacing:.02em; text-wrap:balance}
+h1{font-size:clamp(2.6rem,7.5vw,5.2rem)}
+h2{font-size:clamp(2.1rem,5vw,3.4rem)}
+h3,h4{font-family:var(--sub); font-weight:400; margin:0; line-height:1.15; text-wrap:balance}
+h3{font-size:1.45rem}
+h4{font-size:1.15rem}
+.sub{font-family:var(--sub)}
+.label{font-family:var(--body); font-weight:700; font-size:.95rem; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-soft)}
+.hl{background:var(--accent); color:var(--ink); padding:0 .25em; font-weight:700}
+.ico{display:inline-block; width:32px; height:32px; flex:none}
+.ico svg{width:100%; height:100%; display:block}
+.ico.sm{width:22px; height:22px}
+.ico.lg{width:52px; height:52px}
+.ico.xl{width:72px; height:72px}
+
+/* ---------- ventanas ---------- */
+.win{background:var(--face); border:2px solid; border-color:#fff var(--shade) var(--shade) #fff; box-shadow:2px 2px 0 var(--ink), 8px 10px 0 rgba(53,30,40,.12); border-radius:6px; padding:3px; min-width:0}
+.tb{display:flex; align-items:center; gap:8px; padding:4px 5px 4px 8px; border-radius:4px 4px 0 0; background:linear-gradient(90deg,var(--bar-a),var(--bar-b)); color:#fff; min-height:32px}
+.tb .t{flex:1; font-family:var(--sub); font-size:1.02rem; letter-spacing:.02em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:flex; align-items:center; gap:8px}
+.tb .bs{display:flex; gap:3px; flex:none}
+.tb .b{width:22px; height:20px; background:var(--face); color:var(--ink); border:2px solid; border-color:#fff var(--shade) var(--shade) #fff; display:grid; place-items:center; font:700 13px/1 var(--body); text-decoration:none; border-radius:2px}
+a.tb .b, .tb a.b{cursor:pointer}
+.wb{background:var(--paper); border:2px solid; border-color:var(--shade) #fff #fff var(--shade); margin-top:3px; padding:20px; border-radius:0 0 4px 4px; display:grid; gap:14px; align-content:start}
+.wb.face{background:var(--face); border-color:transparent}
+.mini .tb{background:var(--wasabi); color:var(--ink); min-height:28px}
+.mini .tb .t{font-size:.95rem}
+.mini .wb{padding:16px}
+
+.btn{display:inline-flex; align-items:center; gap:9px; background:var(--face); color:var(--ink); border:2px solid; border-color:#fff var(--shade) var(--shade) #fff; box-shadow:1px 1px 0 var(--ink); padding:7px 16px; font:700 1.05rem/1.1 var(--body); letter-spacing:.03em; text-decoration:none; cursor:pointer; border-radius:4px}
+.btn:active{border-color:var(--shade) #fff #fff var(--shade); transform:translate(1px,1px)}
+.btn.cta{background:var(--accent)}
+.btn.wa{background:#DDF6E5}
+.btn.li{background:#DCEBFA}
+
+/* ---------- escritorio / hero ---------- */
+.desk{display:grid; grid-template-columns:120px 1fr; gap:28px; padding-block:34px 20px; align-items:start}
+.icons{display:grid; gap:14px; align-content:start}
+.dicon{display:grid; justify-items:center; gap:4px; text-decoration:none; text-align:center; padding:6px 4px; border-radius:6px; font-weight:700; font-size:1rem; line-height:1.1}
+.dicon span:last-child{padding:1px 5px}
+.dicon:hover span:last-child,.dicon:focus-visible span:last-child{background:var(--bar-a); color:#fff}
+.hero-win{max-width:760px; transform:rotate(-.6deg)}
+.hero-win .wb{padding:30px 30px 26px; gap:16px}
+.hero .kicker{font-family:var(--sub); font-size:1.45rem; color:var(--ink)}
+.hero .kicker b{font-weight:400; background:var(--wasabi); padding:0 .3em}
+.hero .lead{font-size:1.3rem; max-width:40ch}
+.hero .actions{display:flex; gap:12px; flex-wrap:wrap; margin-top:4px}
+.sticker{position:absolute; font-family:var(--sub); background:var(--accent); color:var(--ink); padding:8px 14px; border:2px solid var(--ink); box-shadow:3px 3px 0 var(--ink); border-radius:999px; transform:rotate(6deg); font-size:1rem; white-space:nowrap}
+.hero-stage{position:relative}
+.hero-stage .sticker{right:6%; top:-14px}
+
+section.block{padding-block:34px}
+.sec{display:flex; align-items:center; gap:16px; margin-bottom:22px; flex-wrap:wrap}
+.sec p{flex-basis:100%; max-width:60ch; font-size:1.15rem}
+
+/* ventana que se abre */
+@keyframes openWin{from{transform:scale(.9) translateY(18px); opacity:.35} to{transform:none; opacity:1}}
+.opening{animation:openWin .55s cubic-bezier(.2,.9,.3,1.2) .15s backwards}
+
+/* sobre mí */
+.about{display:grid; grid-template-columns:1.25fr 1fr; gap:26px; align-items:start}
+.about .wb p{font-size:1.18rem}
+.about .side{display:grid; gap:22px; transform:rotate(.5deg); margin-top:28px}
+.facts{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
+.fact{background:var(--face); border:2px solid var(--ink); border-radius:6px; padding:10px 12px; display:grid; gap:2px}
+.fact b{font-family:var(--sub); font-weight:400; font-size:1.5rem; line-height:1.05}
+.fact.hi{background:var(--accent)}
+
+/* rejilla de íconos */
+.grid-icons{display:grid; grid-template-columns:repeat(auto-fill,minmax(112px,1fr)); gap:18px 10px}
+.gi{display:grid; justify-items:center; gap:6px; text-align:center}
+.gi b{font-weight:700; font-size:1.05rem; line-height:1.1}
+.gi small{font-size:.92rem; color:var(--ink-soft); line-height:1.15}
+
+/* resultados */
+.cascade{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; align-items:start}
+.cascade > :nth-child(2){margin-top:26px; transform:rotate(.6deg)}
+.cascade > :nth-child(3){margin-top:10px; transform:rotate(-.5deg)}
+.cascade > :nth-child(4){margin-top:36px; transform:rotate(.4deg)}
+.big{font-family:var(--sub); font-size:2.2rem; line-height:1}
+.kv{display:grid; grid-template-columns:auto 1fr; gap:4px 12px; font-size:1.05rem}
+.kv dt{color:var(--ink-soft)}
+.kv dd{margin:0; font-weight:700; text-align:right; font-variant-numeric:tabular-nums}
+
+/* carpetas */
+.explorer .wb{padding:26px 20px}
+.folders{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:26px 16px}
+.folder{display:grid; justify-items:center; gap:8px; text-decoration:none; text-align:center; padding:12px 8px; border-radius:8px; border:2px dashed transparent}
+.folder .pic{position:relative; width:96px; height:96px}
+.folder .pic .ico.xl{width:96px; height:96px}
+.folder .pic .badge{position:absolute; right:-4px; bottom:4px; width:40px; height:40px; background:var(--paper); border:2px solid var(--ink); border-radius:8px; padding:3px}
+.folder .pic .badge .ico{width:100%; height:100%}
+.folder b{font-family:var(--sub); font-weight:400; font-size:1.15rem; line-height:1.15}
+.folder small{font-size:.98rem; color:var(--ink-soft); line-height:1.2}
+.folder:hover,.folder:focus-visible{border-color:var(--ink); background:rgba(233,240,86,.45)}
+.folder:hover .pic{transform:translateY(-3px) rotate(-3deg)}
+.folder .pic{transition:transform .2s}
+.statusbar{display:flex; gap:10px; margin-top:3px}
+.statusbar span{flex:1; border:2px solid; border-color:var(--shade) #fff #fff var(--shade); padding:2px 8px; font-size:.95rem}
+
+/* método */
+.steps{display:grid; grid-template-columns:repeat(6,1fr); gap:10px; list-style:none; margin:0; padding:0; counter-reset:s}
+.steps li{display:grid; justify-items:center; gap:6px; text-align:center; position:relative}
+.steps li b{font-family:var(--sub); font-weight:400; font-size:1.1rem}
+.steps li small{font-weight:700; color:var(--ink-soft)}
+.steps li:not(:last-child)::after{content:"→"; position:absolute; right:-12px; top:18px; font-weight:700; color:var(--accent); font-size:1.4rem}
+
+/* contacto */
+.contacts{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:14px}
+.ct{display:grid; justify-items:center; gap:6px; text-align:center; text-decoration:none; padding:14px 10px; border-radius:8px; border:2px solid transparent; background:var(--face)}
+a.ct:hover,button.ct:hover{border-color:var(--ink)}
+.ct b{font-family:var(--sub); font-weight:400; font-size:1.15rem}
+.ct .val{font-size:1rem; overflow-wrap:anywhere; user-select:all}
+button.ct{font:inherit; color:inherit; cursor:pointer; border:2px solid transparent}
+
+/* ---------- caso abierto ---------- */
+.case-layer{position:fixed; left:0; right:0; top:0; bottom:calc(var(--tb-h) + env(safe-area-inset-bottom,0px)); z-index:30; overflow-y:auto; background:rgba(215,239,255,.72); backdrop-filter:blur(3px); padding:calc(18px + env(safe-area-inset-top,0px)) 14px 30px}
+.case-win{max-width:1180px; margin:0 auto; animation:openWin .4s cubic-bezier(.2,.9,.3,1.15) backwards}
+.case-win > .wb{background:var(--face); border-color:transparent; padding:22px; gap:34px}
+.case-head{display:grid; gap:10px}
+.case-head .lead{font-size:1.25rem; max-width:62ch}
+.tags{display:flex; gap:6px; flex-wrap:wrap}
+.tag{font-weight:700; font-size:.92rem; letter-spacing:.06em; text-transform:uppercase; border:2px solid var(--ink); padding:0 9px; background:var(--paper); border-radius:999px}
+.slide > .wb{background:var(--face); border-color:transparent; padding:18px; gap:18px}
+.row3{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-items:start}
+.row3 > :nth-child(2){margin-top:18px}
+.row3 > :nth-child(3){margin-top:36px}
+.row2{display:grid; grid-template-columns:1fr 1fr; gap:16px; align-items:start}
+.row2 > :nth-child(2){margin-top:22px}
+ul.list{margin:0; padding-left:1.1em; display:grid; gap:7px}
+ul.list li::marker{content:"▸ "; color:var(--accent)}
+.note{background:var(--wasabi); border:2px solid var(--ink); border-radius:6px; padding:10px 14px; font-weight:600; transform:rotate(-.4deg)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; font-size:1.05rem}
+th,td{padding:8px 10px; text-align:left; border-bottom:1px solid var(--sage); white-space:nowrap}
+th{font-weight:700; text-transform:uppercase; letter-spacing:.06em; font-size:.9rem; background:var(--face); border-bottom:2px solid var(--ink)}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right}
+td.best{background:var(--accent); font-weight:700}
+.metrics{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px}
+.metric{background:var(--face); border:2px solid var(--ink); border-radius:6px; padding:10px 12px; display:grid; gap:2px}
+.metric b{font-family:var(--sub); font-weight:400; font-size:1.55rem; line-height:1.05; font-variant-numeric:tabular-nums}
+.metric.hi{background:var(--accent)}
+.metric.hi .label{color:var(--ink)}
+.shot{margin:0; display:grid; gap:8px}
+.shot button{padding:0; border:2px solid var(--ink); background:var(--paper); cursor:zoom-in; display:block; width:100%; border-radius:4px; overflow:hidden; position:relative}
+.shot button::after{content:"+ Ampliar"; position:absolute; right:6px; bottom:6px; background:var(--ink); color:#fff; font:700 .8rem/1 var(--body); padding:4px 7px; border-radius:4px; letter-spacing:.04em}
+.shot img{display:block; width:100%; height:auto}
+.shot figcaption{font-size:.98rem; color:var(--ink-soft)}
+.banner{font-family:var(--sub); font-size:clamp(1.4rem,3vw,2rem); background:var(--accent); border:2px solid var(--ink); border-radius:8px; padding:12px 16px; text-align:center}
+.chart{display:grid; gap:9px}
+.crow{display:grid; grid-template-columns:40px 1fr 70px; gap:10px; align-items:center; font-variant-numeric:tabular-nums}
+.crow .m{font-weight:700; text-transform:uppercase}
+.track{height:24px; border:2px solid var(--ink); background:var(--paper); border-radius:3px}
+.fill{height:100%; background:var(--sage)}
+.crow.best .fill{background:var(--accent)}
+.crow .v{text-align:right; font-weight:700}
+.odr-label{font-weight:700; text-transform:uppercase; letter-spacing:.08em; font-size:.85rem; color:var(--ink-soft)}
+
+/* ---------- visor de imágenes con zoom ---------- */
+.viewer{position:fixed; inset:0; z-index:60; display:grid; place-items:center; padding:calc(14px + env(safe-area-inset-top,0px)) 12px calc(14px + env(safe-area-inset-bottom,0px)); background:rgba(53,30,40,.55)}
+.viewer .win{width:min(1200px,100%); max-height:100%; display:flex; flex-direction:column}
+.viewer .tools{display:flex; gap:8px; align-items:center; flex-wrap:wrap; padding:6px 4px}
+.viewer .tools output{min-width:60px; text-align:center; font-weight:700}
+.viewer .stage{overflow:auto; background:#fff; border:2px solid; border-color:var(--shade) #fff #fff var(--shade); flex:1; min-height:200px; max-height:calc(100vh - 170px); cursor:grab}
+.viewer .stage.drag{cursor:grabbing}
+.viewer .stage img{display:block; max-width:none; margin:auto; user-select:none; -webkit-user-drag:none}
+
+/* ---------- barra de tareas ---------- */
+.taskbar{position:fixed; left:0; right:0; bottom:0; z-index:50; background:var(--face); border-top:2px solid #fff; box-shadow:0 -1px 0 var(--shade); padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px)); display:flex; align-items:center; gap:8px}
+.taskbar .start{font-family:var(--sub); font-weight:400}
+.taskbar .tasks{display:flex; gap:6px; flex:1; min-width:0; overflow:hidden}
+.taskbar .tasks .btn{font-size:.98rem; padding:5px 10px}
+.taskbar .clock{border:2px solid; border-color:var(--shade) #fff #fff var(--shade); padding:5px 10px; font-weight:700; font-variant-numeric:tabular-nums; flex:none}
+.taskbar .btn.on{border-color:var(--shade) #fff #fff var(--shade); background:#fff}
+
+@media (max-width:980px){
+  .cascade{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr); row-gap:22px}
+  .steps li:nth-child(3)::after{display:none}
+}
+@media (max-width:800px){
+  .desk{grid-template-columns:1fr}
+  .icons{grid-template-columns:repeat(auto-fill,minmax(92px,1fr))}
+  .hero-win{transform:none}
+  .about,.row2,.row3{grid-template-columns:1fr}
+  .about .side{transform:none; margin-top:0}
+  .row3 > *,.row2 > *{margin-top:0!important}
+  .facts{grid-template-columns:1fr 1fr 1fr}
+}
+@media (max-width:560px){
+  body{font-size:19px}
+  .cascade{grid-template-columns:1fr}
+  .cascade > *{margin-top:0!important; transform:none!important}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps li::after{display:none}
+  .facts{grid-template-columns:1fr 1fr}
+  .wb{padding:15px}
+  .hero-win .wb{padding:20px 16px}
+  .taskbar .tasks .btn .txt{display:none}
+  .sticker{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important; scroll-behavior:auto!important}}
+/* ===== v4: ventanas retro redondeadas, colores planos (referencias de Sil) ===== */
+:root{--cream:#FFFDF6; --line:3px}
+body{
+  background-color:var(--sky);
+  background-image:repeating-radial-gradient(circle at 105% 115%, rgba(255,255,255,0) 0 90px, rgba(255,255,255,.55) 90px 150px),
+                   repeating-radial-gradient(circle at -10% -20%, rgba(174,184,160,0) 0 110px, rgba(174,184,160,.18) 110px 170px);
+  background-attachment:fixed;
+}
+.win{background:var(--cream); border:var(--line) solid var(--ink); border-radius:14px; padding:0; box-shadow:6px 7px 0 var(--ink); overflow:hidden}
+.tb{background:var(--accent); color:var(--ink); border-bottom:var(--line) solid var(--ink); border-radius:0; padding:5px 8px 5px 12px; min-height:36px}
+.tb .t{font-family:var(--sub); font-size:1.05rem}
+.tb .b{width:24px; height:22px; background:var(--cream); border:2px solid var(--ink); border-radius:6px; font:700 14px/1 var(--body)}
+.wb{background:var(--cream); border:0; margin:0; border-radius:0; padding:22px}
+.mini{border-radius:12px; box-shadow:4px 5px 0 var(--ink)}
+.mini .tb{background:var(--wasabi); min-height:30px}
+.row3 > .mini:nth-child(2) .tb,.row2 > .mini:nth-child(2) .tb,.cascade > .mini:nth-child(2) .tb{background:var(--sky)}
+.row3 > .mini:nth-child(3) .tb,.cascade > .mini:nth-child(3) .tb{background:var(--sage)}
+.cascade > .mini:nth-child(4) .tb{background:var(--sky)}
+.slide{box-shadow:5px 6px 0 var(--ink)}
+.slide > .tb{background:var(--ink); color:#fff}
+.slide > .wb,.case-win > .wb{background:#F1F5EC}
+.case-win > .tb{background:var(--accent)}
+.btn{background:var(--cream); border:2px solid var(--ink); border-radius:10px; box-shadow:3px 3px 0 var(--ink); transition:transform .12s, box-shadow .12s}
+.btn:hover{transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--ink)}
+.btn:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); border-color:var(--ink)}
+.btn.cta{background:var(--accent)}
+.btn.wa{background:#DDF6E5}
+.btn.li{background:var(--sky)}
+.metric,.fact,.note{border-radius:10px}
+.tag{background:var(--cream)}
+.shot button{border-radius:10px}
+.tbl{border:2px solid var(--ink); border-radius:10px}
+th{background:var(--sky)}
+.dicon span:last-child{background:var(--cream); border:2px solid var(--ink); border-radius:6px; padding:0 6px}
+.dicon:hover span:last-child,.dicon:focus-visible span:last-child{background:var(--wasabi); color:var(--ink)}
+.dicon .ico{filter:drop-shadow(2px 2px 0 rgba(53,30,40,.25))}
+.explorer .wb{background:#F6EFD6}
+.folder:hover,.folder:focus-visible{background:rgba(255,253,246,.85); border-color:var(--ink)}
+.statusbar{margin:0; border-top:var(--line) solid var(--ink); background:var(--cream); padding:4px; gap:6px}
+.statusbar span{border:2px solid var(--ink); border-radius:6px; background:var(--cream)}
+.viewer .stage{border:2px solid var(--ink); border-radius:10px; margin:0 10px 10px}
+.viewer .tools{padding:10px}
+.ct{background:#F1F5EC; border:2px solid var(--ink); border-radius:12px; box-shadow:3px 3px 0 var(--ink)}
+a.ct:hover,button.ct:hover{background:var(--wasabi); border-color:var(--ink)}
+button.ct{border:2px solid var(--ink)}
+
+/* collage de la portada */
+.hero-stage{min-height:430px}
+.pop{position:absolute; width:320px; z-index:2}
+.pop .wb{padding:16px; gap:10px}
+.pop-load{right:0; top:30px; transform:rotate(1.5deg)}
+.pop-load .tb{background:var(--sky)}
+.pop-ask{right:50px; top:262px; transform:rotate(-1.2deg); width:300px}
+.pop-ask .tb{background:var(--wasabi)}
+.pop-ask .q{display:flex; gap:12px; align-items:center; font-size:1.15rem; font-weight:600; line-height:1.2}
+.pop-ask .yes{display:flex; gap:10px; justify-content:center}
+.pop-ask .yes .btn{min-width:84px; justify-content:center}
+.progress{height:26px; border:2px solid var(--ink); border-radius:8px; background:var(--cream); padding:3px; display:flex; gap:3px; overflow:hidden}
+.progress i{flex:1; background:var(--accent); border-radius:2px; animation:fillIn .9s steps(1) backwards}
+.progress i:nth-child(n+5){animation-delay:.25s}
+.progress i:nth-child(n+9){animation-delay:.5s}
+.progress i:nth-child(n+13){animation-delay:.75s}
+@keyframes fillIn{from{background:var(--cream)}}
+.hero-stage .sticker{left:44%; right:auto; top:-16px}
+.hero-win{position:relative; z-index:1}
+
+/* barra de tareas con pestañas */
+.taskbar{background:var(--cream); border-top:var(--line) solid var(--ink); box-shadow:none}
+.taskbar .tasks{overflow-x:auto; scrollbar-width:none}
+.taskbar .tasks::-webkit-scrollbar{display:none}
+.taskbar .btn{box-shadow:2px 2px 0 var(--ink); padding:4px 12px; white-space:nowrap}
+.taskbar .start{background:var(--accent)}
+.taskbar .clock{border:2px solid var(--ink); border-radius:8px; background:var(--sky)}
+.taskbar .btn.on{background:var(--wasabi); box-shadow:inset 2px 2px 0 rgba(53,30,40,.25); transform:translate(1px,1px)}
+
+@media (max-width:1100px){
+  .hero-stage{min-height:0; display:grid; gap:22px}
+  .pop{position:relative; right:auto; top:auto; width:auto; max-width:420px}
+  .pop-load{transform:rotate(1deg); margin-left:24px}
+  .pop-ask{transform:rotate(-1deg)}
+}
+@media (max-width:560px){
+  .pop-load{margin-left:0}
+  .taskbar .tasks .btn .txt{display:inline}
+  .taskbar .tasks .btn .ico{display:none}
+}
+/* ===== v5: portada según el boceto de Sil ===== */
+.topline{display:flex; align-items:center; justify-content:space-between; gap:18px 26px; flex-wrap:wrap; padding-block:30px 8px}
+.ptitle{font-size:clamp(2.4rem,6vw,4.4rem)}
+.icons-row{display:flex; gap:8px; flex-wrap:wrap}
+.icons-row .dicon{width:88px}
+.front{display:grid; grid-template-columns:1fr 360px; gap:30px; align-items:start; padding-block:22px 10px}
+.front-left{display:grid}
+.hero-win{transform:rotate(-.5deg); max-width:none; margin-right:14%}
+.hero-win h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.about-win{margin-top:-46px; margin-left:18%; position:relative; z-index:2; transform:rotate(.6deg)}
+.about-win .wb p{font-size:1.15rem}
+.metodo-win{margin-top:34px; transform:rotate(1deg)}
+.steps-mini{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:18px 8px}
+.steps-mini li{display:grid; justify-items:center; gap:6px; text-align:center}
+.steps-mini b{font-family:var(--sub); font-weight:400; font-size:1rem; line-height:1.15}
+.trio{display:grid; grid-template-columns:1fr 1.3fr 1fr; gap:26px; align-items:start; padding-block:30px 10px}
+.trio > :nth-child(1){transform:rotate(-.8deg)}
+.trio > :nth-child(2){margin-top:22px}
+.trio > :nth-child(3){transform:rotate(.8deg); margin-top:8px}
+.plat3{display:grid; grid-template-columns:repeat(3,1fr); gap:8px}
+#plataformas,#panel{margin-top:40px}
+#panel{margin-left:4%; transform:rotate(-.4deg)}
+#plataformas{margin-right:4%}
+.carousel{display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:10px}
+.carousel .arrow{width:44px; height:44px; border-radius:50%; padding:0; justify-content:center; font-size:1.8rem; line-height:1}
+.carousel .arrow:disabled{opacity:.35; cursor:default; transform:none; box-shadow:1px 1px 0 var(--ink)}
+.ctrack{display:grid; grid-auto-flow:column; grid-auto-columns:132px; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; padding:8px 4px 12px; scrollbar-width:none; min-width:0}
+.ctrack::-webkit-scrollbar{display:none}
+.ctrack .gi{scroll-snap-align:start; background:#F1F5EC; border:2px solid var(--ink); border-radius:12px; padding:14px 8px; align-content:start}
+.tabtitle{display:inline-flex; align-items:center; gap:12px; background:var(--cream); border:3px solid var(--ink); border-radius:12px; box-shadow:4px 5px 0 var(--ink); padding:8px 16px; margin-bottom:22px}
+.res-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 30px; max-width:900px}
+.res-grid > :nth-child(2){margin-top:22px; transform:rotate(.6deg)}
+.res-grid > :nth-child(3){transform:rotate(-.6deg)}
+.res-grid > :nth-child(4){margin-top:22px}
+
+/* un color de barra por ventana */
+.win.c-orange > .tb{background:var(--accent); color:var(--ink)}
+.win.c-wasabi > .tb{background:var(--wasabi); color:var(--ink)}
+.win.c-sky > .tb{background:var(--sky); color:var(--ink)}
+.win.c-sage > .tb{background:var(--sage); color:var(--ink)}
+.win.c-ink > .tb{background:var(--ink); color:#fff}
+.case-win.t-o > .tb{background:#FF9B7A}
+.case-win.t-b > .tb{background:#A9D8F5}
+.case-win.t-g > .tb{background:#CBD5B9}
+.case-win.t-y > .tb{background:var(--wasabi)}
+.case-win.t-p > .tb{background:#DDB6C6}
+.folder.f-o:hover{background:#FFE3D8}
+.folder.f-b:hover{background:#E1F2FC}
+.folder.f-g:hover{background:#E8EEDD}
+.folder.f-y:hover{background:#F8FBC8}
+.folder.f-p:hover{background:#F5E6EC}
+
+@media (max-width:980px){
+  .front{grid-template-columns:1fr}
+  .metodo-win{margin-top:10px; transform:none; max-width:520px}
+  .trio{grid-template-columns:1fr 1fr}
+  .trio > :nth-child(3){grid-column:1/-1}
+}
+@media (max-width:640px){
+  .hero-win{margin-right:0; transform:none}
+  .about-win{margin-left:6%; margin-top:-22px}
+  .trio{grid-template-columns:1fr}
+  .trio > *{transform:none!important; margin-top:0!important}
+  .res-grid{grid-template-columns:1fr}
+  .res-grid > *{transform:none!important; margin-top:0!important}
+  #panel,#plataformas{margin-inline:0; transform:none}
+  .icons-row .dicon{width:72px; font-size:.9rem}
+  .carousel .arrow{width:36px; height:36px; font-size:1.4rem}
+  .ctrack{grid-auto-columns:118px}
+}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chips span{border:2px solid var(--ink); border-radius:999px; padding:2px 12px; font-weight:600; background:#F1F5EC}
+.hero-win .wb{padding-bottom:72px}
+.about-win{margin-top:-52px}
+@media (max-width:640px){ .hero-win .wb{padding-bottom:44px} .about-win{margin-top:-26px} }
+
+/* ===== v6 (28-set): todo derecho, centrado y del ancho de la ventana Casos ===== */
+main .win,.case-win .win,.note{transform:none!important}
+.front{grid-template-columns:1fr 1fr; gap:26px; align-items:stretch; padding-block:24px 0}
+.hero-win,.about-win{margin:0!important}
+.hero-win .wb{padding-bottom:30px}
+.metodo-win{margin:30px 0 0!important; max-width:none!important}
+.metodo-win .steps-mini{grid-template-columns:repeat(6,1fr)}
+.trio{grid-template-columns:repeat(3,1fr); align-items:stretch; padding-block:30px 0}
+.trio > *{margin-top:0!important}
+#plataformas,#panel{margin:30px 0 0!important}
+.res-grid{grid-template-columns:repeat(4,minmax(0,1fr)); max-width:none; gap:18px}
+.res-grid > *{margin-top:0!important}
+.res-grid .wb{padding:16px; gap:8px}
+.res-grid .big{font-size:1.6rem}
+.res-grid .kv{font-size:.95rem; grid-template-columns:1fr}
+.res-grid .kv dd{text-align:left; margin-bottom:4px}
+.case-win .row3 > *,.case-win .row2 > *{margin-top:0!important}
+.camp-head{display:grid; gap:10px; border-top:3px dashed var(--ink); padding-top:26px}
+.camp-head .lead{font-size:1.2rem}
+@media (max-width:980px){
+  .front{grid-template-columns:1fr}
+  .metodo-win .steps-mini{grid-template-columns:repeat(3,1fr)}
+  .trio{grid-template-columns:1fr 1fr}
+  .trio > :nth-child(3){grid-column:1/-1}
+  .res-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  .metodo-win .steps-mini{grid-template-columns:repeat(2,1fr)}
+  .trio,.res-grid{grid-template-columns:1fr}
+}
+</style>
+
+</head>
+<body>
+<!-- =================== ESCRITORIO =================== -->
+<header class="topline wrap">
+  <h1 class="ptitle">PORTAFOLIO 2026</h1>
+  <nav class="icons-row" aria-label="Accesos del escritorio">
+    <a class="dicon" href="#sobre-mi"><span class="ico lg" data-icon="pc"></span><span>Sobre mí</span></a>
+    <a class="dicon" href="#metodo"><span class="ico lg" data-icon="clip"></span><span>Método</span></a>
+    <a class="dicon" href="#resultados"><span class="ico lg" data-icon="trend"></span><span>Resultados</span></a>
+    <a class="dicon" href="#casos"><span class="ico lg" data-icon="folder" data-tint="y"></span><span>Casos</span></a>
+    <a class="dicon" href="#contacto"><span class="ico lg" data-icon="mail"></span><span>Contacto</span></a>
+  </nav>
+</header>
+
+<main id="inicio" class="wrap">
+
+  <div class="front">
+      <section class="win c-orange hero-win hero" aria-label="Bienvenida">
+        <div class="tb"><span class="t"><span class="ico sm" data-icon="star"></span>bienvenida.exe</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+        <div class="wb">
+          <h2>HOLA, SOY SILVANA</h2>
+          <p class="kicker"><b>Especialista en Paid Media</b></p>
+          <p class="lead">Campañas de Meta Ads, Google Ads y TikTok Ads para servicios de alto ticket, conectadas a ventas y pacientes reales.</p>
+          <div class="actions">
+            <a class="btn li" href="https://www.linkedin.com/in/silvana-saldana-espinoza/" target="_blank" rel="noopener"><span class="ico sm" data-icon="linkedin"></span>LinkedIn</a>
+            <a class="btn wa" href="https://wa.me/51981468544?text=Hola%20Silvana%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener"><span class="ico sm" data-icon="whatsapp"></span>WhatsApp</a>
+          </div>
+        </div>
+      </section>
+      <section class="win c-sky about-win" id="sobre-mi">
+        <div class="tb"><span class="t"><span class="ico sm" data-icon="pc"></span>sobre-mí.txt</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+        <div class="wb">
+          <h2>SOBRE MÍ</h2>
+          <p>Soy <strong>especialista en Paid Media</strong> y gestiono campañas de Meta Ads, Google Ads y TikTok Ads para empresas de salud, medicina estética y servicios de alto ticket.</p>
+          <p>Diseño estrategias de captación y conversión que conectan la inversión publicitaria con resultados comerciales concretos: más leads calificados, más ventas cerradas y procesos más eficientes.</p>
+          <p>Integro CRM y automatizaciones en GoHighLevel para que el proceso no se detenga en el clic, sino que llegue al cierre. También preparo reportes ejecutivos orientados a resultados de negocio.</p>
+        </div>
+      </section>
+  </div>
+
+    <section class="win c-wasabi metodo-win" id="metodo">
+      <div class="tb"><span class="t"><span class="ico sm" data-icon="clip"></span>Método</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+      <div class="wb">
+        <ol class="steps-mini">
+          <li><span class="ico lg" data-icon="lupa"></span><b>1 · Diagnóstico</b></li>
+          <li><span class="ico lg" data-icon="clip"></span><b>2 · Estrategia</b></li>
+          <li><span class="ico lg" data-icon="gear"></span><b>3 · Implementación</b></li>
+          <li><span class="ico lg" data-icon="trend"></span><b>4 · Optimización</b></li>
+          <li><span class="ico lg" data-icon="flow"></span><b>5 · Automatización</b></li>
+          <li><span class="ico lg" data-icon="rocket"></span><b>6 · Escalamiento</b></li>
+        </ol>
+      </div>
+    </section>
+
+  <div class="trio">
+    <section class="win c-sage">
+      <div class="tb"><span class="t">Presupuestos gestionados</span><span class="bs"><span class="b">×</span></span></div>
+      <div class="wb"><span class="big">S/10.000</span><p>al mes, el máximo que he gestionado</p></div>
+    </section>
+    <section class="win c-sky">
+      <div class="tb"><span class="t">Plataformas</span><span class="bs"><span class="b">×</span></span></div>
+      <div class="wb"><div class="plat3"><div class="gi"><span class="ico lg" data-icon="meta"></span><b>Meta Ads</b></div><div class="gi"><span class="ico lg" data-icon="googleads"></span><b>Google Ads</b></div><div class="gi"><span class="ico lg" data-icon="tiktok"></span><b>TikTok Ads</b></div></div></div>
+    </section>
+    <section class="win c-wasabi">
+      <div class="tb"><span class="t">Rubros</span><span class="bs"><span class="b">×</span></span></div>
+      <div class="wb"><div class="chips"><span>Salud</span><span>Medicina estética</span><span>Odontología</span><span>Tricología</span><span>Automotriz premium</span></div></div>
+    </section>
+  </div>
+
+  <section class="win c-ink" id="plataformas">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="pc"></span>Plataformas</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+    <div class="wb"><div class="carousel" data-carousel><button class="btn arrow" type="button" data-dir="-1" aria-label="Ver anteriores">‹</button><div class="ctrack" id="track-plataformas" tabindex="0"><div class="gi"><span class="ico lg" data-icon="meta"></span><b>Meta Ads</b><small>Facebook e Instagram</small></div><div class="gi"><span class="ico lg" data-icon="googleads"></span><b>Google Ads</b><small>Búsqueda y PMax</small></div><div class="gi"><span class="ico lg" data-icon="tiktok"></span><b>TikTok Ads</b><small>Video y leads</small></div><div class="gi"><span class="ico lg" data-icon="ghl"></span><b>GoHighLevel</b><small>CRM y flujos</small></div><div class="gi"><span class="ico lg" data-icon="kommo"></span><b>Kommo</b><small>CRM</small></div><div class="gi"><span class="ico lg" data-icon="pancake"></span><b>Pancake</b><small>Bandeja de chats</small></div><div class="gi"><span class="ico lg" data-icon="gtm"></span><b>Tag Manager</b><small>Etiquetas</small></div><div class="gi"><span class="ico lg" data-icon="ga4"></span><b>GA4</b><small>Analítica</small></div><div class="gi"><span class="ico lg" data-icon="excel"></span><b>Excel</b><small>Reportes</small></div></div><button class="btn arrow" type="button" data-dir="1" aria-label="Ver siguientes">›</button></div></div>
+  </section>
+
+  <section class="win c-orange" id="panel">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="gear"></span>Panel de control</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+    <div class="wb"><div class="carousel" data-carousel><button class="btn arrow" type="button" data-dir="-1" aria-label="Ver anteriores">‹</button><div class="ctrack" id="track-panel" tabindex="0"><div class="gi"><span class="ico lg" data-icon="magnet"></span><b>Generación de leads</b></div><div class="gi"><span class="ico lg" data-icon="target"></span><b>Segmentación de audiencias</b></div><div class="gi"><span class="ico lg" data-icon="funnel"></span><b>Optimización de conversiones</b></div><div class="gi"><span class="ico lg" data-icon="gear"></span><b>Optimización de campañas</b></div><div class="gi"><span class="ico lg" data-icon="flow"></span><b>CRM y automatización</b></div><div class="gi"><span class="ico lg" data-icon="ab"></span><b>Pruebas A/B</b></div><div class="gi"><span class="ico lg" data-icon="chart"></span><b>Reportes y análisis</b></div><div class="gi"><span class="ico lg" data-icon="rocket"></span><b>Escalamiento de campañas</b></div></div><button class="btn arrow" type="button" data-dir="1" aria-label="Ver siguientes">›</button></div></div>
+  </section>
+
+  <section class="block" id="resultados">
+    <div class="tabtitle"><span class="ico lg" data-icon="trend"></span><h2>RESULTADOS</h2></div>
+    <div class="res-grid">
+      <div class="win mini c-wasabi">
+        <div class="tb"><span class="t">Lap Custom · ventas</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb"><span class="label">ROAS</span><span class="big">89,32</span>
+          <dl class="kv"><dt>Facturación</dt><dd>S/112.413</dd><dt>Ventas</dt><dd>13</dd><dt>Inversión</dt><dd>S/1.258</dd></dl></div>
+      </div>
+      <div class="win mini c-sky">
+        <div class="tb"><span class="t">Lap Custom · leads</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb"><span class="label">Leads calificados</span><span class="big">448</span>
+          <dl class="kv"><dt>Facturación</dt><dd>S/169.854</dd><dt>Ventas</dt><dd>16</dd><dt>Inversión</dt><dd>S/3.241</dd></dl></div>
+      </div>
+      <div class="win mini c-sage">
+        <div class="tb"><span class="t">Okara</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb"><span class="label">Conversaciones</span><span class="big">+82,7%</span>
+          <dl class="kv"><dt>Costo por conversación</dt><dd>S/0,82 → S/1,09</dd><dt>Inversión</dt><dd>S/481 → S/1.167</dd></dl></div>
+      </div>
+      <div class="win mini c-orange">
+        <div class="tb"><span class="t">Luis Pachas Ortodoncia Digital</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb"><span class="label">Costo por conversión</span><span class="big">−39%</span>
+          <dl class="kv"><dt>Conversiones</dt><dd>611</dd><dt>CTR</dt><dd>7,18%</dd><dt>Inversión</dt><dd>S/4.510</dd></dl></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS -->
+  <section class="block" id="casos">
+    <div class="win explorer">
+      <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+      <div class="wb">
+        <div class="sec" style="margin-bottom:6px"><h2>CASOS</h2><p>Abre una carpeta para ver el caso completo, slide por slide.</p></div>
+        <div class="folders">
+          <a class="folder f-o" href="#caso-lapcustom"><span class="pic"><span class="ico xl" data-icon="folder" data-tint="o"></span><span class="badge"><span class="ico" data-icon="meta"></span></span></span><b>Caso 1 · Lap Custom</b><small>Automotriz premium · ventas y leads</small></a>
+          <a class="folder f-g" href="#caso-okara"><span class="pic"><span class="ico xl" data-icon="folder" data-tint="g"></span><span class="badge"><span class="ico" data-icon="meta"></span></span></span><b>Caso 2 · Okara</b><small>Medicina estética · +82,7%</small></a>
+          <a class="folder f-y" href="#caso-google"><span class="pic"><span class="ico xl" data-icon="folder" data-tint="y"></span><span class="badge"><span class="ico" data-icon="googleads"></span></span></span><b>Caso 3 · Luis Pachas</b><small>Ortodoncia Digital · Google Ads</small></a>
+          <a class="folder f-p" href="#caso-recupera"><span class="pic"><span class="ico xl" data-icon="folder" data-tint="p"></span><span class="badge"><span class="ico" data-icon="tiktok"></span></span></span><b>Caso 4 · Recupera</b><small>Tricología · TikTok Ads</small></a>
+        </div>
+      </div>
+      <div class="statusbar"><span>4 objetos</span><span>Meta Ads · Google Ads · TikTok Ads</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="block" id="contacto">
+    <div class="win">
+      <div class="tb"><span class="t"><span class="ico sm" data-icon="mail"></span>contacto.exe</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
+      <div class="wb">
+        <h2>¡TRABAJEMOS JUNTOS!</h2>
+        <div class="contacts">
+          <a class="ct" href="https://wa.me/51981468544?text=Hola%20Silvana%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener"><span class="ico lg" data-icon="whatsapp"></span><b>WhatsApp</b><span class="val">+51 981 468 544</span></a>
+          <a class="ct" href="https://www.linkedin.com/in/silvana-saldana-espinoza/" target="_blank" rel="noopener"><span class="ico lg" data-icon="linkedin"></span><b>LinkedIn</b><span class="val">silvana-saldana-espinoza</span></a>
+          <button class="ct" type="button" data-copy="espinoza.silvana99@gmail.com"><span class="ico lg" data-icon="mail"></span><b>Correo</b><span class="val">espinoza.silvana99@gmail.com</span><span class="label" data-copy-msg>Toca para copiar</span></button>
+          <div class="ct"><span class="ico lg" data-icon="pin"></span><b>Ubicación</b><span class="val">Lima, Perú</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- =================== CASO 1 · LAP CUSTOM (ventas + leads) =================== -->
+<div class="case-layer" id="caso-lapcustom" hidden>
+  <article class="win case-win t-o" aria-labelledby="t-lap">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 1 · Lap Custom</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+    <div class="wb">
+      <header class="case-head">
+        <div class="tags"><span class="tag">Caso 1</span><span class="tag">Meta Ads</span><span class="tag">Automotriz premium</span></div>
+        <h2 id="t-lap">LAP CUSTOM</h2>
+        <h3>Diseño interior automotriz de alta gama · dos campañas para la misma marca</h3>
+      </header>
+
+      <header class="camp-head">
+        <div class="tags"><span class="tag">Campaña 1 · Ventas</span><span class="tag">30 dic 2025 – 10 feb 2026</span></div>
+        <h3>Campaña de ventas automotriz premium · diseño interior automotriz de alta gama</h3>
+        <p class="lead"><span class="hl">Cada S/1 invertido generó S/89,32 en ingresos.</span></p>
+      </header>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventas · Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>El servicio tenía un ticket de USD 1.190 a 1.590, pero llegaban consultas de personas que buscaban tapizado económico. Eso saturaba al asesor comercial con contactos sin intención real de compra.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Atraer solo a prospectos con capacidad de inversión y reposicionar el servicio como una experiencia premium, no como un producto de precio.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Posicionamiento desde el copy y la creatividad: <em>"No es tapizado. Es diseño interior."</em></li><li>Segmentación por distritos de nivel socioeconómico A/B en Lima.</li><li>Campañas con objetivo de conversación a WhatsApp.</li><li>CRM con automatización para ordenar el pipeline y reducir tiempos de respuesta.</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventas · Slide 2 · Resultados · 30 dic – 10 feb</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="metrics">
+            <div class="metric hi"><span class="label">ROAS</span><b>89,32</b></div>
+            <div class="metric"><span class="label">Facturación</span><b>S/112.413</b></div>
+            <div class="metric"><span class="label">Ventas generadas</span><b>13</b></div>
+            <div class="metric"><span class="label">Conversaciones</span><b>734</b></div>
+            <div class="metric"><span class="label">Inversión total</span><b>S/1.258</b></div>
+            <div class="metric"><span class="label">Ticket promedio</span><b>S/8.647</b></div>
+            <div class="metric"><span class="label">Tasa de conversión</span><b>2,59%</b></div>
+          </div>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-rendimiento.jpg" alt="Resumen de rendimiento en Meta Ads: 734 conversaciones, 62.489 de alcance, 142.471 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-campana.jpg" alt="La campaña en el administrador de anuncios: 734 resultados a S/1,71" loading="lazy"></button><figcaption>La campaña en el administrador de anuncios</figcaption></figure><p class="note">En servicios premium con venta consultiva, una conversión de 2 a 3% sobre tráfico filtrado es un resultado sólido. El éxito no fue el CPL bajo: fue la rentabilidad final.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventas · Slide 3 · Optimización · cómo se mejoró la calidad del tráfico</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">optimización.txt</span></div><div class="wb"><h4>Reducir el ruido</h4><p>El mayor desafío no era generar volumen, sino reducir el ruido. El copy trabajó como filtro activo: mensajes que elevaban la exclusividad del servicio y desalentaban a quienes buscaban precios bajos.</p><ul class="list"><li>Copy estratégico con frases de exclusión implícita.</li><li>Ajuste continuo de la segmentación hacia perfiles de mayor poder adquisitivo.</li><li>Revisión diaria de métricas para detectar patrones en la calidad de las conversaciones.</li><li>Automatización en CRM: de 734 conversaciones, 502 se clasificaron como interés real.</li></ul><p class="note">El filtro no solo ocurrió en el anuncio. Ocurrió en todo el proceso.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-creativo.jpg" alt="Anuncio: Esto no es tapizado barato. Diseño interior automotriz" loading="lazy"></button><figcaption>Creativo con mejores resultados</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">automatización-crm.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-crm.jpg" alt="Flujo de automatización en el CRM" loading="lazy"></button><figcaption>Automatización en CRM: el equipo comercial enfocó su energía donde valía la pena</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+      <header class="camp-head">
+        <div class="tags"><span class="tag">Campaña 2 · Clientes potenciales</span><span class="tag">19 dic 2025 – 16 feb 2026</span></div>
+        <h3>Formulario estratégico automotriz premium · campaña de leads con precalificación</h3>
+        <p class="lead"><span class="hl">448 leads y 16 ventas cerradas, con ROAS de 52,39.</span></p>
+      </header>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Leads · Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>El equipo comercial recibía un volumen alto de consultas, pero muchas no llegaban al presupuesto mínimo del servicio (S/4.000 a S/7.000). Tiempo invertido y oportunidades perdidas.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Filtrar prospectos desde el formulario, antes de que lleguen al asesor, priorizando calidad sobre cantidad.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Formulario de Meta Lead Ads con preguntas de precalificación: marca y modelo del auto, presupuesto estimado, tipo de personalización y tiempo para iniciar.</li><li>Un solo conjunto de anuncios para concentrar el aprendizaje del algoritmo.</li><li>Los videos con mejor rendimiento histórico como creatividades.</li><li>Integración automática con el CRM y asignación inmediata al asesor.</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Leads · Slide 2 · Resultados · 19 dic – 16 feb</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="metrics">
+            <div class="metric hi"><span class="label">Leads generados</span><b>448</b></div>
+            <div class="metric"><span class="label">Ventas cerradas</span><b>16</b></div>
+            <div class="metric"><span class="label">ROAS</span><b>52,39</b></div>
+            <div class="metric"><span class="label">Facturación</span><b>S/169.854</b></div>
+            <div class="metric"><span class="label">CPL</span><b>S/7,24</b></div>
+            <div class="metric"><span class="label">Inversión</span><b>S/3.241</b></div>
+            <div class="metric"><span class="label">Tasa de conversión</span><b>3,57%</b></div>
+          </div>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-campana.jpg" alt="La campaña en el administrador: 448 resultados a S/7,24" loading="lazy"></button><figcaption>La campaña en el administrador de anuncios</figcaption></figure><p class="note">La tasa de conversión de 3,57% confirma que la precalificación funcionó. No era tráfico frío: eran leads con contexto y mayor probabilidad de cierre.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-rendimiento.jpg" alt="Resumen de rendimiento: 448 clientes potenciales, 101.667 de alcance, 327.749 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Leads · Slide 3 · Optimización</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">diagnóstico.txt</span></div><div class="wb"><h4>Saturación, no creativo</h4><p>Después de varias semanas, el CPL empezó a subir de forma progresiva. La señal era clara: saturación de audiencia. El rendimiento histórico de los videos confirmaba que el mensaje seguía funcionando.</p><p>La decisión fue duplicar la campaña con nueva segmentación, conservando los creativos y el aprendizaje acumulado del algoritmo, y redistribuir el presupuesto sin perder lo que ya funcionaba.</p><p class="note">El ajuste correcto no siempre es empezar de cero.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><h4>Campaña optimizada</h4><div class="metrics" style="grid-template-columns:1fr"><div class="metric hi"><span class="label">Leads adicionales</span><b>133</b></div><div class="metric"><span class="label">CPL estabilizado</span><b>S/7,22</b></div><div class="metric"><span class="label">Inversión</span><b>S/1.321</b></div></div></div></div>
+            <div class="win mini"><div class="tb"><span class="t">capturas.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-rendimiento.jpg" alt="Resumen de rendimiento de la campaña duplicada" loading="lazy"></button><figcaption>Campaña optimizada · resumen del rendimiento</figcaption></figure><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-campana.jpg" alt="La campaña duplicada en el administrador" loading="lazy"></button><figcaption>Campaña optimizada · en el administrador</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>
+
+<!-- =================== CASO 3 · OKARA =================== -->
+<div class="case-layer" id="caso-okara" hidden>
+  <article class="win case-win t-g" aria-labelledby="t-okara">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 2 · Okara</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+    <div class="wb">
+      <header class="case-head">
+        <div class="tags"><span class="tag">Caso 2</span><span class="tag">Meta Ads</span><span class="tag">Medicina estética</span><span class="tag">Marzo – mayo 2026</span></div>
+        <h2 id="t-okara">OKARA</h2>
+        <h3>Okara Medicina Estética y Láser · optimización de performance</h3>
+        <p class="lead">Incremento de agendas sin deteriorar la eficiencia. <span class="hl">+82,7% de conversaciones de marzo a mayo.</span></p>
+      </header>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>Las campañas llevaban meses con la misma estructura. Seguían generando conversaciones, pero aparecieron señales de desgaste: costos en alza, audiencias saturadas y menos estabilidad en los resultados.</p><p>El problema no era la cantidad de campañas: el público estaba agotado.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Aumentar el volumen de agendas médicas manteniendo la eficiencia de adquisición y sin interrumpir la operación.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Etapa de validación con los creativos de mejor historial, para descartar un problema creativo.</li><li>Reestructuración de audiencias: más abiertas, menos saturadas y con segmentación geográfica estratégica.</li><li>Duplicación de campañas ganadoras, conservando el aprendizaje del algoritmo.</li><li>Escalamiento progresivo en lugar de un reinicio total.</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 2 · Análisis inicial</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">análisis.txt</span></div><div class="wb"><p>Antes de cualquier cambio masivo se validó el comportamiento histórico de los creativos activos. Los resultados fueron claros: los anuncios seguían generando interacción consistente.</p><p><strong>El problema no estaba en el mensaje. Estaba en a quién se le mostraba.</strong></p><p>Las audiencias usadas durante meses habían llegado a su techo. La solución no era cambiar lo que funcionaba, sino ampliar el entorno en el que funcionaba.</p><p class="note">Este análisis previo evitó cambios innecesarios y protegió el rendimiento acumulado de la cuenta.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">mejores-videos.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Campaña Mejores videos, marzo de 2026: 585 conversaciones a S/0,82, S/481,43" loading="lazy"></button><figcaption>Campaña "Mejores videos" · 1 al 31 de marzo de 2026</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">nueva-segmentación.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-abril.jpg" alt="Campaña de ventas con nueva segmentación, abril de 2026: 718 conversaciones a S/1,09, S/785,75" loading="lazy"></button><figcaption>Campaña de ventas con nueva segmentación · 1 al 30 de abril de 2026</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 3 · Métricas · antes y después</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <p class="banner">+82,7% más conversaciones generadas</p>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">métricas.xls</span></div><div class="wb">
+              <div class="tbl"><table>
+                <thead><tr><th>Métrica</th><th class="n">Marzo (antes)</th><th class="n">Mayo (después)</th><th class="n">Variación</th></tr></thead>
+                <tbody>
+                  <tr><td>Conversaciones</td><td class="n">585</td><td class="n">1.069</td><td class="n best">+82,7%</td></tr>
+                  <tr><td>Costo por conversación</td><td class="n">S/0,82</td><td class="n">S/1,09</td><td class="n">+32,9%</td></tr>
+                  <tr><td>Inversión</td><td class="n">S/481,43</td><td class="n">S/1.166,88</td><td class="n">+142,4%</td></tr>
+                </tbody>
+              </table></div>
+              <p class="note">El escalamiento se hizo en proporción directa al aumento de inversión, sin deteriorar la eficiencia. Eso confirma que el límite era la saturación de audiencias, no la propuesta creativa.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb"><figure class="shot" style="max-width:380px"><button type="button" data-zoom><img src="img/okara-creativo.jpg" alt="Anuncio de Okara sobre la cámara hiperbárica" loading="lazy"></button><figcaption>Creativo con mejores resultados</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 4 · Impacto</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">impacto.txt</span></div><div class="wb"><p>Más de 350 conversaciones adicionales en un mes, sin aumentar el costo de adquisición. Para una clínica cuyo modelo depende de las agendas que llegan desde Meta, ese volumen significa más pacientes atendidos y más ingresos.</p><p>Las automatizaciones en WhatsApp permitieron clasificar los leads desde el primer contacto. El equipo comercial dejó el trabajo repetitivo y se concentró en quienes estaban listos para agendar.</p><p class="note">El objetivo no era solo más conversaciones. Era un sistema de adquisición más estable y escalable.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultados-marzo.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Resultados de marzo de 2026: 585 conversaciones a S/0,82" loading="lazy"></button><figcaption>Resultados marzo · 1 al 31 de marzo de 2026</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultados-mayo.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-mayo.jpg" alt="Resultados de mayo de 2026: 1.069 conversaciones a S/1,09, S/1.166,88" loading="lazy"></button><figcaption>Resultados mayo · 1 al 30 de mayo de 2026</figcaption></figure></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>
+
+<!-- =================== CASO 4 · GOOGLE ADS =================== -->
+<div class="case-layer" id="caso-google" hidden>
+  <article class="win case-win t-y" aria-labelledby="t-google">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 3 · Luis Pachas Ortodoncia Digital</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+    <div class="wb">
+      <header class="case-head">
+        <div class="tags"><span class="tag">Caso 3</span><span class="tag">Google Ads · Búsqueda</span><span class="tag">Odontología</span><span class="tag">8 jun – 27 set 2026</span></div>
+        <h2 id="t-google">ORTODONCIA</h2>
+        <h3>Ortodoncia Digital · captación de pacientes por intención de búsqueda</h3>
+        <p class="lead">Consultorio de ortodoncia en Surco, Lima. <span class="hl">El costo por conversión bajó 39% en cuatro meses.</span></p>
+      </header>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 1 · Punto de partida, idea central y estructura</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">punto-de-partida.txt</span></div><div class="wb"><h4>El punto de partida</h4><p>Una cuenta de Google Ads nueva, un presupuesto acotado de S/40 al día y un radio de 3 km alrededor del consultorio.</p><p>La meta: conseguir pacientes de brackets.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">idea-central.txt</span></div><div class="wb"><h4>La idea central</h4><p>En Meta hay que generar la demanda. En Google la demanda ya existe: alguien escribe lo que necesita.</p><p>Los datos mostraron qué escribía: el paciente no busca "ortodoncia", <strong>busca precio</strong>.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estructura.txt</span></div><div class="wb"><h4>Estructura</h4><ul class="list"><li>Una campaña de Búsqueda enfocada en la intención de precio.</li><li>Concordancia amplia para descubrir búsquedas, exacta para la que mejor convierte y de frase para controlar el tráfico.</li><li>Anuncios de 15 títulos que abren con "Precio de brackets", con el diagnóstico digital iTero como diferencial.</li><li>Botón de mensaje de WhatsApp en el anuncio.</li><li>Performance Max adaptada a la política de salud de Google desde el 19 de setiembre.</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 2 · Resultados · 8 jun – 27 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="metrics">
+            <div class="metric"><span class="label">Inversión</span><b>S/4.510</b></div>
+            <div class="metric"><span class="label">Impresiones</span><b>42.897</b></div>
+            <div class="metric"><span class="label">Clics</span><b>3.082</b></div>
+            <div class="metric hi"><span class="label">CTR</span><b>7,18%</b></div>
+            <div class="metric"><span class="label">CPC</span><b>S/1,46</b></div>
+            <div class="metric"><span class="label">Conversiones</span><b>611</b></div>
+            <div class="metric"><span class="label">Tasa de conversión</span><b>19,8%</b></div>
+            <div class="metric"><span class="label">Costo por conversión</span><b>S/7,38</b></div>
+          </div>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">costo-por-conversión.chart</span></div><div class="wb">
+              <h4>Costo por conversión, mes a mes</h4>
+              <div class="chart" role="img" aria-label="Costo por conversión: junio S/10,75, julio S/7,25, agosto S/6,64, setiembre S/6,53">
+                <div class="crow"><span class="m">Jun</span><div class="track"><div class="fill" style="width:89.6%"></div></div><span class="v">S/10,75</span></div>
+                <div class="crow"><span class="m">Jul</span><div class="track"><div class="fill" style="width:60.4%"></div></div><span class="v">S/7,25</span></div>
+                <div class="crow"><span class="m">Ago</span><div class="track"><div class="fill" style="width:55.3%"></div></div><span class="v">S/6,64</span></div>
+                <div class="crow best"><span class="m">Set</span><div class="track"><div class="fill" style="width:54.4%"></div></div><span class="v">S/6,53</span></div>
+              </div>
+              <p class="label">Escala de 0 a S/12 · junio desde el día 8 · setiembre hasta el día 27</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">junio-vs-setiembre.xls</span></div><div class="wb">
+              <div class="tbl"><table>
+                <thead><tr><th>Métrica</th><th class="n">Jun</th><th class="n">Set</th></tr></thead>
+                <tbody>
+                  <tr><td>Costo por conversión</td><td class="n">S/10,75</td><td class="n best">S/6,53</td></tr>
+                  <tr><td>Tasa de conversión</td><td class="n">15,6%</td><td class="n">22,3%</td></tr>
+                  <tr><td>CPC</td><td class="n">S/1,67</td><td class="n">S/1,46</td></tr>
+                  <tr><td>Conversiones</td><td class="n">90</td><td class="n">171</td></tr>
+                </tbody>
+              </table></div>
+              <p class="note">La mejor semana llegó al final: del 21 al 27 de setiembre, con 27,2% de tasa de conversión.</p>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 3 · Palabras clave</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">hallazgo.txt</span></div><div class="wb"><h4>El paciente busca precio</h4><p>Las tres palabras clave de intención de precio trajeron el <span class="hl">74% de las conversiones</span>.</p><p>La de concordancia exacta fue la más eficiente: es la búsqueda de alguien que ya decidió y solo compara costos.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">palabras-clave.xls</span></div><div class="wb">
+              <div class="tbl"><table>
+                <thead><tr><th>Palabra clave</th><th>Concordancia</th><th class="n">Conv.</th><th class="n">Costo/conv.</th><th class="n">CTR</th></tr></thead>
+                <tbody>
+                  <tr><td>precio de brackets peru</td><td>Amplia</td><td class="n">248</td><td class="n">S/7,54</td><td class="n">8,3%</td></tr>
+                  <tr><td>[cuanto cuesta ponerse brackets en peru]</td><td>Exacta</td><td class="n">107</td><td class="n best">S/5,89</td><td class="n best">13,4%</td></tr>
+                  <tr><td>brackets precio</td><td>Amplia</td><td class="n">99</td><td class="n">S/7,07</td><td class="n">5,7%</td></tr>
+                  <tr><td>"brackets"</td><td>Frase</td><td class="n">44</td><td class="n">S/7,18</td><td class="n">4,6%</td></tr>
+                  <tr><td>ortodoncista surco</td><td>Amplia</td><td class="n">2</td><td class="n">S/32,29</td><td class="n">3,4%</td></tr>
+                </tbody>
+              </table></div>
+              <p class="label">Acumulado 8 jun – 27 set 2026</p>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 4 · Optimización · dato, decisión y resultado</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb" style="gap:26px">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Autoligantes, calidad 2/10</h4><p>El producto que más vende la clínica casi no aparecía en Google.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Anuncio dedicado</h4><p>Se probó un anuncio con "autoligantes" en el título.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Cortado en 7 días</h4><p>CTR de 2,79% contra 9,88% del anuncio de precio. Aprendizaje: el título sigue cómo busca el paciente, no el nombre del catálogo.</p></div></div>
+          </div>
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>"moons alineadores precio"</h4><p>S/18,36 por conversión: 2,7 veces el promedio, con búsquedas de la competencia.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Pausa</h4><p>Ahorro estimado de S/78 al mes para las palabras que sí convierten.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Semana récord</h4><p>Coincidió con la mejor semana de la cuenta: S/5,78 por conversión.</p></div></div>
+          </div>
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>6 incumplimientos de política</h4><p>Performance Max quedó bloqueada: en salud, Google no permite remarketing ni listas de pacientes.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Reestructura</h4><p>Se quitaron las audiencias propias, se corrigió el nombre de la empresa y el grupo de remarketing pasó a prospección.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Campaña aprobada</h4><p>Estado "Apto (limitado)", el máximo posible en salud, y calidad del anuncio "Excelente".</p></div></div>
+          </div>
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>98% eran toques del botón</h4><p>Las conversiones contaban toques del botón de WhatsApp. El costo real por lead era unas 3 veces mayor.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Medir pacientes reales</h4><p>Mensajes de WhatsApp con un texto propio por campaña, para saber de dónde viene cada paciente.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Cruce semanal</h4><p>Google Ads se compara cada semana con el registro de pacientes de la clínica.</p></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>
+
+<!-- =================== CASO 5 · RECUPERA =================== -->
+<div class="case-layer" id="caso-recupera" hidden>
+  <article class="win case-win t-p" aria-labelledby="t-recupera">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 4 · Recupera tu Cabello</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+    <div class="wb">
+      <header class="case-head">
+        <div class="tags"><span class="tag">Caso 4</span><span class="tag">TikTok Ads</span><span class="tag">Tricología</span><span class="tag">Jul – 24 set 2026</span></div>
+        <h2 id="t-recupera">RECUPERA</h2>
+        <h3>Recupera tu Cabello · citas de consulta desde TikTok</h3>
+        <p class="lead">Centro de tricología en Lima. <span class="hl">La consulta subió de S/120 a S/180 y las citas por día siguieron creciendo: el ROI aproximado pasó de 92% a 187%.</span></p>
+      </header>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 1 · Punto de partida, reto y estructura</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">punto-de-partida.txt</span></div><div class="wb"><h4>El punto de partida</h4><p>Un centro especializado en la caída del cabello, en Lima. Tomé la cuenta el 15 de junio de 2026, con un presupuesto de S/5.000 al mes.</p><p>El canal principal es TikTok Ads. En julio, Meta Ads sumó como apoyo.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">reto.txt</span></div><div class="wb"><h4>El reto</h4><p>Conseguir citas, no solo mensajes. Un mensaje de TikTok cuesta menos de S/1, pero la cita se decide después, en la conversación por WhatsApp con el equipo de la clínica.</p><p>Además, desde el 3 de agosto la consulta subió de S/120 a <strong>S/180</strong>.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estructura.txt</span></div><div class="wb"><h4>Estructura</h4><ul class="list"><li>Campañas de mensajes en TikTok, solo Lima, de 25 a 55+ años.</li><li>Cuatro conjuntos por público: dos de hombres, uno de mujeres y uno por interés en productos capilares.</li><li>Videos con enfoque educativo: la hormona DHT, los tipos de alopecia y cuánto cuesta tratarla.</li><li>Registro diario que cruza la inversión con la agenda de citas de la clínica.</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 2 · Resultados · 1 jul – 24 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="metrics">
+            <div class="metric"><span class="label">Inversión TikTok</span><b>S/11.460</b></div>
+            <div class="metric"><span class="label">Mensajes</span><b>14.075</b></div>
+            <div class="metric"><span class="label">Costo por mensaje</span><b>S/0,81</b></div>
+            <div class="metric"><span class="label">Citas de TikTok</span><b>178</b></div>
+            <div class="metric"><span class="label">Costo por cita</span><b>S/64,38</b></div>
+            <div class="metric hi"><span class="label">ROI aprox. · setiembre</span><b>+187%</b></div>
+          </div>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">citas-por-día.chart</span></div><div class="wb">
+              <h4>Citas de TikTok por día, mes a mes</h4>
+              <div class="chart" role="img" aria-label="Citas de TikTok por día: julio 1,94, agosto 2,06, setiembre 2,25">
+                <div class="crow"><span class="m">Jul</span><div class="track"><div class="fill" style="width:77.6%"></div></div><span class="v">1,94</span></div>
+                <div class="crow"><span class="m">Ago</span><div class="track"><div class="fill" style="width:82.4%"></div></div><span class="v">2,06</span></div>
+                <div class="crow best"><span class="m">Set</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="v">2,25</span></div>
+              </div>
+              <p class="label">Escala de 0 a 2,5 citas por día · setiembre hasta el día 24</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">julio-vs-setiembre.xls</span></div><div class="wb">
+              <div class="tbl"><table>
+                <thead><tr><th>Métrica</th><th class="n">Jul</th><th class="n">Set</th></tr></thead>
+                <tbody>
+                  <tr><td>Valor de la consulta</td><td class="n">S/120</td><td class="n">S/180</td></tr>
+                  <tr><td>Citas de TikTok por día</td><td class="n">1,94</td><td class="n best">2,25</td></tr>
+                  <tr><td>Costo por mensaje</td><td class="n">S/0,79</td><td class="n">S/0,78</td></tr>
+                  <tr><td>Costo por cita</td><td class="n">S/62,52</td><td class="n">S/62,69</td></tr>
+                  <tr><td>ROI aproximado</td><td class="n">+92%</td><td class="n best">+187%</td></tr>
+                </tbody>
+              </table></div>
+              <p class="note">La consulta subió 50% y el costo por cita se mantuvo. Cada cita pasó a dejar más ingreso con la misma inversión.</p>
+              <p class="label">ROI aproximado: citas de TikTok × valor de la consulta, frente a la inversión en TikTok. No incluye los tratamientos que compra cada paciente. En julio hubo además 10 citas de Meta Ads, que no entran en este cálculo.</p>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 3 · Públicos</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">hallazgo.txt</span></div><div class="wb"><h4>El público de hombres con alopecia</h4><p>Fue el conjunto más eficiente de la cuenta: <span class="hl">S/0,58 por mensaje en setiembre</span>, un tercio menos que en julio.</p><p>Los videos que mejor funcionaron hablan claro y sin rodeos: la hormona DHT en hombres y cuánto cuesta tratar la alopecia.</p><p class="note">El público de mujeres mostró desgaste en agosto. La respuesta se ve en el slide 4.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">conjuntos.xls</span></div><div class="wb">
+              <div class="tbl"><table>
+                <thead><tr><th>Conjunto</th><th class="n">Jul</th><th class="n">Ago</th><th class="n">Set</th></tr></thead>
+                <tbody>
+                  <tr><td>Alopecia · hombres</td><td class="n">S/0,86</td><td class="n">S/0,61</td><td class="n best">S/0,58</td></tr>
+                  <tr><td>Hombres · segundo público</td><td class="n">S/0,88</td><td class="n">S/0,92</td><td class="n">S/0,93</td></tr>
+                  <tr><td>Productos capilares</td><td class="n">S/0,79</td><td class="n">S/1,39</td><td class="n">S/0,93</td></tr>
+                  <tr><td>Alopecia · mujeres</td><td class="n">S/0,59</td><td class="n">S/1,06</td><td class="n">Apagado el 7-set</td></tr>
+                </tbody>
+              </table></div>
+              <p class="label">Costo por mensaje · setiembre del 1 al 24</p>
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="win slide">
+        <div class="tb"><span class="t">Slide 4 · Optimización · dato, decisión y resultado</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb" style="gap:26px">
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>+76% en productos capilares</h4><p>En agosto, el conjunto de productos capilares (solo mujeres) pasó de S/0,79 a S/1,39 por mensaje.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Abrir el público</h4><p>El 24 de agosto se quitó el límite de género, sin tocar los videos.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>−42% en una semana</h4><p>Del 1 al 7 de setiembre bajó a S/0,81 por mensaje.</p></div></div>
+          </div>
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Un conjunto gastado</h4><p>Alopecia en mujeres pasó de S/0,59 a más de S/1 por mensaje sin ningún cambio. Sus videos ya estaban sobreexpuestos.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Apagar y redistribuir</h4><p>El 7 de setiembre se apagó y sus S/30 al día pasaron a los otros tres conjuntos, con la misma inversión diaria total.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Mejor semana del año</h4><p>Del 8 al 14 de setiembre: S/0,76 por mensaje y 23 citas de TikTok a S/43,67 cada una. ROI aproximado de la semana: +312%.</p></div></div>
+          </div>
+          <div class="row3">
+            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Mismo costo, menos citas</h4><p>Del 1 al 7 de setiembre, misma inversión y mismo S/0,81 por mensaje que la semana anterior, pero las citas de campaña bajaron de 20 a 8.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Mirar después del clic</h4><p>Cruce de la pauta con la agenda de la clínica, día por día y por asesor.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Diagnóstico claro</h4><p>La variación estaba en la atención por WhatsApp, no en los anuncios. La clínica recibe cada semana un informe con citas y ROI aproximado.</p></div></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+</div>
+
+<!-- =================== VISOR CON ZOOM =================== -->
+<div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="Captura ampliada">
+  <div class="win">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="lupa"></span><span id="v-title">captura.png</span></span><span class="bs"><button class="b" type="button" id="v-close" aria-label="Cerrar">×</button></span></div>
+    <div class="tools">
+      <button class="btn" type="button" id="v-out" aria-label="Alejar">−</button>
+      <output id="v-level">100%</output>
+      <button class="btn" type="button" id="v-in" aria-label="Acercar">+</button>
+      <button class="btn" type="button" id="v-fit">Ajustar</button>
+      <span class="label">Arrastra para moverte por la imagen</span>
+    </div>
+    <div class="stage" id="v-stage"><img id="v-img" alt=""></div>
+  </div>
+</div>
+
+<!-- =================== BARRA DE TAREAS =================== -->
+<nav class="taskbar" aria-label="Barra de tareas">
+  <a class="btn start" href="#inicio"><span class="ico sm" data-icon="star"></span>Inicio</a>
+  <div class="tasks">
+    <a class="btn" href="#sobre-mi"><span class="ico sm" data-icon="pc"></span><span class="txt">Sobre mí</span></a>
+    <a class="btn" href="#metodo"><span class="ico sm" data-icon="clip"></span><span class="txt">Método</span></a>
+    <a class="btn" href="#resultados"><span class="ico sm" data-icon="trend"></span><span class="txt">Resultados</span></a>
+    <a class="btn" href="#casos" id="task-casos"><span class="ico sm" data-icon="folder"></span><span class="txt">Casos</span></a>
+    <a class="btn" href="#contacto"><span class="ico sm" data-icon="mail"></span><span class="txt">Contacto</span></a>
+  </div>
+  <span class="clock" id="clock">--:--</span>
+</nav>
+
+<script>
+(function(){
+  /* ---------- íconos pixelados 16x16 ---------- */
+  var C={k:'#351E28',x:'#111111',w:'#FFFFFF',y:'#E9F056',o:'#FF5C34',b:'#D7EFFF',s:'#AEB8A0',a:'#B9BFC7',d:'#6F97BD',
+         g:'#25D366',G:'#1D6F42',m:'#0866FF',l:'#0A66C2',c:'#25F4EE',p:'#FE2C55',Y:'#FBBC04',B:'#4285F4',E:'#34A853',
+         A:'#F9AB00',O:'#E37400',t:'#F0C27B',T:'#C98A45',v:'#4C6FFF',f:'#F5D76E'};
+  var M={
+    folder:["................","..kkkkk.........",".kfffffk........","kfffffffkkkkkkk.","kffffffffffffffk","kkkkkkkkkkkkkkkk","kfwwwwwwwwwwwwfk","kffffffffffffffk","kffffffffffffffk","kffffffffffffffk","kffffffffffffffk","kffffffffffffffk","kffffffffffffffk","kTTTTTTTTTTTTTTk","kkkkkkkkkkkkkkkk","................"],
+    pc:["..kkkkkkkkkkkk..","..kaaaaaaaaaak..","..kakkkkkkkkak..","..kakbbbbbbkak..","..kakbddbbbkak..","..kakbbbbbbkak..","..kakkkkkkkkak..","..kaaaaaaoaaak..","..kkkkkkkkkkkk..","......kaak......","....kkkkkkkk....",".kkkkkkkkkkkkkk.",".kaaaaaaaaaaaak.",".kakkakkakkakak.",".kaaaaaaaaaaaak.",".kkkkkkkkkkkkkk."],
+    trend:["................","kkkkkkkkkkkkkkkk","kwwwwwwwwwwwwwwk","kwwwwwwwwwwwoowk","kwwwwwwwwwwoowwk","kwwwwwwwwwoowwwk","kwwwwoowwoowwwwk","kwwwoowooowwwwwk","kwwoowwwwwwwwwwk","kwoowwwwwwwwwwwk","kwwwwwwwwwwwwwwk","kkkkkkkkkkkkkkkk","......kkkk......","....kkkkkkkk....","................","................"],
+    chart:["kkkkkkkkkkkkkkkk","kwwwwwwwwwwwwwwk","kwwwwwwwwwwoowwk","kwwwwwwwwwwoowwk","kwwwwwwssswoowwk","kwwwwwwssswoowwk","kwwdddwssswoowwk","kwwdddwssswoowwk","kwwdddwssswoowwk","kwkkkkkkkkkkkkwk","kwwwwwwwwwwwwwwk","kkkkkkkkkkkkkkkk","......kkkk......","....kkkkkkkk....","................","................"],
+    clip:["......kkkk......","..kkkkkookkkkk..","..kyykkkkkkyyk..","..kywwwwwwwwyk..","..kywokwkkkwyk..","..kywwwwwwwwyk..","..kywokwkkkwyk..","..kywwwwwwwwyk..","..kywokwkkkwyk..","..kywwwwwwwwyk..","..kywwwwwwwwyk..","..kyyyyyyyyyyk..","..kkkkkkkkkkkk..","................","................","................"],
+    mail:["................","................","kkkkkkkkkkkkkkkk","kkwwwwwwwwwwwwkk","kwkwwwwwwwwwwkwk","kwwkwwwwwwwwkwwk","kwwwkwwwwwwkwwwk","kwwwwkwwwwkwwwwk","kwwwwwkookwwwwwk","kwwwwwwkkwwwwwwk","kwwwwwwwwwwwwwwk","kwwwwwwwwwwwwwwk","kkkkkkkkkkkkkkkk","................","................","................"],
+    lupa:["................","...kkkkk........","..kbbbbbk.......",".kbwwbbbbk......",".kbwbbbbbk......",".kbbbbbbbk......",".kbbbbbbbk......","..kbbbbbk.......","...kkkkkkk......",".......kook.....","........kook....",".........kook...","..........kook..","...........kk...","................","................"],
+    star:["................",".......oo.......",".......oo.......","......oooo......","......oooo......",".oooooooooooooo.","..oooooooooooo..","....oooooooo....","....oooooooo....","...oooooooooo...","...oooo..oooo...","..ooo......ooo..","..o..........o..","................","................","................"],
+    meta:["................","................","................","................","..mmmm....mmmm..",".mmmmmm..mmmmmm.","mmm..mmmmmm..mmm","mm....mmmm....mm","mm....mmmm....mm","mmm..mmmmmm..mmm",".mmmmmm..mmmmmm.","..mmmm....mmmm..","................","................","................","................"],
+    tiktok:[".xxxxxxxxxxxxxx.","xxxxxxxxxxxxxxxx","xxxxxxxcwwxxxxxx","xxxxxxxcwwwpxxxx","xxxxxxxcwwxwwpxx","xxxxxxxcwwxxxxxx","xxxxxxxcwwxxxxxx","xxxxxxxcwwxxxxxx","xxxxcwwwwwxxxxxx","xxxcwwwwwwpxxxxx","xxxcwwwwwwpxxxxx","xxxxcwwwwpxxxxxx","xxxxxppppxxxxxxx","xxxxxxxxxxxxxxxx","xxxxxxxxxxxxxxxx",".xxxxxxxxxxxxxx."],
+    googleads:["................",".......BB.......","......YYBB......",".....YYYBBB.....",".....YYYBBBB....","....YYY..BBB....","....YYY..BBBB...","...YYY....BBB...","...YYY....BBBB..","..EEE......BBB..",".EEEEE.....BBBB.",".EEEEE......BBB.",".EEEEE......BBB.","..EEE........B..","................","................"],
+    ghl:["............E...","...........EEE..","......B...EEEEE.",".....BBB...EEE..","....BBBBB..EEE..","..Y...BBB..EEE..",".YYY..BBB..EEE..","YYYYY.BBB..EEE..",".YYY..BBB..EEE..",".YYY..BBB..EEE..",".YYY..BBB..EEE..",".YYY..BBB..EEE..",".YYY..BBB..EEE..",".YYY..BBB..EEE..","................","................"],
+    kommo:["................","..kkkkkkkkkkkk..",".kvvvvvvvvvvvvk.","kvvvvvvvvvvvvvvk","kvvvvvvvvvvvvvvk","kvvwwvvwwvvwwvvk","kvvwwvvwwvvwwvvk","kvvvvvvvvvvvvvvk",".kvvvvvvvvvvvvk.","..kkkkkvvkkkkk..","......kvvk......",".....kvvk.......","....kkk.........","................","................","................"],
+    pancake:["................","................","......kyyk......","......kyyk......","...kkkkkkkkkk...","..kttttttttttk..","..kTTTTTTTTTTk..",".kttttttttttttk.",".kTTTTTTTTTTTTk.",".kttttttttttttk.",".kTTTTTTTTTTTTk.","kkkkkkkkkkkkkkkk",".kaaaaaaaaaaaak.","..kkkkkkkkkkkk..","................","................"],
+    ga4:["................","...........OOO..","...........OOO..","...........OOO..","...........OOO..","......AAA..OOO..","......AAA..OOO..","......AAA..OOO..","......AAA..OOO..","......AAA..OOO..",".YYY..AAA..OOO..","YYYYY.AAA..OOO..","YYYYY.AAA..OOO..",".YYY..AAA..OOO..","................","................"],
+    excel:[".GGGGGGGGGGGGGG.","GGGGGGGGGGGGGGGG","GGGGGGGGGGGGGGGG","GGGwwGGGGGGwwGGG","GGGGwwGGGGwwGGGG","GGGGGwwGGwwGGGGG","GGGGGGwwwwGGGGGG","GGGGGGGwwGGGGGGG","GGGGGGwwwwGGGGGG","GGGGGwwGGwwGGGGG","GGGGwwGGGGwwGGGG","GGGwwGGGGGGwwGGG","GGGGGGGGGGGGGGGG","GGGGGGGGGGGGGGGG",".GGGGGGGGGGGGGG.","................"],
+    linkedin:[".llllllllllllll.","llllllllllllllll","llwwllllllllllll","llwwllllllllllll","llllllllllllllll","llwwllwwlwwwllll","llwwllwwwwwwwlll","llwwllwwwlllwwll","llwwllwwllllwwll","llwwllwwllllwwll","llwwllwwllllwwll","llwwllwwllllwwll","llwwllwwllllwwll","llllllllllllllll","llllllllllllllll",".llllllllllllll."],
+    funnel:["................","kkkkkkkkkkkkkkkk","kddddddddddddddk",".kbbbbbbbbbbbbk.","..kbbbbbbbbbbk..","...kbbbbbbbbk...","....kbbbbbbk....",".....kbbbbk.....","......kbbk......","......kbbk......","......kbbk......","......kook......",".......oo.......",".......oo.......","................","................"],
+    ab:["................","................","kkkkkkk.kkkkkkk.","kyyyyyk.kdddddk.","kyykyyk.kwkkwwk.","kykykyk.kwkwkwk.","kykkkyk.kwkkwwk.","kykykyk.kwkwkwk.","kykykyk.kwkkwwk.","kyyyyyk.kdddddk.","kkkkkkk.kkkkkkk.","................","...ooooooooo....","................","................","................"],
+    rocket:[".......kk.......","......kwwk......",".....kwwwwk.....",".....kwddwk.....",".....kwddwk.....",".....kwwwwk.....",".....kwwwwk.....","....kkwwwwkk....","...kokwwwwkok...","...kokwwwwkok...","...kkkkkkkkkk...","......oyyo......","......oyyo......",".......oo.......","................","................"],
+    flow:["kkkkk...........","kyyyk...........","kyyyk...........","kkkkk...........","..k.............","..kkkkkkk.......","........k.......","......kkkkk.....","......kdddk.....","......kdddk.....","......kkkkk.....","........k.......","........kkkkk...","...........kkkkk","...........koook","...........kkkkk"]
+  };
+  /* íconos armados con figuras */
+  function grid(){ var g=[]; for(var i=0;i<16;i++) g.push(new Array(16).fill('.')); return g; }
+  function disc(g,cx,cy,r,col){ for(var y=0;y<16;y++)for(var x=0;x<16;x++){ if((x-cx)*(x-cx)+(y-cy)*(y-cy)<=r*r) g[y][x]=col; } }
+  function toMap(g){ return g.map(function(r){return r.join('');}); }
+  (function(){ var g=grid(); disc(g,7.5,7.5,7.6,'k'); disc(g,7.5,7.5,6.6,'o'); disc(g,7.5,7.5,5,'w'); disc(g,7.5,7.5,3.4,'o'); disc(g,7.5,7.5,1.6,'w'); M.target=toMap(g); })();
+  (function(){ var g=grid(); disc(g,7.5,7.5,7.6,'k'); disc(g,7.5,7.5,6.6,'g'); disc(g,7.5,7.5,5.2,'w'); disc(g,7.5,7.5,4.2,'g');
+    [[5,5],[6,5],[5,6],[5,7],[6,8],[7,9],[8,10],[9,10],[10,10],[10,9],[6,9],[7,10]].forEach(function(p){g[p[1]][p[0]]='w';});
+    g[13][2]='k';g[14][1]='k';g[12][3]='g';g[13][3]='g';g[12][2]='g'; M.whatsapp=toMap(g); })();
+  (function(){ var g=grid(); disc(g,7.5,7.5,5.2,'a');
+    [[7,0],[8,0],[7,1],[8,1],[7,14],[8,14],[7,15],[8,15],[0,7],[0,8],[1,7],[1,8],[14,7],[14,8],[15,7],[15,8],[2,2],[3,3],[13,2],[12,3],[2,13],[3,12],[13,13],[12,12]].forEach(function(p){g[p[1]][p[0]]='a';});
+    disc(g,7.5,7.5,2.2,'w'); M.gear=toMap(g); })();
+  (function(){ var g=grid(); for(var y=0;y<16;y++)for(var x=0;x<16;x++){ var d=Math.abs(x-7.5)+Math.abs(y-7.5); if(d<=7.5) g[y][x]='B'; if(d<=3.5) g[y][x]='w'; if(d<=1.5) g[y][x]='B'; } M.gtm=toMap(g); })();
+  (function(){ var g=grid(); disc(g,7.5,5.5,5.2,'k'); disc(g,7.5,5.5,4.2,'o'); disc(g,7.5,5.5,1.8,'w');
+    for(var y=9;y<15;y++){ var h=Math.max(0,3-Math.floor((y-9)/2)); for(var x=Math.round(7.5-h);x<=Math.round(7.5+h);x++) g[y][x]=(x===Math.round(7.5-h)||x===Math.round(7.5+h))?'k':'o'; }
+    g[15][7]='k';g[15][8]='k'; M.pin=toMap(g); })();
+  (function(){ var g=grid(); for(var y=2;y<12;y++){ g[y][2]='a';g[y][3]='a';g[y][4]='o';g[y][11]='o';g[y][12]='a';g[y][13]='a'; }
+    for(var x=2;x<14;x++){ g[12][x]='o'; } for(x=3;x<13;x++){ g[13][x]='o'; }
+    g[2][2]=g[2][3]=g[2][12]=g[2][13]='w'; g[3][2]=g[3][3]=g[3][12]=g[3][13]='w'; M.magnet=toMap(g); })();
+
+  var TINT={o:{f:'#FF9B7A',T:'#D9542F'},b:{f:'#A9D8F5',T:'#5E9CC8'},g:{f:'#CBD5B9',T:'#7F8C6C'},y:{f:'#E9F056',T:'#B5BD27'},p:{f:'#DDB6C6',T:'#8E4F68'}};
+  function svg(map,tint){
+    var r='';
+    for(var y=0;y<16;y++){ var row=(map[y]||'').padEnd(16,'.'); for(var x=0;x<16;x++){ var col=(tint&&tint[row[x]])||C[row[x]]; if(col) r+='<rect x="'+x+'" y="'+y+'" width="1.02" height="1.02" fill="'+col+'"/>'; } }
+    return '<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" focusable="false">'+r+'</svg>';
+  }
+  document.querySelectorAll('[data-icon]').forEach(function(el){ var m=M[el.getAttribute('data-icon')]; if(m) el.innerHTML=svg(m,TINT[el.getAttribute('data-tint')]); });
+
+
+  /* ---------- carruseles de Plataformas y Panel de control ---------- */
+  document.querySelectorAll('[data-carousel]').forEach(function(c){
+    var track=c.querySelector('.ctrack'), prev=c.querySelector('[data-dir="-1"]'), next=c.querySelector('[data-dir="1"]');
+    function upd(){ prev.disabled=track.scrollLeft<=2; next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2; }
+    [prev,next].forEach(function(b){ b.addEventListener('click',function(){ track.scrollBy({left:Number(b.getAttribute('data-dir'))*Math.max(140,track.clientWidth*.8),behavior:'smooth'}); }); });
+    track.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd); upd();
+  });
+
+  /* ---------- abrir y cerrar casos ---------- */
+  var layers=[].slice.call(document.querySelectorAll('.case-layer'));
+  var taskCasos=document.getElementById('task-casos');
+  function route(){
+    var h=(location.hash||'').slice(1), open=null;
+    layers.forEach(function(l){ var on=(l.id===h); l.hidden=!on; if(on) open=l; });
+    document.documentElement.style.overflow=open?'hidden':'';
+    taskCasos.classList.toggle('on',!!open);
+    if(open){ open.scrollTop=0; var c=open.querySelector('.tb .b'); if(c) c.focus({preventScroll:true}); }
+  }
+  window.addEventListener('hashchange',route); route();
+  document.addEventListener('keydown',function(e){
+    if(e.key!=='Escape') return;
+    if(!viewer.hidden){ closeViewer(); return; }
+    if(layers.some(function(l){return !l.hidden;})) location.hash='casos';
+  });
+
+  /* ---------- visor con zoom ---------- */
+  var viewer=document.getElementById('viewer'), vImg=document.getElementById('v-img'), stage=document.getElementById('v-stage'),
+      level=document.getElementById('v-level'), vTitle=document.getElementById('v-title'), z=1, lastBtn=null;
+  function apply(){ var base=stage.clientWidth-4; vImg.style.width=Math.round(base*z)+'px'; level.textContent=Math.round(z*100)+'%'; }
+  function openViewer(img,btn){ vImg.src=img.src; vImg.alt=img.alt; vTitle.textContent=img.getAttribute('src').split('/').pop(); lastBtn=btn; viewer.hidden=false; z=1; apply(); stage.scrollTop=0; stage.scrollLeft=0; document.getElementById('v-close').focus(); }
+  function closeViewer(){ viewer.hidden=true; if(lastBtn) lastBtn.focus(); }
+  document.getElementById('v-in').onclick=function(){ z=Math.min(4,z+.5); apply(); };
+  document.getElementById('v-out').onclick=function(){ z=Math.max(1,z-.5); apply(); };
+  document.getElementById('v-fit').onclick=function(){ z=1; apply(); };
+  document.getElementById('v-close').onclick=closeViewer;
+  viewer.addEventListener('click',function(e){ if(e.target===viewer) closeViewer(); });
+  stage.addEventListener('wheel',function(e){ if(!e.ctrlKey) return; e.preventDefault(); z=Math.min(4,Math.max(1,z+(e.deltaY<0?.25:-.25))); apply(); },{passive:false});
+  vImg.addEventListener('dblclick',function(){ z=z>1?1:2; apply(); });
+  var drag=null;
+  stage.addEventListener('pointerdown',function(e){ if(e.pointerType==='touch') return; drag={x:e.clientX,y:e.clientY,l:stage.scrollLeft,t:stage.scrollTop}; stage.classList.add('drag'); stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener('pointermove',function(e){ if(!drag) return; stage.scrollLeft=drag.l-(e.clientX-drag.x); stage.scrollTop=drag.t-(e.clientY-drag.y); });
+  function endDrag(){ drag=null; stage.classList.remove('drag'); }
+  stage.addEventListener('pointerup',endDrag); stage.addEventListener('pointercancel',endDrag);
+  window.addEventListener('resize',function(){ if(!viewer.hidden) apply(); });
+
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-zoom]');
+    if(b){ openViewer(b.querySelector('img'),b); return; }
+    var c=e.target.closest('[data-copy]');
+    if(c){
+      var txt=c.getAttribute('data-copy'), msg=c.querySelector('[data-copy-msg]');
+      var ok=function(){ if(msg){ msg.textContent='¡Copiado!'; setTimeout(function(){msg.textContent='Toca para copiar';},1800);} };
+      var sel=function(){ var v=c.querySelector('.val'); var r=document.createRange(); r.selectNodeContents(v); var s=getSelection(); s.removeAllRanges(); s.addRange(r); if(msg) msg.textContent='Texto seleccionado'; };
+      if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(ok,sel); } else { sel(); }
+    }
+  });
+
+  /* ---------- reloj de la barra de tareas (hora de Lima) ---------- */
+  var clock=document.getElementById('clock');
+  function tick(){ try{ clock.textContent=new Date().toLocaleTimeString('es-PE',{hour:'2-digit',minute:'2-digit',timeZone:'America/Lima'}); }catch(e){ clock.textContent=new Date().toTimeString().slice(0,5); } }
+  tick(); setInterval(tick,15000);
+})();
+</script>
+
+</body>
+</html>
