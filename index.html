@@ -79,7 +79,7 @@ a.tb .b, .tb a.b{cursor:pointer}
 .btn{display:inline-flex; align-items:center; gap:9px; background:var(--face); color:var(--ink); border:2px solid; border-color:#fff var(--shade) var(--shade) #fff; box-shadow:1px 1px 0 var(--ink); padding:7px 16px; font:700 1.05rem/1.1 var(--body); letter-spacing:.03em; text-decoration:none; cursor:pointer; border-radius:4px}
 .btn:active{border-color:var(--shade) #fff #fff var(--shade); transform:translate(1px,1px)}
 .btn.cta{background:var(--accent)}
-.btn.wa{background:#DDF6E5}
+.btn.wa{background:var(--t-sky)}
 .btn.li{background:#DCEBFA}
 
 /* ---------- escritorio / hero ---------- */
@@ -141,7 +141,7 @@ section.block{padding-block:34px}
 .folder .pic .badge .ico{width:100%; height:100%}
 .folder b{font-family:var(--sub); font-weight:400; font-size:1.15rem; line-height:1.15}
 .folder small{font-size:.98rem; color:var(--ink-soft); line-height:1.2}
-.folder:hover,.folder:focus-visible{border-color:var(--ink); background:rgba(233,240,86,.45)}
+.folder:hover,.folder:focus-visible{border-color:var(--ink); background:var(--t-wasabi)}
 .folder:hover .pic{transform:translateY(-3px) rotate(-3deg)}
 .folder .pic{transition:transform .2s}
 .statusbar{display:flex; gap:10px; margin-top:3px}
@@ -270,13 +270,13 @@ body{
 .cascade > .mini:nth-child(4) .tb{background:var(--sky)}
 .slide{box-shadow:5px 6px 0 var(--ink)}
 .slide > .tb{background:var(--ink); color:#fff}
-.slide > .wb,.case-win > .wb{background:#F1F5EC}
+.slide > .wb,.case-win > .wb{background:var(--panel)}
 .case-win > .tb{background:var(--accent)}
 .btn{background:var(--cream); border:2px solid var(--ink); border-radius:10px; box-shadow:3px 3px 0 var(--ink); transition:transform .12s, box-shadow .12s}
 .btn:hover{transform:translate(-1px,-1px); box-shadow:4px 4px 0 var(--ink)}
 .btn:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--ink); border-color:var(--ink)}
 .btn.cta{background:var(--accent)}
-.btn.wa{background:#DDF6E5}
+.btn.wa{background:var(--t-sky)}
 .btn.li{background:var(--sky)}
 .metric,.fact,.note{border-radius:10px}
 .tag{background:var(--cream)}
@@ -286,13 +286,13 @@ th{background:var(--sky)}
 .dicon span:last-child{background:var(--cream); border:2px solid var(--ink); border-radius:6px; padding:0 6px}
 .dicon:hover span:last-child,.dicon:focus-visible span:last-child{background:var(--wasabi); color:var(--ink)}
 .dicon .ico{filter:drop-shadow(2px 2px 0 rgba(53,30,40,.25))}
-.explorer .wb{background:#F6EFD6}
+.explorer .wb{background:var(--t-wasabi)}
 .folder:hover,.folder:focus-visible{background:rgba(255,253,246,.85); border-color:var(--ink)}
 .statusbar{margin:0; border-top:var(--line) solid var(--ink); background:var(--cream); padding:4px; gap:6px}
 .statusbar span{border:2px solid var(--ink); border-radius:6px; background:var(--cream)}
 .viewer .stage{border:2px solid var(--ink); border-radius:10px; margin:0 10px 10px}
 .viewer .tools{padding:10px}
-.ct{background:#F1F5EC; border:2px solid var(--ink); border-radius:12px; box-shadow:3px 3px 0 var(--ink)}
+.ct{background:var(--panel); border:2px solid var(--ink); border-radius:12px; box-shadow:3px 3px 0 var(--ink)}
 a.ct:hover,button.ct:hover{background:var(--wasabi); border-color:var(--ink)}
 button.ct{border:2px solid var(--ink)}
 
@@ -364,7 +364,7 @@ button.ct{border:2px solid var(--ink)}
 .carousel .arrow:disabled{opacity:.35; cursor:default; transform:none; box-shadow:1px 1px 0 var(--ink)}
 .ctrack{display:grid; grid-auto-flow:column; grid-auto-columns:132px; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; padding:8px 4px 12px; scrollbar-width:none; min-width:0}
 .ctrack::-webkit-scrollbar{display:none}
-.ctrack .gi{scroll-snap-align:start; background:#F1F5EC; border:2px solid var(--ink); border-radius:12px; padding:14px 8px; align-content:start}
+.ctrack .gi{scroll-snap-align:start; background:var(--panel); border:2px solid var(--ink); border-radius:12px; padding:14px 8px; align-content:start}
 .tabtitle{display:inline-flex; align-items:center; gap:12px; background:var(--cream); border:3px solid var(--ink); border-radius:12px; box-shadow:4px 5px 0 var(--ink); padding:8px 16px; margin-bottom:22px}
 .res-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:26px 30px; max-width:900px}
 .res-grid > :nth-child(2){margin-top:22px; transform:rotate(.6deg)}
@@ -381,12 +381,12 @@ button.ct{border:2px solid var(--ink)}
 .case-win.t-b > .tb{background:#A9D8F5}
 .case-win.t-g > .tb{background:#CBD5B9}
 .case-win.t-y > .tb{background:var(--wasabi)}
-.case-win.t-p > .tb{background:#DDB6C6}
-.folder.f-o:hover{background:#FFE3D8}
-.folder.f-b:hover{background:#E1F2FC}
-.folder.f-g:hover{background:#E8EEDD}
-.folder.f-y:hover{background:#F8FBC8}
-.folder.f-p:hover{background:#F5E6EC}
+.case-win.t-p > .tb{background:var(--pink)}
+.folder.f-o:hover{background:var(--t-accent)}
+.folder.f-b:hover{background:var(--t-sky)}
+.folder.f-g:hover{background:var(--t-sage)}
+.folder.f-y:hover{background:var(--t-wasabi)}
+.folder.f-p:hover{background:var(--t-pink)}
 
 @media (max-width:980px){
   .front{grid-template-columns:1fr}
@@ -407,7 +407,7 @@ button.ct{border:2px solid var(--ink)}
   .ctrack{grid-auto-columns:118px}
 }
 .chips{display:flex; flex-wrap:wrap; gap:8px}
-.chips span{border:2px solid var(--ink); border-radius:999px; padding:2px 12px; font-weight:600; background:#F1F5EC}
+.chips span{border:2px solid var(--ink); border-radius:999px; padding:2px 12px; font-weight:600; background:var(--panel)}
 .hero-win .wb{padding-bottom:72px}
 .about-win{margin-top:-52px}
 @media (max-width:640px){ .hero-win .wb{padding-bottom:44px} .about-win{margin-top:-26px} }
@@ -442,6 +442,360 @@ main .win,.case-win .win,.note{transform:none!important}
   .metodo-win .steps-mini{grid-template-columns:repeat(2,1fr)}
   .trio,.res-grid{grid-template-columns:1fr}
 }
+
+/* ===== v7 (29-set): caso Recupera según los textos de Sil ===== */
+.cover{display:grid; grid-template-columns:1.1fr .9fr; gap:22px; align-items:center}
+.cover .kicker{font-family:var(--sub); font-size:1.35rem; margin:0}
+.ph{border:3px dashed var(--ink); border-radius:10px; background:repeating-linear-gradient(45deg,var(--t-pink) 0 12px,#FFFFFF 12px 24px); min-height:220px; display:grid; place-items:center; align-content:center; text-align:center; padding:18px; font-weight:700; color:var(--ink-soft); letter-spacing:.04em}
+.ph.tall{min-height:380px; aspect-ratio:9/14; width:100%; max-width:320px; margin-inline:auto}
+.ph b{display:block; font-family:var(--sub); font-weight:400; font-size:1.2rem; color:var(--ink); letter-spacing:0}
+.slide-title{font-family:var(--sub); font-size:clamp(1.3rem,2.6vw,1.8rem); margin:0; line-height:1.15; text-transform:uppercase}
+.flow{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px 10px}
+.flow span{border:2px solid var(--ink); border-radius:999px; padding:5px 14px; font-weight:700; background:#fff}
+.flow i{font-style:normal; font-weight:700; font-size:1.3rem}
+.flow.v{flex-direction:column; gap:4px}
+.flow .end{background:var(--accent)}
+.flow .bad{background:var(--pink)}
+.funnel{display:grid; gap:12px; justify-items:center}
+.funnel > .win{width:100%}
+.funnel > .win:nth-child(2){width:94%}
+.funnel > .win:nth-child(3){width:88%}
+.funnel > .win:nth-child(4){width:82%}
+.funnel > .win > .wb{display:grid; grid-template-columns:170px 1fr; gap:14px; align-items:start}
+.funnel .num{font-family:var(--sub); font-size:1.25rem; line-height:1.1}
+.chips.sm span{font-size:.95rem}
+.bigflow{font-family:var(--sub); font-size:clamp(2rem,5.5vw,3.4rem); line-height:1; display:flex; flex-wrap:wrap; gap:.2em .35em; align-items:baseline}
+.bigflow i{font-style:normal; color:var(--accent)}
+.stack{display:grid; gap:12px}
+.srow{display:grid; grid-template-columns:62px 1fr 56px; gap:10px; align-items:center; font-variant-numeric:tabular-nums}
+.srow .m{font-weight:700; text-transform:uppercase}
+.sbar{display:flex; height:34px; border:2px solid var(--ink); border-radius:4px; overflow:hidden; background:#fff}
+.sbar .tk{background:var(--deep); color:#fff; display:grid; place-items:center; font-weight:700; border-right:2px solid var(--ink)}
+.sbar .ot{background:var(--panel); display:grid; place-items:center; font-weight:700}
+.srow .v{text-align:right; font-weight:700}
+.legend{display:flex; flex-wrap:wrap; gap:14px; font-weight:600}
+.legend span::before{content:""; display:inline-block; width:14px; height:14px; border:2px solid var(--ink); margin-right:6px; vertical-align:-2px; background:var(--c)}
+#caso-recupera .wb > *,#caso-recupera .row2 > *,#caso-recupera .funnel > *{min-width:0}
+#caso-recupera .situ .metrics{grid-template-columns:repeat(2,1fr)}
+#caso-recupera .flow span{max-width:100%}
+#caso-google .wb > *,#caso-google .row2 > *,#caso-google .row4 > *{min-width:0}
+.row4{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; align-items:stretch}
+.num-big{font-family:var(--title); font-size:2rem; line-height:1; color:var(--accent)}
+.kvs{display:grid; grid-template-columns:auto 1fr; gap:6px 12px; margin:0}
+.kvs dt{font-weight:700; border:2px solid var(--ink); border-radius:999px; padding:1px 10px; background:#fff; text-align:center}
+.kvs dd{margin:0; align-self:center}
+.bignum{font-family:var(--sub); font-size:clamp(2.6rem,6vw,3.8rem); line-height:1; color:var(--accent)}
+svg.line{width:100%; height:auto; display:block; font-family:var(--body); font-weight:700; font-size:15px; fill:var(--ink)}
+svg.line .v{font-size:16px}
+#caso-google code{font-family:inherit; font-weight:700; background:var(--wasabi); padding:0 .3em; border-radius:4px}
+.metrics.m4{grid-template-columns:repeat(4,1fr)}
+svg.line{max-width:760px; margin-inline:auto}
+@media (max-width:560px){ .metrics.m4{grid-template-columns:1fr 1fr} svg.line,svg.line .v{font-size:24px} }
+@media (max-width:980px){ .row4{grid-template-columns:1fr 1fr} }
+@media (max-width:560px){ .row4{grid-template-columns:1fr} }
+/* v8 (29-set): Recupera más liviano, estilo del caso Ortodoncia */
+#caso-recupera .row4 > *{min-width:0}
+.ph.vid{aspect-ratio:9/16; min-height:0; width:100%; max-width:250px; margin-inline:auto}
+.ph.vid.sm{max-width:170px; margin:0}
+.video-card{display:grid; grid-template-columns:170px 1fr; gap:14px; align-items:center}
+.metric b.xl{font-size:2.6rem; color:var(--ink)}
+.metrics.m5{grid-template-columns:repeat(5,1fr)}
+.versus{display:grid; grid-template-columns:1fr 1fr; border:2px solid var(--ink); border-radius:12px; overflow:hidden}
+.versus > div{padding:14px 18px; display:grid; gap:6px}
+.versus p{margin:0; font-family:var(--sub); font-size:1.15rem; line-height:1.4}
+.versus i{font-style:normal; color:var(--accent); font-weight:700; padding:0 .15em}
+.vs-a{background:var(--t-pink)}
+.vs-a s{text-decoration-thickness:2px}
+.vs-b{background:var(--wasabi); border-left:2px solid var(--ink)}
+.vs-b i{color:var(--ink)}
+.angles{font-family:var(--sub); color:var(--deep); margin:0}
+.vsteps{display:grid; grid-template-columns:none; justify-items:start; gap:4px; margin:0; font-weight:700}
+.vsteps .hl{display:inline-block}
+.vsteps i{font-style:normal; color:var(--accent); line-height:1}
+@media (max-width:980px){ .metrics.m5{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:560px){ .versus{grid-template-columns:1fr} .vs-b{border-left:0; border-top:2px solid var(--ink)} .video-card{grid-template-columns:120px 1fr} .ph.vid.sm{max-width:120px} .metrics.m5{grid-template-columns:1fr 1fr} }
+.shot.phone{max-width:260px; margin-inline:auto}
+.shot.phone.sm{max-width:170px; margin:0}
+.shot.phone button::after{content:"+"}
+.video-card{align-items:start!important}
+.metrics.vm{grid-template-columns:repeat(auto-fit,minmax(110px,1fr)); gap:8px}
+.metrics.vm .metric b{font-size:1.2rem}
+#caso-recupera .video-card > *{min-width:0}
+@media (max-width:640px){ #caso-recupera .video-card{grid-template-columns:1fr} #caso-recupera .shot.phone.sm{max-width:200px; margin-inline:auto} .metrics.vm{grid-template-columns:1fr 1fr} }
+/* v9 (29-set): colores por ventana, burbujas, problema/solución, meses */
+.case-win .mini.k-w > .tb{background:var(--wasabi); color:var(--ink)}
+.case-win .mini.k-s > .tb{background:var(--sky); color:var(--ink)}
+.case-win .mini.k-g > .tb{background:var(--sage); color:var(--ink)}
+.case-win .mini.k-o > .tb{background:var(--accent); color:var(--ink)}
+.case-win .mini.k-p > .tb{background:var(--pink); color:var(--ink)}
+.case-win .mini.k-i > .tb{background:var(--ink); color:#fff}
+.row4.eq,.row2.eq2{align-items:stretch}
+.row2.eq2 > .mini{display:flex; flex-direction:column}
+.row2.eq2 > .mini > .wb{flex:1; align-content:center}
+.roi-note{margin:0; background:var(--t-wasabi); border:2px solid var(--ink); border-radius:10px; padding:10px 14px; font-size:1.05rem}
+.row4.eq > .mini,.grid2eq > .mini{display:flex; flex-direction:column}
+.row4.eq > .mini > .wb,.grid2eq > .mini > .wb{flex:1}
+.grid2eq{display:grid; grid-template-columns:1fr 1fr; grid-auto-rows:1fr; gap:16px}
+.grid2eq > *{min-width:0}
+.people{display:flex; gap:10px; align-items:end}
+.people svg{width:40px; height:64px}
+.age{font-family:var(--sub); font-size:1.3rem; margin:0}
+.bubbles{display:flex; flex-wrap:wrap; gap:8px}
+.bubbles span{border:2px solid var(--ink); border-radius:999px; padding:4px 14px; font-weight:700; background:#fff}
+.bubbles span:nth-child(5n+1){background:var(--wasabi)}
+.bubbles span:nth-child(5n+2){background:var(--sky)}
+.bubbles span:nth-child(5n+3){background:var(--pink)}
+.bubbles span:nth-child(5n+4){background:var(--sage)}
+.bubbles span:nth-child(5n+5){background:var(--t-accent)}
+.metrics.m6{grid-template-columns:repeat(6,1fr)}
+.ps{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.box{border:2px solid var(--ink); border-radius:10px; padding:12px 14px; display:grid; gap:6px; align-content:start}
+.box p{margin:0}
+.b-prob{background:var(--t-pink)}
+.b-sol{background:var(--t-wasabi)}
+.months{display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap}
+.months i{font-style:normal; font-weight:700; color:var(--accent); font-size:1.4rem}
+.mbox{border:2px solid var(--ink); border-radius:10px; overflow:hidden; text-align:center; min-width:92px; background:#fff}
+.mbox span{display:block; background:var(--sky); border-bottom:2px solid var(--ink); font-weight:700; text-transform:uppercase; letter-spacing:.06em; font-size:.85rem; padding:3px 8px}
+.mbox b{display:block; font-family:var(--sub); font-weight:400; font-size:1.45rem; padding:6px 10px}
+.mbox.best span{background:var(--accent)}
+.concl{font-family:var(--sub); font-size:1.2rem; line-height:1.45; margin:0}
+.shot.wide{max-width:760px; width:100%; margin-inline:auto}
+@media (max-width:980px){ .metrics.m6{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:800px){ .grid2eq{grid-template-columns:1fr; grid-auto-rows:auto} }
+@media (max-width:560px){ .metrics.m6{grid-template-columns:1fr 1fr} .ps{grid-template-columns:1fr} }
+@media (max-width:800px){ .cover{grid-template-columns:1fr} .funnel > .win{width:100%!important} .funnel > .win > .wb{grid-template-columns:1fr} }
+
+/* ===== v10 (11-nov): íconos pixelados, cuadros que se levantan, carrusel continuo, antes/después ===== */
+.pic-ico{width:52px; height:52px; object-fit:contain; flex:none; filter:drop-shadow(2px 2px 0 rgba(53,30,40,.18))}
+.pic-ico.sm{width:40px; height:40px}
+.pic-ico.lg{width:64px; height:64px}
+.ihead{display:flex; align-items:center; gap:12px}
+.ihead h4{margin:0}
+.ihead .num-big{margin-right:-2px}
+/* levantarse al pasar el cursor (.lift) y además sombrearse de un color suave (.shade) */
+.lift{transition:transform .2s ease, box-shadow .2s ease, background-color .2s ease}
+.lift:hover,.case-win .win.lift:hover,main .win.lift:hover{transform:translateY(-6px)!important; box-shadow:4px 8px 0 var(--ink)}
+.lift.shade:hover{background-color:var(--soft,var(--t-sky))}
+.metric.hi.lift.shade:hover{background-color:var(--accent)}
+#caso-lapcustom{--soft:var(--t-sky)}
+#caso-google{--soft:var(--t-sage)}
+#caso-recupera{--soft:var(--t-pink)}
+#caso-okara{--soft:var(--t-wasabi)}
+.metrics.center .metric{text-align:center; justify-items:center; align-content:center}
+.metric .desc{font-size:.88rem; color:var(--ink-soft); line-height:1.15; font-weight:600}
+.metric.hi .desc{color:var(--ink)}
+.cap-note{font-size:.95rem; color:var(--ink-soft); margin:0}
+/* bienvenida y portada */
+.btn.mail{background:var(--t-accent)}
+.about-win strong{font-weight:700; color:var(--ink); background:linear-gradient(transparent 62%, var(--t-wasabi) 62%)}
+.trio > .win{display:flex; flex-direction:column}
+.trio > .win > .wb{flex:1}
+.budget{text-align:center; justify-items:center; align-content:center}
+.budget-num{font-family:var(--sub); font-size:clamp(2.6rem,5vw,3.5rem); line-height:1.05; background:var(--wasabi); border:3px solid var(--ink); border-radius:14px; padding:6px 18px; box-shadow:4px 4px 0 var(--ink)}
+.budget p{font-size:1.1rem; font-weight:600}
+/* carrusel que se desliza solo, sin cortes */
+.marquee{overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent); mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+.mtrack{display:flex; gap:10px; width:max-content; padding:8px 0 12px; animation:marq 40s linear infinite}
+.mtrack.rev{animation-direction:reverse; animation-duration:36s}
+.marquee:hover .mtrack,.marquee:focus-within .mtrack{animation-play-state:paused}
+.mtrack .gi{width:132px; flex:none; background:var(--panel); border:2px solid var(--ink); border-radius:12px; padding:14px 8px; align-content:start}
+@keyframes marq{to{transform:translateX(calc(-50% - 5px))}}
+@media (prefers-reduced-motion:reduce){ .marquee{overflow-x:auto} }
+/* resultados de Inicio: más grandes y con antes / después */
+.res-grid.v10{grid-template-columns:repeat(6,minmax(0,1fr)); gap:22px}
+.res-grid.v10 > *{grid-column:span 2; display:flex; flex-direction:column}
+.res-grid.v10 > .r-lap{grid-column:1/-1}
+.res-grid.v10 .wb{flex:1; padding:18px 20px; gap:10px; align-content:start}
+.res-grid.v10 .tb .t{font-size:1.05rem}
+.rsplit{display:grid; grid-template-columns:1fr 1fr; padding:0!important; gap:0!important}
+.rsplit > div{padding:18px 20px; display:grid; gap:10px; align-content:start}
+.rsplit > div + div{border-left:3px dashed var(--ink)}
+.rtag{justify-self:start; font-weight:700; text-transform:uppercase; letter-spacing:.08em; font-size:.85rem; border:2px solid var(--ink); border-radius:999px; padding:1px 10px; background:var(--wasabi)}
+.rtag.b{background:var(--sky)}
+.rwhat{font-weight:700; font-size:1.05rem; line-height:1.2}
+.rbig{font-family:var(--sub); font-size:clamp(2.8rem,5vw,3.9rem); line-height:1; color:var(--accent); -webkit-text-stroke:1px var(--ink)}
+.rbig small{font-family:var(--body); font-size:1.05rem; color:var(--ink); -webkit-text-stroke:0; font-weight:700; margin-left:6px}
+.ba{display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:8px; border:2px solid var(--ink); border-radius:12px; background:#fff; padding:10px 12px}
+.ba > div{display:grid; gap:2px; text-align:center}
+.ba span{font-weight:700; text-transform:uppercase; letter-spacing:.06em; font-size:.78rem; color:var(--ink-soft)}
+.ba b{font-family:var(--sub); font-weight:400; font-size:clamp(1.45rem,2.6vw,1.9rem); line-height:1.05; font-variant-numeric:tabular-nums}
+.ba i{font-style:normal; font-weight:700; color:var(--accent); font-size:1.6rem}
+.ba-cap{font-size:.95rem; font-weight:600; text-align:center; margin-top:-4px}
+.rfoot{font-size:.98rem; color:var(--ink-soft); line-height:1.3}
+.rfoot b{color:var(--ink)}
+/* casos: ventana ancha arriba y dos abajo; dos campañas en ventanas separadas */
+.case-win + .case-win{margin-top:38px}
+.case-win.t-b2 > .tb{background:#A9D8F5}
+.jump{display:flex; gap:10px; flex-wrap:wrap}
+.wide2{display:grid; grid-template-columns:1.2fr .8fr; gap:18px; align-items:start}
+.creative-center{display:grid; grid-template-columns:minmax(0,340px) minmax(0,1fr); gap:20px; align-items:start; justify-content:center; max-width:880px; margin-inline:auto; width:100%}
+.ph.sm{min-height:150px}
+.serp{border:2px solid var(--ink); border-radius:12px; background:#fff; padding:14px; display:grid; gap:12px}
+.serp .q{display:flex; align-items:center; gap:10px; border:2px solid var(--ink); border-radius:999px; padding:6px 14px; font-weight:700; font-size:1.1rem}
+.serp .q .ico{width:24px; height:24px}
+.serp .ad{display:grid; gap:2px; font-family:Arial, sans-serif; font-size:.95rem; line-height:1.3}
+.serp .ad small{font-weight:700; font-size:.8rem}
+.serp .ad b{color:#1a0dab; font-weight:400; font-size:1.08rem}
+.serp .ad span{color:#006621; font-size:.85rem}
+.mtable td,.mtable th{white-space:normal}
+.mtable td.n,.mtable th.n{white-space:nowrap}
+.bars4 .srow{grid-template-columns:82px 1fr 56px}
+@media (max-width:980px){
+  .res-grid.v10 > *{grid-column:span 3}
+  .res-grid.v10 > :last-child{grid-column:1/-1}
+  .wide2,.creative-center{grid-template-columns:1fr}
+  .creative-center{max-width:420px}
+}
+@media (max-width:640px){
+  .res-grid.v10 > *{grid-column:1/-1!important}
+  .rsplit{grid-template-columns:1fr}
+  .rsplit > div + div{border-left:0; border-top:3px dashed var(--ink)}
+}
+
+/* ===== v11 (12-nov): una paleta y un fondo por página (primario = cifras clave, secundarios = ventanas y resaltados, terciarios = detalles) ===== */
+:root{
+  --ink:#2E1A17; --ink-soft:#6E5148; --shade:#B9967C;
+  --bg:#FFF3DA; --cream:#FFFBF0; --panel:#FFF3DA; --face:#FFF3DA;
+  --accent:#F93239; --on-accent:#2E1A17;      /* primario: Strawberry Red */
+  --wasabi:#F2CD27; --on-wasabi:#2E1A17;      /* secundario: Bright Amber */
+  --sky:#4FAC98; --on-sky:#2E1A17;            /* secundario: Ocean Mist */
+  --sage:#FB9386; --on-sage:#2E1A17;          /* terciario: Sweet Salmon */
+  --pink:#849A1B; --on-pink:#2E1A17;          /* terciario: Lime Moss */
+  --t3:#499555; --on-t3:#2E1A17;              /* terciario: Sea Green */
+  --deep:#499555; --on-deep:#FFFFFF;
+  --t-accent:#FED3D2; --t-wasabi:#FCEDB0; --t-sky:#D3EDE6; --t-sage:#FEE0DB; --t-pink:#E8EEC6;
+  --soft:#D3EDE6;
+}
+#caso-lapcustom{   /* Transparent Yellow · Sceptre Red · Cerulean Blue · Potting Soil · Java Brown */
+  --ink:#231815; --ink-soft:#5E4A40; --shade:#8E7468;
+  --bg:#EAD9CB; --bgimg:url(img/bg-lap.jpg); --cream:#FFFDF6; --panel:#F8F3DA; --face:#F5EFC6;
+  --accent:#4D0E12; --on-accent:#F5EFC6;
+  --wasabi:#A5BCD6; --on-wasabi:#231815;
+  --sky:#4A2E27; --on-sky:#F5EFC6;
+  --sage:#F5EFC6; --on-sage:#231815;
+  --pink:#D9B3AE; --on-pink:#231815;
+  --t3:#231815; --on-t3:#F5EFC6;
+  --deep:#4D0E12; --on-deep:#F5EFC6;
+  --t-accent:#EBD3D3; --t-wasabi:#E6EDF5; --t-sky:#EADFD6; --t-sage:#FAF6E1; --t-pink:#F2E3E0;
+  --soft:#E6EDF5;
+}
+#caso-okara{       /* Autumn Ember · Harvest Gold · Jasmine · Cool Blue · Blue Slate · Sage */
+  --ink:#1F3B4D; --ink-soft:#4F6470; --shade:#8FA3AD;
+  --bg:#FBEBC8; --bgimg:url(img/bg-okara.jpg); --cream:#FFFCEF; --panel:#FDF5DD; --face:#FBF0D2;
+  --accent:#B35813; --on-accent:#FFF8E6;
+  --wasabi:#E29420; --on-wasabi:#1F3B4D;
+  --sky:#2B6584; --on-sky:#FFFFFF;
+  --sage:#A4B092; --on-sage:#1F3B4D;
+  --pink:#A0BEC3; --on-pink:#1F3B4D;
+  --t3:#FEF870; --on-t3:#1F3B4D;
+  --deep:#B35813; --on-deep:#FFF8E6;
+  --t-accent:#F5D9C2; --t-wasabi:#FEF9C4; --t-sky:#D5E4EC; --t-sage:#E7EBDF; --t-pink:#E3EDEF;
+  --soft:#FEF9C4;
+}
+#caso-google{      /* Bright Marine · Lime Moss · Aquamarine · Turquoise · Grey Olive */
+  --ink:#0D2B47; --ink-soft:#43586B; --shade:#8BA3B5;
+  --bg:#DCEBF4; --bgimg:url(img/bg-orto.jpg); --cream:#F8FDFC; --panel:#EAF7F2; --face:#E3F5EE;
+  --accent:#2073C3; --on-accent:#FFFFFF;
+  --wasabi:#4DC9AE; --on-wasabi:#0D2B47;
+  --sky:#98B62D; --on-sky:#0D2B47;
+  --sage:#7DDEB5; --on-sage:#0D2B47;
+  --pink:#838A7E; --on-pink:#FFFFFF;
+  --t3:#2073C3; --on-t3:#FFFFFF;
+  --deep:#2073C3; --on-deep:#FFFFFF;
+  --t-accent:#D4E5F6; --t-wasabi:#D3F3EC; --t-sky:#E8F0CF; --t-sage:#DDF6EC; --t-pink:#E4E7E1;
+  --soft:#D3F3EC;
+}
+#caso-recupera{    /* Ballie Scott Sage · Queen Blue · Blue Nude · Konjō Blue · Gotham Grey · Green Mesh · Green Papaya */
+  --ink:#043473; --ink-soft:#4C5F7C; --shade:#8B9091;
+  --bg:#F4EFE4; --bgimg:url(img/bg-recupera.jpg); --cream:#FCFBF5; --panel:#F3F2E4; --face:#EFEEDB;
+  --accent:#28518A; --on-accent:#FFFFFF;
+  --wasabi:#E4D076; --on-wasabi:#043473;
+  --sky:#476998; --on-sky:#FFFFFF;
+  --sage:#B2B39D; --on-sage:#043473;
+  --pink:#D7D6AE; --on-pink:#043473;
+  --t3:#8B9091; --on-t3:#FFFFFF;
+  --deep:#28518A; --on-deep:#FFFFFF;
+  --t-accent:#D3DCEA; --t-wasabi:#F6EDC4; --t-sky:#DCE3EE; --t-sage:#E6E6DA; --t-pink:#EFEEDB;
+  --soft:#F6EDC4;
+}
+
+/* fondos: aclarados para acompañar, nunca para competir con el contenido */
+body{background:var(--bg) url(img/bg-inicio.jpg) repeat; background-size:300px; background-attachment:fixed}
+.case-layer{background-color:var(--bg); background-image:var(--bgimg); background-position:center; background-size:cover; background-repeat:no-repeat; backdrop-filter:none}
+#caso-okara{background-size:330px auto; background-repeat:repeat}
+.case-win > .wb{background:color-mix(in srgb, var(--panel) 62%, transparent)}
+.slide > .wb{background:var(--panel)}
+
+/* texto legible sobre cada color de relleno */
+.tb{color:var(--on-accent)}
+.tb .b{color:var(--ink)}
+.mini .tb{color:var(--on-wasabi)}
+.row3 > .mini:nth-child(2) .tb,.row2 > .mini:nth-child(2) .tb,.cascade > .mini:nth-child(2) .tb,.cascade > .mini:nth-child(4) .tb{color:var(--on-sky)}
+.row3 > .mini:nth-child(3) .tb,.cascade > .mini:nth-child(3) .tb{color:var(--on-sage)}
+.win.c-orange > .tb{color:var(--on-accent)}
+.win.c-wasabi > .tb{color:var(--on-wasabi)}
+.win.c-sky > .tb{color:var(--on-sky)}
+.win.c-sage > .tb{color:var(--on-sage)}
+.win.c-pink > .tb{background:var(--pink); color:var(--on-pink)}
+.win.c-t3 > .tb{background:var(--t3); color:var(--on-t3)}
+.case-win .mini.k-w > .tb{color:var(--on-wasabi)}
+.case-win .mini.k-s > .tb{color:var(--on-sky)}
+.case-win .mini.k-g > .tb{color:var(--on-sage)}
+.case-win .mini.k-o > .tb{color:var(--on-accent)}
+.case-win .mini.k-p > .tb{color:var(--on-pink)}
+.case-win > .tb,.case-win.t-o > .tb,.case-win.t-b > .tb,.case-win.t-g > .tb,.case-win.t-y > .tb,.case-win.t-p > .tb{background:var(--accent); color:var(--on-accent)}
+.case-win.t-b2 > .tb{background:var(--sky); color:var(--on-sky)}
+.hl,.btn.cta,.taskbar .start,td.best,.banner,.flow .end,.mbox.best span,.fact.hi{color:var(--on-accent)}
+.metric.hi,.metric.hi .label,.metric.hi .desc,.metric.hi b,.metric.hi b.xl{color:var(--on-accent)}
+th,.mbox span,.rtag.b,.btn.li,.taskbar .clock{color:var(--on-sky)}
+.rtag,.note,.vs-b,#caso-google code{color:var(--on-wasabi)}
+.vs-b i{color:var(--on-wasabi)}
+.flow .bad{color:var(--on-pink)}
+.sbar .tk{color:var(--on-deep)}
+.bubbles span:nth-child(5n+2){color:var(--on-sky)}
+.bubbles span:nth-child(5n+3){color:var(--on-pink)}
+.bubbles span:nth-child(5n+4){color:var(--on-sage)}
+.btn.cur-a{background:var(--accent); color:var(--on-accent); cursor:default}
+.btn.cur-s{background:var(--sky); color:var(--on-sky); cursor:default}
+.btn.cur-a:hover,.btn.cur-s:hover{transform:none; box-shadow:3px 3px 0 var(--ink)}
+
+/* íconos pixelados y gráficos con la paleta de la página */
+.ico .pk{fill:var(--ink)} .ico .py{fill:var(--wasabi)} .ico .po{fill:var(--accent)} .ico .pb{fill:var(--t-sky)} .ico .ps{fill:var(--sage)}
+svg.line [stroke="#351E28"]{stroke:var(--ink)}
+svg.line [stroke="#AEB8A0"]{stroke:var(--sage)}
+svg.line [fill="#AEB8A0"]{fill:var(--sage)}
+svg.line [fill="#FF5C34"]{fill:var(--accent)}
+.people svg [stroke]{stroke:var(--ink)}
+.people svg:first-child [fill]{fill:var(--sky)}
+.people svg:last-child [fill]{fill:var(--pink)}
+
+/* Inicio: jerarquía de color en cifras y ventanas */
+.rbig{color:var(--accent)}
+.ba{background:var(--cream)}
+.ba > div:last-child b{color:var(--deep)}
+.rfoot b{color:var(--deep)}
+.chips span:nth-child(5n+1){background:var(--t-accent)}
+.chips span:nth-child(5n+2){background:var(--t-wasabi)}
+.chips span:nth-child(5n+3){background:var(--t-sky)}
+.chips span:nth-child(5n+4){background:var(--t-sage)}
+.chips span:nth-child(5n+5){background:var(--t-pink)}
+.mtrack .gi:nth-child(4n+1){background:var(--t-wasabi)}
+.mtrack .gi:nth-child(4n+2){background:var(--t-sky)}
+.mtrack .gi:nth-child(4n+3){background:var(--t-sage)}
+.mtrack .gi:nth-child(4n+4){background:var(--t-pink)}
+.steps-mini li:nth-child(odd) b{color:var(--accent)}
+.steps-mini li:nth-child(even) b{color:var(--deep)}
+.budget-num{background:var(--wasabi); color:var(--ink)}
+.res-grid .ba-cap{color:var(--ink-soft)}
+.ct:nth-child(1){background:var(--t-sky)} .ct:nth-child(2){background:var(--t-wasabi)} .ct:nth-child(3){background:var(--t-sage)} .ct:nth-child(4){background:var(--t-pink)}
+.folder.f-o:hover{background:#F2E3E0} .folder.f-g:hover{background:#FCEBC8} .folder.f-y:hover{background:#D3F3EC} .folder.f-p:hover{background:#F4EFD0}
+.dicon:hover span:last-child,.dicon:focus-visible span:last-child{background:var(--wasabi); color:var(--on-wasabi)}
+
+/* Okara · Ventana 3: el creativo ganador sin el recuadro de métricas, equilibrado */
+.ok-creative{grid-template-columns:minmax(0,300px) minmax(0,1fr); max-width:820px; align-items:center; gap:28px}
+.ok-creative .cc-text{display:grid; gap:12px; align-content:center}
+@media (max-width:980px){ .ok-creative{grid-template-columns:1fr; max-width:420px} }
 </style>
 
 </head>
@@ -453,7 +807,7 @@ main .win,.case-win .win,.note{transform:none!important}
     <a class="dicon" href="#sobre-mi"><span class="ico lg" data-icon="pc"></span><span>Sobre mí</span></a>
     <a class="dicon" href="#metodo"><span class="ico lg" data-icon="clip"></span><span>Método</span></a>
     <a class="dicon" href="#resultados"><span class="ico lg" data-icon="trend"></span><span>Resultados</span></a>
-    <a class="dicon" href="#casos"><span class="ico lg" data-icon="folder" data-tint="y"></span><span>Casos</span></a>
+    <a class="dicon" href="#casos"><span class="ico lg" data-icon="folder" data-tint="a"></span><span>Casos</span></a>
     <a class="dicon" href="#contacto"><span class="ico lg" data-icon="mail"></span><span>Contacto</span></a>
   </nav>
 </header>
@@ -470,6 +824,7 @@ main .win,.case-win .win,.note{transform:none!important}
           <div class="actions">
             <a class="btn li" href="https://www.linkedin.com/in/silvana-saldana-espinoza/" target="_blank" rel="noopener"><span class="ico sm" data-icon="linkedin"></span>LinkedIn</a>
             <a class="btn wa" href="https://wa.me/51981468544?text=Hola%20Silvana%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar." target="_blank" rel="noopener"><span class="ico sm" data-icon="whatsapp"></span>WhatsApp</a>
+            <a class="btn mail" href="mailto:espinoza.silvana99@gmail.com?subject=Vi%20tu%20portafolio"><span class="ico sm" data-icon="mail"></span>Correo</a>
           </div>
         </div>
       </section>
@@ -477,9 +832,9 @@ main .win,.case-win .win,.note{transform:none!important}
         <div class="tb"><span class="t"><span class="ico sm" data-icon="pc"></span>sobre-mí.txt</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
         <div class="wb">
           <h2>SOBRE MÍ</h2>
-          <p>Soy <strong>especialista en Paid Media</strong> y gestiono campañas de Meta Ads, Google Ads y TikTok Ads para empresas de salud, medicina estética y servicios de alto ticket.</p>
-          <p>Diseño estrategias de captación y conversión que conectan la inversión publicitaria con resultados comerciales concretos: más leads calificados, más ventas cerradas y procesos más eficientes.</p>
-          <p>Integro CRM y automatizaciones en GoHighLevel para que el proceso no se detenga en el clic, sino que llegue al cierre. También preparo reportes ejecutivos orientados a resultados de negocio.</p>
+          <p>Soy <strong>especialista en Paid Media</strong> y gestiono campañas de <strong>Meta Ads, Google Ads y TikTok Ads</strong> para empresas de <strong>salud, medicina estética y servicios de alto ticket</strong>.</p>
+          <p>Diseño <strong>estrategias de captación y conversión</strong> que conectan la inversión publicitaria con <strong>resultados comerciales concretos</strong>: más <strong>leads calificados</strong>, más <strong>ventas cerradas</strong> y procesos más eficientes.</p>
+          <p>Integro <strong>CRM y automatizaciones en GoHighLevel</strong> para que el proceso no se detenga en el clic, sino que <strong>llegue al cierre</strong>. También preparo <strong>reportes ejecutivos</strong> orientados a resultados de negocio.</p>
         </div>
       </section>
   </div>
@@ -501,13 +856,13 @@ main .win,.case-win .win,.note{transform:none!important}
   <div class="trio">
     <section class="win c-sage">
       <div class="tb"><span class="t">Presupuestos gestionados</span><span class="bs"><span class="b">×</span></span></div>
-      <div class="wb"><span class="big">S/10.000</span><p>al mes, el máximo que he gestionado</p></div>
+      <div class="wb budget"><span class="budget-num">S/10.000</span><p>al mes, el presupuesto más alto que he gestionado</p></div>
     </section>
-    <section class="win c-sky">
+    <section class="win c-pink">
       <div class="tb"><span class="t">Plataformas</span><span class="bs"><span class="b">×</span></span></div>
       <div class="wb"><div class="plat3"><div class="gi"><span class="ico lg" data-icon="meta"></span><b>Meta Ads</b></div><div class="gi"><span class="ico lg" data-icon="googleads"></span><b>Google Ads</b></div><div class="gi"><span class="ico lg" data-icon="tiktok"></span><b>TikTok Ads</b></div></div></div>
     </section>
-    <section class="win c-wasabi">
+    <section class="win c-t3">
       <div class="tb"><span class="t">Rubros</span><span class="bs"><span class="b">×</span></span></div>
       <div class="wb"><div class="chips"><span>Salud</span><span>Medicina estética</span><span>Odontología</span><span>Tricología</span><span>Automotriz premium</span></div></div>
     </section>
@@ -515,43 +870,74 @@ main .win,.case-win .win,.note{transform:none!important}
 
   <section class="win c-ink" id="plataformas">
     <div class="tb"><span class="t"><span class="ico sm" data-icon="pc"></span>Plataformas</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
-    <div class="wb"><div class="carousel" data-carousel><button class="btn arrow" type="button" data-dir="-1" aria-label="Ver anteriores">‹</button><div class="ctrack" id="track-plataformas" tabindex="0"><div class="gi"><span class="ico lg" data-icon="meta"></span><b>Meta Ads</b><small>Facebook e Instagram</small></div><div class="gi"><span class="ico lg" data-icon="googleads"></span><b>Google Ads</b><small>Búsqueda y PMax</small></div><div class="gi"><span class="ico lg" data-icon="tiktok"></span><b>TikTok Ads</b><small>Video y leads</small></div><div class="gi"><span class="ico lg" data-icon="ghl"></span><b>GoHighLevel</b><small>CRM y flujos</small></div><div class="gi"><span class="ico lg" data-icon="kommo"></span><b>Kommo</b><small>CRM</small></div><div class="gi"><span class="ico lg" data-icon="pancake"></span><b>Pancake</b><small>Bandeja de chats</small></div><div class="gi"><span class="ico lg" data-icon="gtm"></span><b>Tag Manager</b><small>Etiquetas</small></div><div class="gi"><span class="ico lg" data-icon="ga4"></span><b>GA4</b><small>Analítica</small></div><div class="gi"><span class="ico lg" data-icon="excel"></span><b>Excel</b><small>Reportes</small></div></div><button class="btn arrow" type="button" data-dir="1" aria-label="Ver siguientes">›</button></div></div>
+    <div class="wb"><div class="marquee" tabindex="0"><div class="mtrack" id="track-plataformas" data-marquee><div class="gi"><span class="ico lg" data-icon="meta"></span><b>Meta Ads</b><small>Facebook e Instagram</small></div><div class="gi"><span class="ico lg" data-icon="googleads"></span><b>Google Ads</b><small>Búsqueda y PMax</small></div><div class="gi"><span class="ico lg" data-icon="tiktok"></span><b>TikTok Ads</b><small>Video y leads</small></div><div class="gi"><span class="ico lg" data-icon="ghl"></span><b>GoHighLevel</b><small>CRM y flujos</small></div><div class="gi"><span class="ico lg" data-icon="kommo"></span><b>Kommo</b><small>CRM</small></div><div class="gi"><span class="ico lg" data-icon="pancake"></span><b>Pancake</b><small>Bandeja de chats</small></div><div class="gi"><span class="ico lg" data-icon="gtm"></span><b>Tag Manager</b><small>Etiquetas</small></div><div class="gi"><span class="ico lg" data-icon="ga4"></span><b>GA4</b><small>Analítica</small></div><div class="gi"><span class="ico lg" data-icon="excel"></span><b>Excel</b><small>Reportes</small></div></div></div></div>
   </section>
 
-  <section class="win c-orange" id="panel">
+  <section class="win c-sky" id="panel">
     <div class="tb"><span class="t"><span class="ico sm" data-icon="gear"></span>Panel de control</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
-    <div class="wb"><div class="carousel" data-carousel><button class="btn arrow" type="button" data-dir="-1" aria-label="Ver anteriores">‹</button><div class="ctrack" id="track-panel" tabindex="0"><div class="gi"><span class="ico lg" data-icon="magnet"></span><b>Generación de leads</b></div><div class="gi"><span class="ico lg" data-icon="target"></span><b>Segmentación de audiencias</b></div><div class="gi"><span class="ico lg" data-icon="funnel"></span><b>Optimización de conversiones</b></div><div class="gi"><span class="ico lg" data-icon="gear"></span><b>Optimización de campañas</b></div><div class="gi"><span class="ico lg" data-icon="flow"></span><b>CRM y automatización</b></div><div class="gi"><span class="ico lg" data-icon="ab"></span><b>Pruebas A/B</b></div><div class="gi"><span class="ico lg" data-icon="chart"></span><b>Reportes y análisis</b></div><div class="gi"><span class="ico lg" data-icon="rocket"></span><b>Escalamiento de campañas</b></div></div><button class="btn arrow" type="button" data-dir="1" aria-label="Ver siguientes">›</button></div></div>
+    <div class="wb"><div class="marquee" tabindex="0"><div class="mtrack rev" id="track-panel" data-marquee><div class="gi"><span class="ico lg" data-icon="magnet"></span><b>Generación de leads</b></div><div class="gi"><span class="ico lg" data-icon="target"></span><b>Segmentación de audiencias</b></div><div class="gi"><span class="ico lg" data-icon="funnel"></span><b>Optimización de conversiones</b></div><div class="gi"><span class="ico lg" data-icon="gear"></span><b>Optimización de campañas</b></div><div class="gi"><span class="ico lg" data-icon="flow"></span><b>CRM y automatización</b></div><div class="gi"><span class="ico lg" data-icon="ab"></span><b>Pruebas A/B</b></div><div class="gi"><span class="ico lg" data-icon="chart"></span><b>Reportes y análisis</b></div><div class="gi"><span class="ico lg" data-icon="rocket"></span><b>Escalamiento de campañas</b></div></div></div></div>
   </section>
 
   <section class="block" id="resultados">
     <div class="tabtitle"><span class="ico lg" data-icon="trend"></span><h2>RESULTADOS</h2></div>
-    <div class="res-grid">
-      <div class="win mini c-wasabi">
-        <div class="tb"><span class="t">Lap Custom · ventas</span><span class="bs"><span class="b">×</span></span></div>
-        <div class="wb"><span class="label">ROAS</span><span class="big">89,32</span>
-          <dl class="kv"><dt>Facturación</dt><dd>S/112.413</dd><dt>Ventas</dt><dd>13</dd><dt>Inversión</dt><dd>S/1.258</dd></dl></div>
+    <div class="res-grid v10">
+      <div class="win mini c-wasabi r-lap lift">
+        <div class="tb"><span class="t">Lap Custom · Meta Ads · automotriz premium</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb rsplit">
+          <div>
+            <span class="rtag b">Campaña de leads</span>
+            <p class="rwhat">Leads calificados con formulario de precalificación</p>
+            <span class="rbig">448 <small>leads</small></span>
+            <div class="ba"><div><span>Invertido</span><b>S/3.241</b></div><i>→</i><div><span>Facturado</span><b>S/169.854</b></div></div>
+            <p class="ba-cap">Inversión en Meta Ads frente a lo que facturaron las ventas cerradas</p>
+            <p class="rfoot"><b>16 ventas</b> · <b>ROAS 52,39</b> (S/52,39 facturados por cada S/1 invertido) · 19 dic 2025 – 16 feb 2026</p>
+          </div>
+          <div>
+            <span class="rtag">Campaña de ventas</span>
+            <p class="rwhat">Retorno de la campaña de conversaciones a WhatsApp</p>
+            <span class="rbig">89,32 <small>ROAS</small></span>
+            <div class="ba"><div><span>Invertido</span><b>S/1.258</b></div><i>→</i><div><span>Facturado</span><b>S/112.413</b></div></div>
+            <p class="ba-cap">Inversión en Meta Ads frente a lo que facturaron las ventas cerradas</p>
+            <p class="rfoot"><b>13 ventas</b> de <b>734 conversaciones</b> · S/89,32 facturados por cada S/1 invertido · 30 dic 2025 – 10 feb 2026</p>
+          </div>
+        </div>
       </div>
-      <div class="win mini c-sky">
-        <div class="tb"><span class="t">Lap Custom · leads</span><span class="bs"><span class="b">×</span></span></div>
-        <div class="wb"><span class="label">Leads calificados</span><span class="big">448</span>
-          <dl class="kv"><dt>Facturación</dt><dd>S/169.854</dd><dt>Ventas</dt><dd>16</dd><dt>Inversión</dt><dd>S/3.241</dd></dl></div>
+      <div class="win mini c-sage lift">
+        <div class="tb"><span class="t">Okara · Meta Ads</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb">
+          <p class="rwhat">Conversaciones por WhatsApp en el mes</p>
+          <span class="rbig">+82,7%</span>
+          <div class="ba"><div><span>Antes · marzo</span><b>585</b></div><i>→</i><div><span>Después · mayo</span><b>1.069</b></div></div>
+          <p class="ba-cap">conversaciones iniciadas en el mes</p>
+          <p class="rfoot">Costo por conversación <b>S/0,82 → S/1,09</b> · inversión del mes <b>S/481 → S/1.167</b> · medicina estética, 2026</p>
+        </div>
       </div>
-      <div class="win mini c-sage">
-        <div class="tb"><span class="t">Okara</span><span class="bs"><span class="b">×</span></span></div>
-        <div class="wb"><span class="label">Conversaciones</span><span class="big">+82,7%</span>
-          <dl class="kv"><dt>Costo por conversación</dt><dd>S/0,82 → S/1,09</dd><dt>Inversión</dt><dd>S/481 → S/1.167</dd></dl></div>
-      </div>
-      <div class="win mini c-orange">
+      <div class="win mini c-orange lift">
         <div class="tb"><span class="t">Luis Pachas Ortodoncia Digital</span><span class="bs"><span class="b">×</span></span></div>
-        <div class="wb"><span class="label">Costo por conversión</span><span class="big">−39%</span>
-          <dl class="kv"><dt>Conversiones</dt><dd>611</dd><dt>CTR</dt><dd>7,18%</dd><dt>Inversión</dt><dd>S/4.510</dd></dl></div>
+        <div class="wb">
+          <p class="rwhat">Google Ads · costo por conversión en la campaña de búsqueda</p>
+          <span class="rbig">−39%</span>
+          <div class="ba"><div><span>Antes · junio</span><b>S/10,75</b></div><i>→</i><div><span>Después · setiembre</span><b>S/6,53</b></div></div>
+          <p class="ba-cap">costo por cada conversión (toque al botón de WhatsApp)</p>
+          <p class="rfoot">Tasa de conversión <b>15,6% → 22,3%</b> · <b>611 conversiones</b> con S/4.510 · 8 jun – 27 set 2026</p>
+        </div>
+      </div>
+      <div class="win mini c-pink lift">
+        <div class="tb"><span class="t">Recupera tu Cabello · TikTok Ads</span><span class="bs"><span class="b">×</span></span></div>
+        <div class="wb">
+          <p class="rwhat">Citas agendadas desde la campaña, por mes</p>
+          <span class="rbig">+34,3%</span>
+          <div class="ba"><div><span>Antes · julio</span><b>70</b></div><i>→</i><div><span>Después · octubre</span><b>94</b></div></div>
+          <p class="ba-cap">citas de campaña en el mes</p>
+          <p class="rfoot">Costo por cita <b>S/50,22 → S/46,15</b> · <b>298 citas</b> y ROI aprox. <b>+197%</b> de julio a octubre de 2026</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CASOS -->
   <section class="block" id="casos">
-    <div class="win explorer">
+    <div class="win explorer c-t3">
       <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
       <div class="wb">
         <div class="sec" style="margin-bottom:6px"><h2>CASOS</h2><p>Abre una carpeta para ver el caso completo, slide por slide.</p></div>
@@ -568,7 +954,7 @@ main .win,.case-win .win,.note{transform:none!important}
 
   <!-- CONTACTO -->
   <section class="block" id="contacto">
-    <div class="win">
+    <div class="win c-orange">
       <div class="tb"><span class="t"><span class="ico sm" data-icon="mail"></span>contacto.exe</span><span class="bs"><span class="b">_</span><span class="b">□</span><span class="b">×</span></span></div>
       <div class="wb">
         <h2>¡TRABAJEMOS JUNTOS!</h2>
@@ -585,13 +971,15 @@ main .win,.case-win .win,.note{transform:none!important}
 
 <!-- =================== CASO 1 · LAP CUSTOM (ventas + leads) =================== -->
 <div class="case-layer" id="caso-lapcustom" hidden>
-  <article class="win case-win t-o" aria-labelledby="t-lap">
-    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 1 · Lap Custom</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+  <!-- ===== Campaña 1 · Ventas (ventana propia) ===== -->
+  <article class="win case-win t-o" aria-labelledby="t-lap" id="lap-c1">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 1 · Lap Custom\Campaña 1 · Ventas</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
     <div class="wb">
       <header class="case-head">
         <div class="tags"><span class="tag">Caso 1</span><span class="tag">Meta Ads</span><span class="tag">Automotriz premium</span></div>
         <h2 id="t-lap">LAP CUSTOM</h2>
         <h3>Diseño interior automotriz de alta gama · dos campañas para la misma marca</h3>
+        <div class="jump"><span class="btn cur-a">Campaña 1 · Ventas</span><button class="btn" type="button" data-goto="lap-c2">Ver Campaña 2 · Clientes potenciales ↓</button></div>
       </header>
 
       <header class="camp-head">
@@ -601,88 +989,99 @@ main .win,.case-win .win,.note{transform:none!important}
       </header>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Ventas · Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventas · Ventana 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>El servicio tenía un ticket de USD 1.190 a 1.590, pero llegaban consultas de personas que buscaban tapizado económico. Eso saturaba al asesor comercial con contactos sin intención real de compra.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Atraer solo a prospectos con capacidad de inversión y reposicionar el servicio como una experiencia premium, no como un producto de precio.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Posicionamiento desde el copy y la creatividad: <em>"No es tapizado. Es diseño interior."</em></li><li>Segmentación por distritos de nivel socioeconómico A/B en Lima.</li><li>Campañas con objetivo de conversación a WhatsApp.</li><li>CRM con automatización para ordenar el pipeline y reducir tiempos de respuesta.</li></ul></div></div>
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-problema.png" alt=""><h4>El problema</h4></div><p>El servicio tenía un ticket de USD 1.190 a 1.590, pero llegaban consultas de personas que buscaban tapizado económico. Eso saturaba al asesor comercial con contactos sin intención real de compra.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-objetivo.png" alt=""><h4>El objetivo</h4></div><p>Atraer solo a prospectos con capacidad de inversión y reposicionar el servicio como una experiencia premium, no como un producto de precio.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-estrategia.png" alt=""><h4>Estrategia</h4></div><ul class="list"><li>Posicionamiento desde el copy y la creatividad: <em>"No es tapizado. Es diseño interior."</em></li><li>Segmentación por distritos de nivel socioeconómico A/B en Lima.</li><li>Campañas con objetivo de conversación a WhatsApp.</li><li>CRM con automatización para ordenar el pipeline y reducir tiempos de respuesta.</li></ul></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Ventas · Slide 2 · Resultados · 30 dic – 10 feb</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventas · Ventana 2 · Resultados · 30 dic 2025 – 10 feb 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="metrics">
-            <div class="metric hi"><span class="label">ROAS</span><b>89,32</b></div>
-            <div class="metric"><span class="label">Facturación</span><b>S/112.413</b></div>
-            <div class="metric"><span class="label">Ventas generadas</span><b>13</b></div>
-            <div class="metric"><span class="label">Conversaciones</span><b>734</b></div>
-            <div class="metric"><span class="label">Inversión total</span><b>S/1.258</b></div>
-            <div class="metric"><span class="label">Ticket promedio</span><b>S/8.647</b></div>
-            <div class="metric"><span class="label">Tasa de conversión</span><b>2,59%</b></div>
+          <div class="ihead"><img class="pic-ico lg" src="img/ico-lap-resultado.png" alt=""><h4>Resultados de la campaña de ventas · Meta Ads · 30 dic 2025 – 10 feb 2026</h4></div>
+          <div class="metrics center">
+            <div class="metric hi lift shade"><span class="label">ROAS</span><b>89,32</b><span class="desc">soles facturados por cada S/1 invertido</span></div>
+            <div class="metric lift shade"><span class="label">Facturación</span><b>S/112.413</b><span class="desc">ventas cerradas que llegaron por la campaña</span></div>
+            <div class="metric lift shade"><span class="label">Ventas generadas</span><b>13</b><span class="desc">clientes que compraron el servicio</span></div>
+            <div class="metric lift shade"><span class="label">Conversaciones</span><b>734</b><span class="desc">chats de WhatsApp iniciados desde el anuncio</span></div>
+            <div class="metric lift shade"><span class="label">Inversión total</span><b>S/1.258</b><span class="desc">gastado en Meta Ads en el periodo</span></div>
+            <div class="metric lift shade"><span class="label">Ticket promedio</span><b>S/8.647</b><span class="desc">facturación ÷ 13 ventas</span></div>
+            <div class="metric lift shade"><span class="label">Tasa de conversión</span><b>2,59%</b><span class="desc">13 ventas ÷ 502 conversaciones con interés real</span></div>
           </div>
           <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-rendimiento.jpg" alt="Resumen de rendimiento en Meta Ads: 734 conversaciones, 62.489 de alcance, 142.471 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads</figcaption></figure></div></div>
-            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-campana.jpg" alt="La campaña en el administrador de anuncios: 734 resultados a S/1,71" loading="lazy"></button><figcaption>La campaña en el administrador de anuncios</figcaption></figure><p class="note">En servicios premium con venta consultiva, una conversión de 2 a 3% sobre tráfico filtrado es un resultado sólido. El éxito no fue el CPL bajo: fue la rentabilidad final.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><div class="ihead"><img class="pic-ico sm" src="img/ico-lap-capturas.png" alt=""><h4>Resumen del rendimiento</h4></div><figure class="shot"><button type="button" data-zoom><img src="img/ventas-rendimiento.jpg" alt="Resumen de rendimiento en Meta Ads: 734 conversaciones, 62.489 de alcance, 142.471 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads · 30 dic 2025 – 10 feb 2026</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><div class="ihead"><img class="pic-ico sm" src="img/ico-lap-campana.png" alt=""><h4>La campaña en el administrador</h4></div><figure class="shot"><button type="button" data-zoom><img src="img/ventas-campana.jpg" alt="La campaña en el administrador de anuncios: 734 resultados a S/1,71" loading="lazy"></button><figcaption>Campaña_Diseño_Interior_30Dic: 734 conversaciones a S/1,71 cada una · 2.189 clics en el enlace</figcaption></figure><p class="note">En servicios premium con venta consultiva, una conversión de 2 a 3% sobre tráfico filtrado es un resultado sólido. El éxito no fue el CPL bajo: fue la rentabilidad final.</p></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Ventas · Slide 3 · Optimización · cómo se mejoró la calidad del tráfico</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventas · Ventana 3 · Optimización · cómo se mejoró la calidad del tráfico</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">optimización.txt</span></div><div class="wb"><h4>Reducir el ruido</h4><p>El mayor desafío no era generar volumen, sino reducir el ruido. El copy trabajó como filtro activo: mensajes que elevaban la exclusividad del servicio y desalentaban a quienes buscaban precios bajos.</p><ul class="list"><li>Copy estratégico con frases de exclusión implícita.</li><li>Ajuste continuo de la segmentación hacia perfiles de mayor poder adquisitivo.</li><li>Revisión diaria de métricas para detectar patrones en la calidad de las conversaciones.</li><li>Automatización en CRM: de 734 conversaciones, 502 se clasificaron como interés real.</li></ul><p class="note">El filtro no solo ocurrió en el anuncio. Ocurrió en todo el proceso.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-creativo.jpg" alt="Anuncio: Esto no es tapizado barato. Diseño interior automotriz" loading="lazy"></button><figcaption>Creativo con mejores resultados</figcaption></figure></div></div>
-            <div class="win mini"><div class="tb"><span class="t">automatización-crm.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/ventas-crm.jpg" alt="Flujo de automatización en el CRM" loading="lazy"></button><figcaption>Automatización en CRM: el equipo comercial enfocó su energía donde valía la pena</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">optimización.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-optimizacion.png" alt=""><h4>Reducir el ruido</h4></div><p>El mayor desafío no era generar volumen, sino reducir el ruido. El copy trabajó como filtro activo: mensajes que elevaban la exclusividad del servicio y desalentaban a quienes buscaban precios bajos.</p><ul class="list"><li>Copy estratégico con frases de exclusión implícita.</li><li>Ajuste continuo de la segmentación hacia perfiles de mayor poder adquisitivo.</li><li>Revisión diaria de métricas para detectar patrones en la calidad de las conversaciones.</li><li>Automatización en CRM: de 734 conversaciones, 502 se clasificaron como interés real.</li></ul><p class="note">El filtro no solo ocurrió en el anuncio. Ocurrió en todo el proceso.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb"><h4>Creativo con mejores resultados</h4><figure class="shot"><button type="button" data-zoom><img src="img/ventas-creativo.jpg" alt="Anuncio: Esto no es tapizado barato. Diseño interior automotriz" loading="lazy"></button><figcaption>"Esto no es tapizado barato" · anuncio a WhatsApp en Meta Ads</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">automatización-crm.png</span></div><div class="wb"><h4>Automatización en CRM</h4><figure class="shot"><button type="button" data-zoom><img src="img/ventas-crm.jpg" alt="Flujo de automatización en el CRM" loading="lazy"></button><figcaption>Flujo en GoHighLevel: el equipo comercial enfocó su energía donde valía la pena</figcaption></figure></div></div>
           </div>
         </div>
       </section>
-      <header class="camp-head">
+    </div>
+  </article>
+
+  <!-- ===== Campaña 2 · Clientes potenciales (ventana propia) ===== -->
+  <article class="win case-win t-b2" aria-labelledby="t-lap2" id="lap-c2">
+    <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 1 · Lap Custom\Campaña 2 · Clientes potenciales</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
+    <div class="wb">
+      <header class="case-head">
         <div class="tags"><span class="tag">Campaña 2 · Clientes potenciales</span><span class="tag">19 dic 2025 – 16 feb 2026</span></div>
+        <h2 id="t-lap2">LAP CUSTOM</h2>
         <h3>Formulario estratégico automotriz premium · campaña de leads con precalificación</h3>
         <p class="lead"><span class="hl">448 leads y 16 ventas cerradas, con ROAS de 52,39.</span></p>
+        <div class="jump"><button class="btn" type="button" data-goto="lap-c1">↑ Volver a Campaña 1 · Ventas</button><span class="btn cur-s">Campaña 2 · Clientes potenciales</span></div>
       </header>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Leads · Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Leads · Ventana 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>El equipo comercial recibía un volumen alto de consultas, pero muchas no llegaban al presupuesto mínimo del servicio (S/4.000 a S/7.000). Tiempo invertido y oportunidades perdidas.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Filtrar prospectos desde el formulario, antes de que lleguen al asesor, priorizando calidad sobre cantidad.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Formulario de Meta Lead Ads con preguntas de precalificación: marca y modelo del auto, presupuesto estimado, tipo de personalización y tiempo para iniciar.</li><li>Un solo conjunto de anuncios para concentrar el aprendizaje del algoritmo.</li><li>Los videos con mejor rendimiento histórico como creatividades.</li><li>Integración automática con el CRM y asignación inmediata al asesor.</li></ul></div></div>
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-problema.png" alt=""><h4>El problema</h4></div><p>El equipo comercial recibía un volumen alto de consultas, pero muchas no llegaban al presupuesto mínimo del servicio (S/4.000 a S/7.000). Tiempo invertido y oportunidades perdidas.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-objetivo.png" alt=""><h4>El objetivo</h4></div><p>Filtrar prospectos desde el formulario, antes de que lleguen al asesor, priorizando calidad sobre cantidad.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-estrategia.png" alt=""><h4>Estrategia</h4></div><ul class="list"><li>Formulario de Meta Lead Ads con preguntas de precalificación: marca y modelo del auto, presupuesto estimado, tipo de personalización y tiempo para iniciar.</li><li>Un solo conjunto de anuncios para concentrar el aprendizaje del algoritmo.</li><li>Los videos con mejor rendimiento histórico como creatividades.</li><li>Integración automática con el CRM y asignación inmediata al asesor.</li></ul></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Leads · Slide 2 · Resultados · 19 dic – 16 feb</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Leads · Ventana 2 · Resultados · 19 dic 2025 – 16 feb 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="metrics">
-            <div class="metric hi"><span class="label">Leads generados</span><b>448</b></div>
-            <div class="metric"><span class="label">Ventas cerradas</span><b>16</b></div>
-            <div class="metric"><span class="label">ROAS</span><b>52,39</b></div>
-            <div class="metric"><span class="label">Facturación</span><b>S/169.854</b></div>
-            <div class="metric"><span class="label">CPL</span><b>S/7,24</b></div>
-            <div class="metric"><span class="label">Inversión</span><b>S/3.241</b></div>
-            <div class="metric"><span class="label">Tasa de conversión</span><b>3,57%</b></div>
+          <div class="ihead"><img class="pic-ico lg" src="img/ico-lap-resultado.png" alt=""><h4>Resultados de la campaña de leads · Meta Ads · 19 dic 2025 – 16 feb 2026</h4></div>
+          <div class="metrics center">
+            <div class="metric hi lift shade"><span class="label">Leads generados</span><b>448</b><span class="desc">formularios completados en Meta Lead Ads</span></div>
+            <div class="metric lift shade"><span class="label">Ventas cerradas</span><b>16</b><span class="desc">leads que compraron el servicio</span></div>
+            <div class="metric lift shade"><span class="label">ROAS</span><b>52,39</b><span class="desc">soles facturados por cada S/1 invertido</span></div>
+            <div class="metric lift shade"><span class="label">Facturación</span><b>S/169.854</b><span class="desc">suma de las 16 ventas cerradas</span></div>
+            <div class="metric lift shade"><span class="label">CPL</span><b>S/7,24</b><span class="desc">costo por cada lead (formulario)</span></div>
+            <div class="metric lift shade"><span class="label">Inversión</span><b>S/3.241</b><span class="desc">gastado en Meta Ads en el periodo</span></div>
+            <div class="metric lift shade"><span class="label">Tasa de conversión</span><b>3,57%</b><span class="desc">16 ventas ÷ 448 leads</span></div>
           </div>
           <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-campana.jpg" alt="La campaña en el administrador: 448 resultados a S/7,24" loading="lazy"></button><figcaption>La campaña en el administrador de anuncios</figcaption></figure><p class="note">La tasa de conversión de 3,57% confirma que la precalificación funcionó. No era tráfico frío: eran leads con contexto y mayor probabilidad de cierre.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-rendimiento.jpg" alt="Resumen de rendimiento: 448 clientes potenciales, 101.667 de alcance, 327.749 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">campaña.png</span></div><div class="wb"><div class="ihead"><img class="pic-ico sm" src="img/ico-lap-campana.png" alt=""><h4>La campaña en el administrador</h4></div><figure class="shot"><button type="button" data-zoom><img src="img/leads-campana.jpg" alt="La campaña en el administrador: 448 resultados a S/7,24" loading="lazy"></button><figcaption>448 clientes potenciales a S/7,24 cada uno</figcaption></figure><p class="note">La tasa de conversión de 3,57% confirma que la precalificación funcionó. No era tráfico frío: eran leads con contexto y mayor probabilidad de cierre.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">rendimiento.png</span></div><div class="wb"><div class="ihead"><img class="pic-ico sm" src="img/ico-lap-capturas.png" alt=""><h4>Resumen del rendimiento</h4></div><figure class="shot"><button type="button" data-zoom><img src="img/leads-rendimiento.jpg" alt="Resumen de rendimiento: 448 clientes potenciales, 101.667 de alcance, 327.749 impresiones" loading="lazy"></button><figcaption>Resumen del rendimiento en Meta Ads · 19 dic 2025 – 16 feb 2026</figcaption></figure></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Leads · Slide 3 · Optimización</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Leads · Ventana 3 · Optimización</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">diagnóstico.txt</span></div><div class="wb"><h4>Saturación, no creativo</h4><p>Después de varias semanas, el CPL empezó a subir de forma progresiva. La señal era clara: saturación de audiencia. El rendimiento histórico de los videos confirmaba que el mensaje seguía funcionando.</p><p>La decisión fue duplicar la campaña con nueva segmentación, conservando los creativos y el aprendizaje acumulado del algoritmo, y redistribuir el presupuesto sin perder lo que ya funcionaba.</p><p class="note">El ajuste correcto no siempre es empezar de cero.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><h4>Campaña optimizada</h4><div class="metrics" style="grid-template-columns:1fr"><div class="metric hi"><span class="label">Leads adicionales</span><b>133</b></div><div class="metric"><span class="label">CPL estabilizado</span><b>S/7,22</b></div><div class="metric"><span class="label">Inversión</span><b>S/1.321</b></div></div></div></div>
-            <div class="win mini"><div class="tb"><span class="t">capturas.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-rendimiento.jpg" alt="Resumen de rendimiento de la campaña duplicada" loading="lazy"></button><figcaption>Campaña optimizada · resumen del rendimiento</figcaption></figure><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-campana.jpg" alt="La campaña duplicada en el administrador" loading="lazy"></button><figcaption>Campaña optimizada · en el administrador</figcaption></figure></div></div>
+            <div class="win mini"><div class="tb"><span class="t">diagnóstico.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-cono.png" alt=""><h4>Saturación, no creativo</h4></div><p>Después de varias semanas, el CPL empezó a subir de forma progresiva. La señal era clara: saturación de audiencia. El rendimiento histórico de los videos confirmaba que el mensaje seguía funcionando.</p><p>La decisión fue duplicar la campaña con nueva segmentación, conservando los creativos y el aprendizaje acumulado del algoritmo, y redistribuir el presupuesto sin perder lo que ya funcionaba.</p><p class="note">El ajuste correcto no siempre es empezar de cero.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-optimizacion.png" alt=""><h4>Campaña optimizada</h4></div><p class="cap-note">Campaña duplicada con nueva segmentación · Meta Ads</p><div class="metrics center" style="grid-template-columns:1fr"><div class="metric hi lift shade"><span class="label">Leads adicionales</span><b>133</b><span class="desc">formularios que sumó la campaña duplicada</span></div><div class="metric lift shade"><span class="label">CPL estabilizado</span><b>S/7,22</b><span class="desc">costo por lead tras el ajuste</span></div><div class="metric lift shade"><span class="label">Inversión</span><b>S/1.321</b><span class="desc">gastado en la campaña duplicada</span></div></div></div></div>
+            <div class="win mini"><div class="tb"><span class="t">capturas.png</span></div><div class="wb"><div class="ihead"><img class="pic-ico sm" src="img/ico-lap-capturas.png" alt=""><h4>Capturas</h4></div><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-rendimiento.jpg" alt="Resumen de rendimiento de la campaña duplicada" loading="lazy"></button><figcaption>Campaña optimizada · resumen del rendimiento</figcaption></figure><figure class="shot"><button type="button" data-zoom><img src="img/leads-optimizada-campana.jpg" alt="La campaña duplicada en el administrador" loading="lazy"></button><figcaption>Campaña optimizada · en el administrador</figcaption></figure></div></div>
           </div>
         </div>
       </section>
@@ -703,55 +1102,73 @@ main .win,.case-win .win,.note{transform:none!important}
       </header>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 1 · Problema, objetivo y estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><h4>El problema</h4><p>Las campañas llevaban meses con la misma estructura. Seguían generando conversaciones, pero aparecieron señales de desgaste: costos en alza, audiencias saturadas y menos estabilidad en los resultados.</p><p>El problema no era la cantidad de campañas: el público estaba agotado.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><h4>El objetivo</h4><p>Aumentar el volumen de agendas médicas manteniendo la eficiencia de adquisición y sin interrumpir la operación.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><h4>Estrategia</h4><ul class="list"><li>Etapa de validación con los creativos de mejor historial, para descartar un problema creativo.</li><li>Reestructuración de audiencias: más abiertas, menos saturadas y con segmentación geográfica estratégica.</li><li>Duplicación de campañas ganadoras, conservando el aprendizaje del algoritmo.</li><li>Escalamiento progresivo en lugar de un reinicio total.</li></ul></div></div>
+            <div class="win mini"><div class="tb"><span class="t">problema.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-ok-problema.png" alt=""><h4>El problema</h4></div><p>Las campañas llevaban meses con la misma estructura. Seguían generando conversaciones, pero aparecieron señales de desgaste: costos en alza, audiencias saturadas y menos estabilidad en los resultados.</p><p>El problema no era la cantidad de campañas: el público estaba agotado.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-ok-objetivo.png" alt=""><h4>El objetivo</h4></div><p>Aumentar el volumen de agendas médicas manteniendo la eficiencia de adquisición y sin interrumpir la operación.</p></div></div>
+            <div class="win mini"><div class="tb"><span class="t">estrategia.txt</span></div><div class="wb"><div class="ihead"><img class="pic-ico" src="img/ico-lap-estrategia.png" alt=""><h4>Estrategia</h4></div><ul class="list"><li>Etapa de validación con los creativos de mejor historial, para descartar un problema creativo.</li><li>Reestructuración de audiencias: más abiertas, menos saturadas y con segmentación geográfica estratégica.</li><li>Duplicación de campañas ganadoras, conservando el aprendizaje del algoritmo.</li><li>Escalamiento progresivo en lugar de un reinicio total.</li></ul></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 2 · Análisis inicial</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 2 · Análisis inicial · marzo y abril 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">análisis.txt</span></div><div class="wb"><p>Antes de cualquier cambio masivo se validó el comportamiento histórico de los creativos activos. Los resultados fueron claros: los anuncios seguían generando interacción consistente.</p><p><strong>El problema no estaba en el mensaje. Estaba en a quién se le mostraba.</strong></p><p>Las audiencias usadas durante meses habían llegado a su techo. La solución no era cambiar lo que funcionaba, sino ampliar el entorno en el que funcionaba.</p><p class="note">Este análisis previo evitó cambios innecesarios y protegió el rendimiento acumulado de la cuenta.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">mejores-videos.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Campaña Mejores videos, marzo de 2026: 585 conversaciones a S/0,82, S/481,43" loading="lazy"></button><figcaption>Campaña "Mejores videos" · 1 al 31 de marzo de 2026</figcaption></figure></div></div>
-            <div class="win mini"><div class="tb"><span class="t">nueva-segmentación.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-abril.jpg" alt="Campaña de ventas con nueva segmentación, abril de 2026: 718 conversaciones a S/1,09, S/785,75" loading="lazy"></button><figcaption>Campaña de ventas con nueva segmentación · 1 al 30 de abril de 2026</figcaption></figure></div></div>
+          <div class="win mini k-s"><div class="tb"><span class="t">análisis.txt</span></div><div class="wb wide2">
+            <div style="display:grid; gap:12px"><p>Antes de cualquier cambio masivo se validó el comportamiento histórico de los creativos activos. Los resultados fueron claros: los anuncios seguían generando interacción consistente.</p><p>Las audiencias usadas durante meses habían llegado a su techo. La solución no era cambiar lo que funcionaba, sino ampliar el entorno en el que funcionaba.</p></div>
+            <div style="display:grid; gap:12px"><p><strong>El problema no estaba en el mensaje. Estaba en a quién se le mostraba.</strong></p><p class="note">Este análisis previo evitó cambios innecesarios y protegió el rendimiento acumulado de la cuenta.</p></div>
+          </div></div>
+          <div class="row2">
+            <div class="win mini k-w"><div class="tb"><span class="t">mejores-videos.png</span></div><div class="wb"><h4>Marzo · campaña "Mejores videos"</h4><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Campaña Mejores videos, marzo de 2026: 585 conversaciones a S/0,82, S/481,43" loading="lazy"></button><figcaption>1 al 31 de marzo de 2026 · 585 conversaciones a S/0,82 · S/481,43 invertidos</figcaption></figure></div></div>
+            <div class="win mini k-g"><div class="tb"><span class="t">nueva-segmentación.png</span></div><div class="wb"><h4>Abril · campaña de ventas con nueva segmentación</h4><figure class="shot"><button type="button" data-zoom><img src="img/okara-abril.jpg" alt="Campaña de ventas con nueva segmentación, abril de 2026: 718 conversaciones a S/1,09, S/785,75" loading="lazy"></button><figcaption>1 al 30 de abril de 2026 · 718 conversaciones a S/1,09 · S/785,75 invertidos</figcaption></figure></div></div>
           </div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 3 · Métricas · antes y después</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 3 · Métricas · marzo (antes) vs mayo (después)</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
           <p class="banner">+82,7% más conversaciones generadas</p>
-          <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">métricas.xls</span></div><div class="wb">
-              <div class="tbl"><table>
-                <thead><tr><th>Métrica</th><th class="n">Marzo (antes)</th><th class="n">Mayo (después)</th><th class="n">Variación</th></tr></thead>
-                <tbody>
-                  <tr><td>Conversaciones</td><td class="n">585</td><td class="n">1.069</td><td class="n best">+82,7%</td></tr>
-                  <tr><td>Costo por conversación</td><td class="n">S/0,82</td><td class="n">S/1,09</td><td class="n">+32,9%</td></tr>
-                  <tr><td>Inversión</td><td class="n">S/481,43</td><td class="n">S/1.166,88</td><td class="n">+142,4%</td></tr>
-                </tbody>
-              </table></div>
-              <p class="note">Al abrir la segmentación, la inversión pudo crecer sin que la campaña se frenara. Eso confirma que el límite era la saturación de audiencias, no la propuesta creativa.</p>
-            </div></div>
-            <div class="win mini"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb"><figure class="shot" style="max-width:380px"><button type="button" data-zoom><img src="img/okara-creativo.jpg" alt="Anuncio de Okara sobre la cámara hiperbárica" loading="lazy"></button><figcaption>Creativo con mejores resultados</figcaption></figure></div></div>
-          </div>
+          <div class="win mini k-w"><div class="tb"><span class="t">métricas.xls</span></div><div class="wb">
+            <div class="ihead"><img class="pic-ico" src="img/ico-ok-metricas.png" alt=""><h4>Conversaciones a WhatsApp desde Meta Ads · total de cada mes</h4></div>
+            <p class="cap-note"><strong>Antes:</strong> marzo de 2026 (1 al 31), con la campaña "Mejores videos" y las audiencias de siempre. <strong>Después:</strong> mayo de 2026 (1 al 30), con las audiencias reestructuradas. Una "conversación" es un chat de WhatsApp que una persona inició desde un anuncio.</p>
+            <div class="tbl"><table class="mtable">
+              <thead><tr><th>Qué se mide</th><th class="n">Marzo 2026 · antes</th><th class="n">Mayo 2026 · después</th><th class="n">Variación</th></tr></thead>
+              <tbody>
+                <tr><td>Conversaciones iniciadas por WhatsApp en el mes</td><td class="n">585</td><td class="n">1.069</td><td class="n best">+82,7%</td></tr>
+                <tr><td>Costo por conversación (inversión ÷ conversaciones)</td><td class="n">S/0,82</td><td class="n">S/1,09</td><td class="n">+32,9%</td></tr>
+                <tr><td>Inversión en Meta Ads en el mes</td><td class="n">S/481,43</td><td class="n">S/1.166,88</td><td class="n">+142,4%</td></tr>
+              </tbody>
+            </table></div>
+            <p class="note">Al abrir la segmentación, la inversión pudo crecer sin que la campaña se frenara. Eso confirma que el límite era la saturación de audiencias, no la propuesta creativa.</p>
+          </div></div>
+          <div class="win mini k-o"><div class="tb"><span class="t">creativo-ganador.jpg</span></div><div class="wb">
+            <div class="creative-center ok-creative">
+              <figure class="shot"><button type="button" data-zoom><img src="img/okara-creativo.jpg" alt="Anuncio de Okara sobre la cámara hiperbárica" loading="lazy"></button><figcaption>Anuncio de la cámara hiperbárica · Meta Ads</figcaption></figure>
+              <div class="cc-text">
+                <h4>Creativo con mejores resultados</h4>
+                <p>Anuncio de la cámara hiperbárica: habla de energía, enfoque y descanso, y cierra con la invitación a escribir por WhatsApp para agendar.</p>
+                <span class="odr-label">Lo que comunica</span>
+                <div class="bubbles"><span>Energía</span><span>Enfoque</span><span>Descanso</span></div>
+                <span class="odr-label">Cómo lleva a la agenda</span>
+                <p class="vsteps">Ve el anuncio<i>↓</i>Escribe por WhatsApp<i>↓</i><span class="hl">Agenda su cita</span></p>
+              </div>
+            </div>
+          </div></div>
         </div>
       </section>
 
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 4 · Impacto</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 4 · Impacto · marzo vs mayo 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">impacto.txt</span></div><div class="wb"><p>484 conversaciones más al mes frente a marzo, con un costo por conversación estable. Para una clínica cuyo modelo depende de las agendas que llegan desde Meta, ese volumen significa más pacientes atendidos y más ingresos.</p><p>Las automatizaciones en WhatsApp permitieron clasificar los leads desde el primer contacto. El equipo comercial dejó el trabajo repetitivo y se concentró en quienes estaban listos para agendar.</p><p class="note">El objetivo no era solo más conversaciones. Era un sistema de adquisición más estable y escalable.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultados-marzo.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Resultados de marzo de 2026: 585 conversaciones a S/0,82" loading="lazy"></button><figcaption>Resultados marzo · 1 al 31 de marzo de 2026</figcaption></figure></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultados-mayo.png</span></div><div class="wb"><figure class="shot"><button type="button" data-zoom><img src="img/okara-mayo.jpg" alt="Resultados de mayo de 2026: 1.069 conversaciones a S/1,09, S/1.166,88" loading="lazy"></button><figcaption>Resultados mayo · 1 al 30 de mayo de 2026</figcaption></figure></div></div>
+          <div class="win mini k-p"><div class="tb"><span class="t">impacto.txt</span></div><div class="wb wide2">
+            <div style="display:grid; gap:12px"><p>484 conversaciones más al mes frente a marzo, con un costo por conversación estable. Para una clínica cuyo modelo depende de las agendas que llegan desde Meta, ese volumen significa más pacientes atendidos y más ingresos.</p><p>Las automatizaciones en WhatsApp permitieron clasificar los leads desde el primer contacto. El equipo comercial dejó el trabajo repetitivo y se concentró en quienes estaban listos para agendar.</p></div>
+            <div style="display:grid; gap:12px"><p class="note">El objetivo no era solo más conversaciones. Era un sistema de adquisición más estable y escalable.</p></div>
+          </div></div>
+          <div class="row2">
+            <div class="win mini k-w"><div class="tb"><span class="t">resultados-marzo.png</span></div><div class="wb"><h4>Antes · marzo</h4><figure class="shot"><button type="button" data-zoom><img src="img/okara-marzo.jpg" alt="Resultados de marzo de 2026: 585 conversaciones a S/0,82" loading="lazy"></button><figcaption>1 al 31 de marzo de 2026 · 585 conversaciones a S/0,82</figcaption></figure></div></div>
+            <div class="win mini k-s"><div class="tb"><span class="t">resultados-mayo.png</span></div><div class="wb"><h4>Después · mayo</h4><figure class="shot"><button type="button" data-zoom><img src="img/okara-mayo.jpg" alt="Resultados de mayo de 2026: 1.069 conversaciones a S/1,09, S/1.166,88" loading="lazy"></button><figcaption>1 al 30 de mayo de 2026 · 1.069 conversaciones a S/1,09 · S/1.166,88 invertidos</figcaption></figure></div></div>
           </div>
         </div>
       </section>
@@ -764,109 +1181,181 @@ main .win,.case-win .win,.note{transform:none!important}
   <article class="win case-win t-y" aria-labelledby="t-google">
     <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 3 · Luis Pachas Ortodoncia Digital</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
     <div class="wb">
-      <header class="case-head">
-        <div class="tags"><span class="tag">Caso 3</span><span class="tag">Google Ads · Búsqueda</span><span class="tag">Odontología</span><span class="tag">8 jun – 27 set 2026</span></div>
-        <h2 id="t-google">ORTODONCIA</h2>
-        <h3>Ortodoncia Digital · captación de pacientes por intención de búsqueda</h3>
-        <p class="lead">Consultorio de ortodoncia en Surco, Lima. <span class="hl">El costo por conversión bajó 39% en cuatro meses.</span></p>
+      <!-- Slide 1 · Portada -->
+      <header class="case-head cover">
+        <div style="display:grid; gap:12px">
+          <div class="tags"><span class="tag">Caso 3</span><span class="tag">Google Ads</span><span class="tag">Ortodoncia</span><span class="tag">Jun – set 2026</span></div>
+          <h2 id="t-google">LUIS PACHAS</h2>
+          <p class="kicker">Ortodoncia Digital · Google Ads</p>
+          <h3>Optimización de campañas Search para captación de pacientes</h3>
+          <div class="flow" style="justify-content:flex-start"><span>Capturar intención</span><i>→</i><span>optimizar</span><i>→</i><span class="end">mejorar eficiencia</span></div>
+          <p class="label">Jun — set 2026 · Search Ads · Ortodoncia · Surco, Lima</p>
+        </div>
+        <div style="display:grid; gap:12px">
+          <div class="win mini k-s"><div class="tb"><span class="t">google.com</span></div><div class="wb">
+            <div class="serp">
+              <div class="q"><span class="ico" data-icon="lupa"></span>precio de brackets peru</div>
+              <div class="ad"><small>Patrocinado</small><b>Precio de brackets | Ortodoncista en Surco | Brackets Metálicos y Zafiro</b><span>www.ortodonciadigital.pe/brackets</span>Brackets para adolescentes y adultos en Surco. Cuida tu sonrisa con expertos.</div>
+            </div>
+            <p class="cap-note">La keyword con más impresiones de la campaña y uno de sus anuncios activos.</p>
+          </div></div>
+        </div>
       </header>
 
+      <!-- Slide 2 · El reto -->
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 1 · Punto de partida, idea central y estructura</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 2 · El reto · 8 jun – 27 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">punto-de-partida.txt</span></div><div class="wb"><h4>El punto de partida</h4><p>Una cuenta de Google Ads nueva, un presupuesto acotado de S/40 al día y un radio de 3 km alrededor del consultorio.</p><p>La meta: conseguir pacientes de brackets.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">idea-central.txt</span></div><div class="wb"><h4>La idea central</h4><p>En Meta hay que generar la demanda. En Google la demanda ya existe: alguien escribe lo que necesita.</p><p>Los datos mostraron qué escribía: el paciente no busca "ortodoncia", <strong>busca precio</strong>.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">estructura.txt</span></div><div class="wb"><h4>Estructura</h4><ul class="list"><li>Una campaña de Búsqueda enfocada en la intención de precio.</li><li>Concordancia amplia para descubrir búsquedas, exacta para la que mejor convierte y de frase para controlar el tráfico.</li><li>Anuncios de 15 títulos que abren con "Precio de brackets", con el diagnóstico digital iTero como diferencial.</li><li>Botón de mensaje de WhatsApp en el anuncio.</li><li>Performance Max adaptada a la política de salud de Google desde el 19 de setiembre.</li></ul></div></div>
+          <h4 class="slide-title">Optimizar una campaña existente para mejorar su eficiencia</h4>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">contexto.txt</span></div><div class="wb">
+              <h4>Contexto</h4>
+              <p>Campaña Search heredada con un presupuesto de S/40 diarios, orientada a captar pacientes en un radio de 3 km alrededor del consultorio.</p>
+              <p>El desafío fue identificar qué búsquedas generaban mejores resultados y optimizar la inversión hacia usuarios con mayor intención.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb">
+              <h4>Objetivo</h4>
+              <p>Captar pacientes interesados en tratamientos de ortodoncia, con una meta comercial de <strong>5 tratamientos mensuales</strong>.</p>
+            </div></div>
+          </div>
+          <div class="metrics center">
+            <div class="metric lift"><span class="label">Presupuesto</span><b>S/40/día</b><span class="desc">inversión diaria en Google Ads (Búsqueda)</span></div>
+            <div class="metric lift"><span class="label">Radio de cobertura</span><b>3 km</b><span class="desc">alrededor del consultorio en Surco</span></div>
+            <div class="metric hi lift"><span class="label">Estrategia de puja</span><b>Maximizar conversiones</b><span class="desc">Google busca la mayor cantidad de toques a WhatsApp</span></div>
+          </div>
+          <p class="label" style="margin:0">Periodo analizado: 8 de junio – 27 de setiembre de 2026</p>
+        </div>
+      </section>
+
+      <!-- Slide 3 · Estrategia -->
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventana 3 · Estrategia</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <h4 class="slide-title">De la intención de búsqueda a la conversión</h4>
+          <div class="win mini"><div class="tb"><span class="t">search.exe</span></div><div class="wb" style="display:grid; gap:10px; justify-items:center">
+            <div class="flow"><span class="end">Search</span></div>
+            <i style="font-style:normal; font-weight:700; font-size:1.3rem">↓</i>
+            <div class="flow"><span>Keywords</span><i>→</i><span>Anuncios</span><i>→</i><span class="end">WhatsApp</span></div>
+          </div></div>
+          <div class="row4">
+            <div class="win mini"><div class="tb"><span class="t">01-identificar.txt</span></div><div class="wb">
+              <span class="num-big">01</span><h4>Identificar</h4>
+              <p>El análisis mostró que el usuario buscaba principalmente <strong>precio</strong>.</p>
+              <p>Las búsquedas relacionadas con precio concentraron aproximadamente <span class="hl">74% de las conversiones</span>.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">02-optimizar-keywords.txt</span></div><div class="wb">
+              <span class="num-big">02</span><h4>Optimizar keywords</h4>
+              <p>Se trabajaron diferentes concordancias:</p>
+              <dl class="kvs"><dt>Amplia</dt><dd>Descubrimiento</dd><dt>Frase</dt><dd>Control</dd><dt>Exacta</dt><dd>Intención específica</dd></dl>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">03-alinear-anuncios.txt</span></div><div class="wb">
+              <span class="num-big">03</span><h4>Alinear anuncios</h4>
+              <p>Mensajes centrados en la intención:</p>
+              <div class="chips sm"><span>Precio de brackets</span><span>Ortodoncista en Surco</span><span>Evaluación Digital iTero</span><span>Agenda tu diagnóstico</span></div>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">04-controlar-el-tráfico.txt</span></div><div class="wb">
+              <span class="num-big">04</span><h4>Controlar el tráfico</h4>
+              <p>Se identificaron y pausaron términos con bajo rendimiento y se trabajó con palabras clave negativas.</p>
+            </div></div>
+          </div>
+          <div class="row2">
+            <div class="win mini k-w"><div class="tb"><span class="t">keywords.png</span></div><div class="wb"><h4>Keywords con más impresiones</h4><figure class="shot" style="max-width:513px; margin-inline:auto; width:100%"><button type="button" data-zoom><img src="img/orto-keywords.jpg" alt="Keywords: precio de brackets peru 4.710 impresiones y 415 clics; brackets 728 y 40; brackets en lima 490 y 22; ortodoncista surco 439 y 15; presupuesto de brackets 323 y 16" loading="lazy"></button><figcaption>"precio de brackets peru" lidera: 4.710 impresiones, 415 clics y 8,81% de interacción</figcaption></figure></div></div>
+            <div class="win mini k-s"><div class="tb"><span class="t">términos-de-búsqueda.png</span></div><div class="wb"><h4>Términos que escribió el paciente</h4><figure class="shot" style="max-width:316px; margin-inline:auto; width:100%"><button type="button" data-zoom><img src="img/orto-terminos.jpg" alt="Términos de búsqueda reales: alineadores graphy, autoligantes esteticos, brackets, brackets autoligables precio peru, brackets cerámicos precio perú, brackets costo lima, brackets en piura, brackets esteticos peru" loading="lazy"></button><figcaption>Búsquedas reales que activaron los anuncios: casi todas preguntan por precio o costo</figcaption></figure></div></div>
+            <div class="win mini k-p"><div class="tb"><span class="t">anuncio.png</span></div><div class="wb"><h4>Anuncios alineados a la búsqueda</h4><figure class="shot" style="max-width:286px; margin-inline:auto; width:100%"><button type="button" data-zoom><img src="img/orto-anuncio.jpg" alt="Dos anuncios activos: Precio de brackets | Ortodoncista en Surco | Brackets Metálicos y Zafiro; Precio de brackets | Brackets metálicos y estéticos | Corrige tu sonrisa" loading="lazy"></button><figcaption>Los títulos empiezan con "Precio de brackets", igual que la búsqueda del paciente</figcaption></figure></div></div>
+            <div class="win mini k-g"><div class="tb"><span class="t">negativas.png</span></div><div class="wb"><h4>Palabras clave negativas</h4><figure class="shot"><button type="button" data-zoom><img src="img/orto-negativas.jpg" alt="Palabras negativas a nivel de campaña, concordancia amplia: argentina, ate, barato, blanqueamiento" loading="lazy"></button><figcaption>Búsquedas excluidas de la campaña: otro país, otro distrito, "barato" y otros tratamientos</figcaption></figure></div></div>
           </div>
         </div>
       </section>
 
+      <!-- Slide 4 · Resultados -->
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 2 · Resultados · 8 jun – 27 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 4 · Resultados · Search · 8 jun – 27 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="metrics">
-            <div class="metric"><span class="label">Inversión</span><b>S/4.510</b></div>
-            <div class="metric"><span class="label">Impresiones</span><b>42.897</b></div>
-            <div class="metric"><span class="label">Clics</span><b>3.082</b></div>
-            <div class="metric hi"><span class="label">CTR</span><b>7,18%</b></div>
-            <div class="metric"><span class="label">CPC</span><b>S/1,46</b></div>
-            <div class="metric"><span class="label">Conversiones</span><b>611</b></div>
-            <div class="metric"><span class="label">Tasa de conversión</span><b>19,8%</b></div>
-            <div class="metric"><span class="label">Costo por conversión</span><b>S/7,38</b></div>
+          <h4 class="slide-title">Resultados</h4>
+          <div class="metrics m4 center">
+            <div class="metric lift shade"><span class="label">Inversión</span><b>S/4.510</b><span class="desc">gastado en la campaña de búsqueda</span></div>
+            <div class="metric lift shade"><span class="label">Impresiones</span><b>42.897</b><span class="desc">veces que se mostró un anuncio</span></div>
+            <div class="metric lift shade"><span class="label">Clics</span><b>3.082</b><span class="desc">personas que entraron al anuncio</span></div>
+            <div class="metric lift shade"><span class="label">CTR</span><b>7,18%</b><span class="desc">clics ÷ impresiones</span></div>
+            <div class="metric lift shade"><span class="label">CPC</span><b>S/1,46</b><span class="desc">costo promedio de cada clic</span></div>
+            <div class="metric lift shade"><span class="label">Conversiones registradas</span><b>611</b><span class="desc">toques al botón de WhatsApp</span></div>
+            <div class="metric lift shade"><span class="label">Tasa de conversión</span><b>19,8%</b><span class="desc">conversiones ÷ clics</span></div>
+            <div class="metric hi lift shade"><span class="label">Costo / conversión</span><b>S/7,38</b><span class="desc">inversión ÷ conversiones</span></div>
           </div>
           <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">costo-por-conversión.chart</span></div><div class="wb">
-              <h4>Costo por conversión, mes a mes</h4>
-              <div class="chart" role="img" aria-label="Costo por conversión: junio S/10,75, julio S/7,25, agosto S/6,64, setiembre S/6,53">
-                <div class="crow"><span class="m">Jun</span><div class="track"><div class="fill" style="width:89.6%"></div></div><span class="v">S/10,75</span></div>
-                <div class="crow"><span class="m">Jul</span><div class="track"><div class="fill" style="width:60.4%"></div></div><span class="v">S/7,25</span></div>
-                <div class="crow"><span class="m">Ago</span><div class="track"><div class="fill" style="width:55.3%"></div></div><span class="v">S/6,64</span></div>
-                <div class="crow best"><span class="m">Set</span><div class="track"><div class="fill" style="width:54.4%"></div></div><span class="v">S/6,53</span></div>
+            <div class="win mini"><div class="tb"><span class="t">costo-por-conversión.txt</span></div><div class="wb" style="display:grid; gap:8px; text-align:center">
+              <div class="bignum">−39%</div>
+              <p class="label" style="margin:0">Costo por conversión</p>
+              <div class="bigflow" style="justify-content:center; font-size:clamp(1.5rem,3.4vw,2.2rem)"><span>S/10,75</span><i>→</i><span>S/6,53</span></div>
+              <p class="label" style="margin:0">Junio → Setiembre</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">tasa-de-conversión.txt</span></div><div class="wb" style="display:grid; gap:8px; text-align:center">
+              <div class="bignum">+6,7 pp</div>
+              <p class="label" style="margin:0">Tasa de conversión</p>
+              <div class="bigflow" style="justify-content:center; font-size:clamp(1.5rem,3.4vw,2.2rem)"><span>15,6%</span><i>→</i><span>22,3%</span></div>
+              <p class="label" style="margin:0">Junio → Setiembre</p>
+            </div></div>
+          </div>
+          <div class="win mini"><div class="tb"><span class="t">costo-por-conversión.chart</span></div><div class="wb">
+            <h4>Costo por conversión · Jun → Jul → Ago → Set</h4>
+            <svg class="line" viewBox="0 0 440 200" role="img" aria-label="Costo por conversión: junio S/10,75, julio S/7,25, agosto S/6,64, setiembre S/6,53">
+              <line x1="40" y1="170" x2="420" y2="170" stroke="#351E28" stroke-width="2"/>
+              <line x1="40" y1="100" x2="420" y2="100" stroke="#AEB8A0" stroke-width="1" stroke-dasharray="4 4"/>
+              <line x1="40" y1="30" x2="420" y2="30" stroke="#AEB8A0" stroke-width="1" stroke-dasharray="4 4"/>
+              <text x="34" y="174" text-anchor="end">0</text><text x="34" y="104" text-anchor="end">6</text><text x="34" y="34" text-anchor="end">12</text>
+              <polyline points="70,44.6 183,85.4 297,92.5 410,93.8" fill="none" stroke="#351E28" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="70" cy="44.6" r="6" fill="#AEB8A0" stroke="#351E28" stroke-width="2"/>
+              <circle cx="183" cy="85.4" r="6" fill="#AEB8A0" stroke="#351E28" stroke-width="2"/>
+              <circle cx="297" cy="92.5" r="6" fill="#AEB8A0" stroke="#351E28" stroke-width="2"/>
+              <circle cx="410" cy="93.8" r="7" fill="#FF5C34" stroke="#351E28" stroke-width="2"/>
+              <text x="70" y="30" text-anchor="middle" class="v">S/10,75</text>
+              <text x="183" y="71" text-anchor="middle" class="v">S/7,25</text>
+              <text x="297" y="78" text-anchor="middle" class="v">S/6,64</text>
+              <text x="410" y="79" text-anchor="end" class="v">S/6,53</text>
+              <text x="70" y="192" text-anchor="middle">JUN</text><text x="183" y="192" text-anchor="middle">JUL</text><text x="297" y="192" text-anchor="middle">AGO</text><text x="410" y="192" text-anchor="middle">SET</text>
+            </svg>
+            <p class="label" style="margin:0">Junio desde el día 8 · setiembre hasta el día 27</p>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- Slide 5 · Optimización -->
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventana 5 · Optimización · jun – set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <h4 class="slide-title">Optimizar a partir de los datos</h4>
+          <div class="row2">
+            <div class="win mini"><div class="tb"><span class="t">keywords.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-or-keyword.png" alt=""><h4>Keywords</h4></div>
+              <span class="odr-label">Detecté</span><p><code>moons alineadores precio</code> alcanzaba S/18,36 por conversión.</p>
+              <span class="odr-label">Decisión</span><p>Pausar keyword.</p>
+              <span class="odr-label">Resultado</span><p>Eliminar inversión de una búsqueda poco eficiente.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">anuncios.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-or-anuncios.png" alt=""><h4>Anuncios</h4></div>
+              <span class="odr-label">Detecté</span><p>El anuncio de brackets autoligantes obtuvo 2,79% CTR y 0 conversiones.</p>
+              <span class="odr-label">Decisión</span><p>Pausarlo después de 7 días.</p>
+              <span class="odr-label">Aprendizaje</span><p>Priorizar el lenguaje utilizado por el paciente.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">medición.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-or-medicion.png" alt=""><h4>Medición</h4></div>
+              <span class="odr-label">Detecté</span><p>98% de las conversiones correspondían a toques en WhatsApp.</p>
+              <span class="odr-label">Decisión</span><p>Diferenciar mensajes de WhatsApp por campaña.</p>
+              <span class="odr-label">Resultado</span><p>Mejor seguimiento entre conversión digital y lead real.</p>
+            </div></div>
+            <div class="win mini"><div class="tb"><span class="t">escalabilidad.txt</span></div><div class="wb">
+              <h4>Escalabilidad</h4>
+              <p>La campaña registraba:</p>
+              <div class="metrics">
+                <div class="metric lift"><span class="label">Cuota de impresiones</span><b>18,44%</b><span class="desc">de las búsquedas posibles en las que apareció el anuncio</span></div>
+                <div class="metric lift"><span class="label">Perdida por ranking</span><b>61,52%</b><span class="desc">no apareció por calidad o puja del anuncio</span></div>
+                <div class="metric lift"><span class="label">Perdida por presupuesto</span><b>20,04%</b><span class="desc">no apareció porque se acabó el presupuesto del día</span></div>
               </div>
-              <p class="label">Escala de 0 a S/12 · junio desde el día 8 · setiembre hasta el día 27</p>
-            </div></div>
-            <div class="win mini"><div class="tb"><span class="t">junio-vs-setiembre.xls</span></div><div class="wb">
-              <div class="tbl"><table>
-                <thead><tr><th>Métrica</th><th class="n">Jun</th><th class="n">Set</th></tr></thead>
-                <tbody>
-                  <tr><td>Costo por conversión</td><td class="n">S/10,75</td><td class="n best">S/6,53</td></tr>
-                  <tr><td>Tasa de conversión</td><td class="n">15,6%</td><td class="n">22,3%</td></tr>
-                  <tr><td>CPC</td><td class="n">S/1,67</td><td class="n">S/1,46</td></tr>
-                  <tr><td>Conversiones</td><td class="n">90</td><td class="n">171</td></tr>
-                </tbody>
-              </table></div>
-              <p class="note">La mejor semana llegó al final: del 21 al 27 de setiembre, con 27,2% de tasa de conversión.</p>
+              <p>Existía margen de exposición, pero el foco de optimización debía mantenerse en relevancia y eficiencia.</p>
+              <figure class="shot"><button type="button" data-zoom><img src="img/orto-campana.jpg" alt="Campaña search venta en Google Ads: 622 conversiones, costo por conversión S/7,41, 3.139 clics, CPC S/1,47, 43.641 impresiones" loading="lazy"></button><figcaption>La campaña "search venta" en Google Ads (Búsqueda)</figcaption></figure>
             </div></div>
           </div>
-        </div>
-      </section>
-
-      <section class="win slide">
-        <div class="tb"><span class="t">Slide 3 · Palabras clave</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
-        <div class="wb">
-          <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">hallazgo.txt</span></div><div class="wb"><h4>El paciente busca precio</h4><p>Las tres palabras clave de intención de precio trajeron el <span class="hl">74% de las conversiones</span>.</p><p>La de concordancia exacta fue la más eficiente: es la búsqueda de alguien que ya decidió y solo compara costos.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">palabras-clave.xls</span></div><div class="wb">
-              <div class="tbl"><table>
-                <thead><tr><th>Palabra clave</th><th>Concordancia</th><th class="n">Conv.</th><th class="n">Costo/conv.</th><th class="n">CTR</th></tr></thead>
-                <tbody>
-                  <tr><td>precio de brackets peru</td><td>Amplia</td><td class="n">248</td><td class="n">S/7,54</td><td class="n">8,3%</td></tr>
-                  <tr><td>[cuanto cuesta ponerse brackets en peru]</td><td>Exacta</td><td class="n">107</td><td class="n best">S/5,89</td><td class="n best">13,4%</td></tr>
-                  <tr><td>brackets precio</td><td>Amplia</td><td class="n">99</td><td class="n">S/7,07</td><td class="n">5,7%</td></tr>
-                  <tr><td>"brackets"</td><td>Frase</td><td class="n">44</td><td class="n">S/7,18</td><td class="n">4,6%</td></tr>
-                  <tr><td>ortodoncista surco</td><td>Amplia</td><td class="n">2</td><td class="n">S/32,29</td><td class="n">3,4%</td></tr>
-                </tbody>
-              </table></div>
-              <p class="label">Acumulado 8 jun – 27 set 2026</p>
-            </div></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="win slide">
-        <div class="tb"><span class="t">Slide 4 · Optimización · dato, decisión y resultado</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
-        <div class="wb" style="gap:26px">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Autoligantes, calidad 2/10</h4><p>El producto que más vende la clínica casi no aparecía en Google.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Anuncio dedicado</h4><p>Se probó un anuncio con "autoligantes" en el título.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Cortado en 7 días</h4><p>CTR de 2,79% contra 9,88% del anuncio de precio. Aprendizaje: el título sigue cómo busca el paciente, no el nombre del catálogo.</p></div></div>
-          </div>
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>"moons alineadores precio"</h4><p>S/18,36 por conversión: 2,7 veces el promedio, con búsquedas de la competencia.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Pausa</h4><p>Ahorro estimado de S/78 al mes para las palabras que sí convierten.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Semana récord</h4><p>Coincidió con la mejor semana de la cuenta: S/5,78 por conversión.</p></div></div>
-          </div>
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>6 incumplimientos de política</h4><p>Performance Max quedó bloqueada: en salud, Google no permite remarketing ni listas de pacientes.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Reestructura</h4><p>Se quitaron las audiencias propias, se corrigió el nombre de la empresa y el grupo de remarketing pasó a prospección.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Campaña aprobada</h4><p>Estado "Apto (limitado)", el máximo posible en salud, y calidad del anuncio "Excelente".</p></div></div>
-          </div>
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>98% eran toques del botón</h4><p>Las conversiones contaban toques del botón de WhatsApp. El costo real por lead era unas 3 veces mayor.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Medir pacientes reales</h4><p>Mensajes de WhatsApp con un texto propio por campaña, para saber de dónde viene cada paciente.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Cruce semanal</h4><p>Google Ads se compara cada semana con el registro de pacientes de la clínica.</p></div></div>
-          </div>
+          <p class="banner">La optimización redujo el costo por conversión mientras mejoró la tasa de conversión de la campaña.</p>
         </div>
       </section>
     </div>
@@ -878,102 +1367,233 @@ main .win,.case-win .win,.note{transform:none!important}
   <article class="win case-win t-p" aria-labelledby="t-recupera">
     <div class="tb"><span class="t"><span class="ico sm" data-icon="folder"></span>C:\Portafolio\Casos\Caso 4 · Recupera tu Cabello</span><span class="bs"><a class="b" href="#casos" aria-label="Cerrar caso">×</a></span></div>
     <div class="wb">
-      <header class="case-head">
-        <div class="tags"><span class="tag">Caso 4</span><span class="tag">TikTok Ads</span><span class="tag">Tricología</span><span class="tag">Jul – 24 set 2026</span></div>
-        <h2 id="t-recupera">RECUPERA</h2>
-        <h3>Recupera tu Cabello · citas de consulta desde TikTok</h3>
-        <p class="lead">Centro de tricología en Lima. <span class="hl">La consulta subió de S/120 a S/180 y las citas por día siguieron creciendo: el ROI aproximado pasó de 92% a 187%.</span></p>
+      <!-- Ventana 1 · Portada -->
+      <header class="case-head cover">
+        <div style="display:grid; gap:12px">
+          <div class="tags"><span class="tag">Caso 4</span><span class="tag">TikTok Ads</span><span class="tag">Tricología</span><span class="tag">Jul – oct 2026</span></div>
+          <h2 id="t-recupera">RECUPERA TU CABELLO</h2>
+          <p class="kicker">TikTok Ads</p>
+          <h3>De una estructura estancada a una estrategia orientada a citas</h3>
+          <p class="label">Jul — oct 2026 · TikTok Ads · Tricología · Lima</p>
+          <p class="lead"><span class="hl">298 citas de campaña en 4 meses, con un ROI aproximado de +197%.</span></p>
+        </div>
+        <figure class="shot phone"><button type="button" data-zoom><img src="img/recupera-dht-hombres.jpg" alt="Anuncio de TikTok DHT Hombres de Recupera tu Cabello" loading="lazy"></button><figcaption><strong>Video DHT Hombres:</strong> más de 3.000 conversiones en 3 meses</figcaption></figure>
       </header>
 
+      <!-- Ventana 2 · El reto -->
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 1 · Punto de partida, reto y estructura</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 2 · El reto · al asumir la cuenta</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">punto-de-partida.txt</span></div><div class="wb"><h4>El punto de partida</h4><p>Un centro especializado en la caída del cabello, en Lima. Tomé la cuenta el 15 de junio de 2026, con un presupuesto de S/5.000 al mes.</p><p>El canal principal es TikTok Ads. En julio, Meta Ads sumó como apoyo.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">reto.txt</span></div><div class="wb"><h4>El reto</h4><p>Conseguir citas, no solo mensajes. Un mensaje de TikTok cuesta menos de S/1, pero la cita se decide después, en la conversación por WhatsApp con el equipo de la clínica.</p><p>Además, desde el 3 de agosto la consulta subió de S/120 a <strong>S/180</strong>.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">estructura.txt</span></div><div class="wb"><h4>Estructura</h4><ul class="list"><li>Campañas de mensajes en TikTok, solo Lima, de 25 a 55+ años.</li><li>Cuatro conjuntos por público: dos de hombres, uno de mujeres y uno por interés en productos capilares.</li><li>Videos con enfoque educativo: la hormona DHT, los tipos de alopecia y cuánto cuesta tratarla.</li><li>Registro diario que cruza la inversión con la agenda de citas de la clínica.</li></ul></div></div>
+          <h4 class="slide-title">Había pauta, pero no se medían las citas</h4>
+          <p style="margin:0">Al asumir la cuenta existía una campaña activa desde abril con:</p>
+          <div class="metrics m4 center">
+            <div class="metric lift shade"><b class="xl">7</b><span class="label">conjuntos de anuncios</span><span class="desc">públicos guardados distintos en la misma campaña</span></div>
+            <div class="metric lift shade"><b class="xl">1</b><span class="label">anuncio por conjunto</span><span class="desc">sin variantes para comparar</span></div>
+            <div class="metric lift shade"><b class="xl">3</b><span class="label">videos utilizados durante meses</span><span class="desc">el mismo material para los 7 públicos</span></div>
+            <div class="metric hi lift shade"><b class="xl">0</b><span class="label">rotación creativa significativa</span><span class="desc">no se renovaban los videos</span></div>
+          </div>
+          <p class="label" style="margin:0">La estructura utilizaba diferentes públicos guardados, pero los anuncios compartían un inventario creativo muy reducido.</p>
+          <div class="win mini k-g"><div class="tb"><span class="t">conjuntos-antes.png</span></div><div class="wb" style="display:grid; gap:14px">
+            <figure class="shot wide"><button type="button" data-zoom><img src="img/recupera-conjuntos-antes.jpg" alt="Conjuntos de anuncios activos en mayo: resultados, costo por resultado, inversión, impresiones y clics" loading="lazy"></button><figcaption>Conjuntos de anuncios activos durante el mes de mayo</figcaption></figure>
+          </div></div>
+          <div class="row2 eq2">
+            <div class="win mini k-o"><div class="tb"><span class="t">problema.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-precaucion.png" alt=""><span class="odr-label">Problema</span></div>
+              <p>La pauta estaba activa, pero no se registraba cuántas citas generaba: no había forma de saber si la inversión se convertía en pacientes.</p>
+            </div></div>
+            <div class="win mini k-s"><div class="tb"><span class="t">objetivo.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-objetivo.png" alt=""><span class="odr-label">Objetivo</span></div>
+              <p>Replantear la estrategia para generar nuevas oportunidades y convertirlas en citas para la consulta de evaluación capilar.</p>
+            </div></div>
+          </div>
+          <div class="versus">
+            <div class="vs-a"><span class="odr-label">Antes</span><p>7 conjuntos <i>→</i> 3 videos <i>→</i> poca renovación <i>→</i> <s>citas sin medir</s></p></div>
+            <div class="vs-b"><span class="odr-label">Nuevo enfoque</span><p>Nueva campaña <i>+</i> nuevos videos <i>+</i> nueva segmentación <i>+</i> rotación creativa</p></div>
           </div>
         </div>
       </section>
 
+      <!-- Ventana 3 · Nueva estrategia -->
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 2 · Resultados · 1 jul – 24 set 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="tb"><span class="t">Ventana 3 · Nueva estrategia · jul – oct 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
         <div class="wb">
-          <div class="metrics">
-            <div class="metric"><span class="label">Inversión TikTok</span><b>S/11.460</b></div>
-            <div class="metric"><span class="label">Mensajes</span><b>14.075</b></div>
-            <div class="metric"><span class="label">Costo por mensaje</span><b>S/0,81</b></div>
-            <div class="metric"><span class="label">Citas de TikTok</span><b>178</b></div>
-            <div class="metric"><span class="label">Costo por cita</span><b>S/64,38</b></div>
-            <div class="metric hi"><span class="label">ROI aprox. · setiembre</span><b>+187%</b></div>
-          </div>
-          <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">citas-por-día.chart</span></div><div class="wb">
-              <h4>Citas de TikTok por día, mes a mes</h4>
-              <div class="chart" role="img" aria-label="Citas de TikTok por día: julio 1,94, agosto 2,06, setiembre 2,25">
-                <div class="crow"><span class="m">Jul</span><div class="track"><div class="fill" style="width:77.6%"></div></div><span class="v">1,94</span></div>
-                <div class="crow"><span class="m">Ago</span><div class="track"><div class="fill" style="width:82.4%"></div></div><span class="v">2,06</span></div>
-                <div class="crow best"><span class="m">Set</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="v">2,25</span></div>
+          <h4 class="slide-title">Reestructuración de audiencias y creatividades</h4>
+          <div class="row4 eq">
+            <div class="win mini k-w lift"><div class="tb"><span class="t">01-audiencia.txt</span></div><div class="wb">
+              <span class="num-big">01</span><h4>Audiencia</h4>
+              <div class="people" aria-label="Hombres y mujeres">
+                <svg viewBox="0 0 40 64" role="img" aria-label="Hombre"><circle cx="20" cy="11" r="8" fill="#D7EFFF" stroke="#351E28" stroke-width="3"/><path d="M8 58V30q0-8 8-8h8q8 0 8 8v28z" fill="#D7EFFF" stroke="#351E28" stroke-width="3" stroke-linejoin="round"/><path d="M20 40v18" stroke="#351E28" stroke-width="3"/></svg>
+                <svg viewBox="0 0 40 64" role="img" aria-label="Mujer"><circle cx="20" cy="11" r="8" fill="#DDB6C6" stroke="#351E28" stroke-width="3"/><path d="M14 22h12l10 30H4z" fill="#DDB6C6" stroke="#351E28" stroke-width="3" stroke-linejoin="round"/><path d="M14 52v6M26 52v6" stroke="#351E28" stroke-width="3"/></svg>
               </div>
-              <p class="label">Escala de 0 a 2,5 citas por día · setiembre hasta el día 24</p>
+              <p class="age">25 – 55+ años</p>
+              <div class="chips sm"><span>Lima</span></div>
+              <p>Segmentación diferenciada por sexo e intereses relacionados con el cuidado y crecimiento del cabello.</p>
             </div></div>
-            <div class="win mini"><div class="tb"><span class="t">julio-vs-setiembre.xls</span></div><div class="wb">
-              <div class="tbl"><table>
-                <thead><tr><th>Métrica</th><th class="n">Jul</th><th class="n">Set</th></tr></thead>
-                <tbody>
-                  <tr><td>Valor de la consulta</td><td class="n">S/120</td><td class="n">S/180</td></tr>
-                  <tr><td>Citas de TikTok por día</td><td class="n">1,94</td><td class="n best">2,25</td></tr>
-                  <tr><td>Costo por mensaje</td><td class="n">S/0,79</td><td class="n">S/0,78</td></tr>
-                  <tr><td>Costo por cita</td><td class="n">S/62,52</td><td class="n">S/62,69</td></tr>
-                  <tr><td>ROI aproximado</td><td class="n">+92%</td><td class="n best">+187%</td></tr>
-                </tbody>
-              </table></div>
-              <p class="note">La consulta subió 50% y el costo por cita se mantuvo. Cada cita pasó a dejar más ingreso con la misma inversión.</p>
-              <p class="label">ROI aproximado: citas de TikTok × valor de la consulta, frente a la inversión en TikTok. No incluye los tratamientos que compra cada paciente. En julio hubo además 10 citas de Meta Ads, que no entran en este cálculo.</p>
+            <div class="win mini k-s lift"><div class="tb"><span class="t">02-creatividad.txt</span></div><div class="wb">
+              <span class="num-big">02</span><h4>Creatividad</h4>
+              <p>Se incorporaron nuevos videos educativos y se estableció una rotación constante de contenidos.</p>
+              <div class="bubbles"><span>DHT</span><span>Alopecia</span><span>Tricoscopía</span><span>Exámenes</span><span>Tratamientos</span><span>Costos</span></div>
+            </div></div>
+            <div class="win mini k-p lift"><div class="tb"><span class="t">03-optimización.txt</span></div><div class="wb">
+              <span class="num-big">03</span><h4>Optimización</h4>
+              <p>Los intereses se ajustaron según el rendimiento observado.</p>
+              <p class="vsteps">Cuidado del cabello<i>↓</i><span class="hl">Productos para el crecimiento del cabello</span></p>
+            </div></div>
+            <div class="win mini k-g lift"><div class="tb"><span class="t">04-funnel.txt</span></div><div class="wb">
+              <span class="num-big">04</span><h4>Funnel</h4>
+              <p class="vsteps">Video<i>↓</i>WhatsApp<i>↓</i><span class="hl">Cita</span></p>
+              <p><strong>El objetivo real de negocio no era el mensaje: era la cita.</strong></p>
             </div></div>
           </div>
-        </div>
-      </section>
-
-      <section class="win slide">
-        <div class="tb"><span class="t">Slide 3 · Públicos</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
-        <div class="wb">
           <div class="row2">
-            <div class="win mini"><div class="tb"><span class="t">hallazgo.txt</span></div><div class="wb"><h4>El público de hombres con alopecia</h4><p>Fue el conjunto más eficiente de la cuenta: <span class="hl">S/0,58 por mensaje en setiembre</span>, un tercio menos que en julio.</p><p>Los videos que mejor funcionaron hablan claro y sin rodeos: la hormona DHT en hombres y cuánto cuesta tratar la alopecia.</p><p class="note">El público de mujeres mostró desgaste en agosto. La respuesta se ve en el slide 4.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">conjuntos.xls</span></div><div class="wb">
-              <div class="tbl"><table>
-                <thead><tr><th>Conjunto</th><th class="n">Jul</th><th class="n">Ago</th><th class="n">Set</th></tr></thead>
-                <tbody>
-                  <tr><td>Alopecia · hombres</td><td class="n">S/0,86</td><td class="n">S/0,61</td><td class="n best">S/0,58</td></tr>
-                  <tr><td>Hombres · segundo público</td><td class="n">S/0,88</td><td class="n">S/0,92</td><td class="n">S/0,93</td></tr>
-                  <tr><td>Productos capilares</td><td class="n">S/0,79</td><td class="n">S/1,39</td><td class="n">S/0,93</td></tr>
-                  <tr><td>Alopecia · mujeres</td><td class="n">S/0,59</td><td class="n">S/1,06</td><td class="n">Apagado el 7-set</td></tr>
-                </tbody>
-              </table></div>
-              <p class="label">Costo por mensaje · setiembre del 1 al 24</p>
+            <div class="win mini k-o"><div class="tb"><span class="t">dht-hombres.mp4</span></div><div class="wb video-card">
+              <figure class="shot phone sm"><button type="button" data-zoom><img src="img/recupera-dht-hombres.jpg" alt="Anuncio DHT Hombres en TikTok" loading="lazy"></button></figure>
+              <div style="display:grid; gap:8px">
+                <h4>DHT Hombres</h4>
+                <p class="label" style="margin:0">Anuncio creado el 14/07 · resultados del 14/07 al 28/09</p>
+                <div class="metrics vm">
+                  <div class="metric hi"><span class="label">Conversiones</span><b>3.279</b></div>
+                  <div class="metric"><span class="label">Costo / conversión</span><b>S/0,87</b></div>
+                  <div class="metric"><span class="label">Inversión</span><b>S/2.863,95</b></div>
+                  <div class="metric"><span class="label">Impresiones</span><b>677.806</b></div>
+                  <div class="metric"><span class="label">Clics</span><b>7.239</b></div>
+                </div>
+                <figure class="shot"><button type="button" data-zoom><img src="img/recupera-dht-metricas.jpg" alt="Métricas del anuncio DHT Hombres en TikTok Ads Manager" loading="lazy"></button><figcaption>Captura de TikTok Ads Manager</figcaption></figure>
+              </div>
+            </div></div>
+            <div class="win mini k-w"><div class="tb"><span class="t">cuanto-cuesta-tratar-la-alopecia.mp4</span></div><div class="wb video-card">
+              <figure class="shot phone sm"><button type="button" data-zoom><img src="img/recupera-cuanto-cuesta.jpg" alt="Anuncio Cuánto cuesta tratar la alopecia en TikTok" loading="lazy"></button></figure>
+              <div style="display:grid; gap:8px">
+                <h4>Cuánto cuesta tratar la alopecia</h4>
+                <p class="label" style="margin:0">Anuncio creado el 12/08 · resultados del 12/08 al 28/09</p>
+                <div class="metrics vm">
+                  <div class="metric hi"><span class="label">Conversiones</span><b>3.218</b></div>
+                  <div class="metric"><span class="label">Costo / conversión</span><b>S/0,54</b></div>
+                  <div class="metric"><span class="label">Inversión</span><b>S/1.730,21</b></div>
+                  <div class="metric"><span class="label">Impresiones</span><b>712.461</b></div>
+                  <div class="metric"><span class="label">Clics</span><b>6.881</b></div>
+                </div>
+                <figure class="shot"><button type="button" data-zoom><img src="img/recupera-cuanto-cuesta-metricas.jpg" alt="Métricas del anuncio Cuánto cuesta tratar la alopecia en TikTok Ads Manager" loading="lazy"></button><figcaption>Captura de TikTok Ads Manager</figcaption></figure>
+              </div>
             </div></div>
           </div>
+          <p class="label" style="margin:0">Métricas de cada video acumuladas desde su creación hasta el 28/09 · nuevos videos incorporados de julio a octubre de 2026 (13 solo en octubre)</p>
         </div>
       </section>
 
+      <!-- Ventana 4 · Resultados -->
       <section class="win slide">
-        <div class="tb"><span class="t">Slide 4 · Optimización · dato, decisión y resultado</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
-        <div class="wb" style="gap:26px">
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>+76% en productos capilares</h4><p>En agosto, el conjunto de productos capilares (solo mujeres) pasó de S/0,79 a S/1,39 por mensaje.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Abrir el público</h4><p>El 24 de agosto se quitó el límite de género, sin tocar los videos.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>−42% en una semana</h4><p>Del 1 al 7 de setiembre bajó a S/0,81 por mensaje.</p></div></div>
+        <div class="tb"><span class="t">Ventana 4 · Resultados · julio – octubre 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <h4 class="slide-title">Más citas de campaña, mes a mes</h4>
+          <div class="row2 eq2">
+            <div class="win mini k-s"><div class="tb"><span class="t">citas-de-campaña.txt</span></div><div class="wb" style="display:grid; gap:8px; text-align:center; justify-items:center">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-citas-totales.png" alt=""><span class="label" style="margin:0">Citas de campaña (TikTok) por mes</span></div>
+              <div class="bigflow" style="justify-content:center; font-size:clamp(1.7rem,3.2vw,2.5rem); flex-wrap:nowrap"><span>70</span><i>→</i><span>64</span><i>→</i><span>70</span><i>→</i><span>94</span></div>
+              <p class="label" style="margin:0">Julio → Agosto → Setiembre → Octubre</p>
+              <div class="bignum">+34,3%</div>
+              <p class="label" style="margin:0">más citas de campaña en octubre que en julio</p>
+              <p class="cap-note">Una "cita de campaña" es una cita agendada por un paciente que escribió desde un anuncio de TikTok.</p>
+            </div></div>
+            <div class="win mini k-p"><div class="tb"><span class="t">citas-por-origen.chart</span></div><div class="wb" style="display:grid; gap:12px">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-citas-origen.png" alt=""><h4>Citas totales de la clínica, por origen</h4></div>
+              <div class="stack bars4" role="img" aria-label="Julio: 70 citas de TikTok y 112 de otros orígenes, 182 en total. Agosto: 64 y 164, 228. Setiembre: 70 y 132, 202. Octubre: 94 y 110, 204.">
+                <div class="srow"><span class="m">Julio</span><div class="sbar" style="width:79.8%"><span class="tk" style="width:38.5%">70</span><span class="ot" style="flex:1">112</span></div><span class="v">182</span></div>
+                <div class="srow"><span class="m">Agosto</span><div class="sbar" style="width:100%"><span class="tk" style="width:28.1%">64</span><span class="ot" style="flex:1">164</span></div><span class="v">228</span></div>
+                <div class="srow"><span class="m">Set.</span><div class="sbar" style="width:88.6%"><span class="tk" style="width:34.7%">70</span><span class="ot" style="flex:1">132</span></div><span class="v">202</span></div>
+                <div class="srow"><span class="m">Octubre</span><div class="sbar" style="width:89.5%"><span class="tk" style="width:46.1%">94</span><span class="ot" style="flex:1">110</span></div><span class="v">204</span></div>
+              </div>
+              <div class="legend"><span style="--c:var(--deep)">Desde anuncios de TikTok</span><span style="--c:var(--panel)">Otros orígenes (fuera de campañas)</span></div>
+              <p>En octubre, casi la mitad de las citas de la clínica (46%) llegó desde TikTok.</p>
+            </div></div>
           </div>
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Un conjunto gastado</h4><p>Alopecia en mujeres pasó de S/0,59 a más de S/1 por mensaje sin ningún cambio. Sus videos ya estaban sobreexpuestos.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Apagar y redistribuir</h4><p>El 7 de setiembre se apagó y sus S/30 al día pasaron a los otros tres conjuntos, con la misma inversión diaria total.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Mejor semana del año</h4><p>Del 8 al 14 de setiembre: S/0,76 por mensaje y 23 citas de TikTok a S/43,67 cada una. ROI aproximado de la semana: +312%.</p></div></div>
+
+          <h4 style="margin:6px 0 0">Paid Media · aporte directo de TikTok · 1 de julio – 31 de octubre de 2026</h4>
+          <div class="metrics m6 center">
+            <div class="metric lift shade"><span class="label">Inversión</span><b>S/16.439</b><span class="desc">gastado en TikTok Ads en los 4 meses</span></div>
+            <div class="metric lift shade"><span class="label">Mensajes</span><b>20.469</b><span class="desc">chats de WhatsApp iniciados desde los anuncios</span></div>
+            <div class="metric lift shade"><span class="label">Costo / mensaje</span><b>S/0,80</b><span class="desc">inversión ÷ mensajes</span></div>
+            <div class="metric lift shade"><span class="label">Citas de campaña</span><b>298</b><span class="desc">citas agendadas desde TikTok</span></div>
+            <div class="metric lift shade"><span class="label">Costo / cita</span><b>S/55,17</b><span class="desc">inversión ÷ citas de campaña</span></div>
+            <div class="metric hi lift shade"><span class="label">ROI aproximado</span><b>+197%</b><span class="desc">ganancia ÷ inversión (ver abajo)</span></div>
           </div>
-          <div class="row3">
-            <div class="win mini"><div class="tb"><span class="t">dato.txt</span></div><div class="wb"><span class="odr-label">Dato</span><h4>Mismo costo, menos citas</h4><p>Del 1 al 7 de setiembre, misma inversión y mismo S/0,81 por mensaje que la semana anterior, pero las citas de campaña bajaron de 20 a 8.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">decisión.txt</span></div><div class="wb"><span class="odr-label">Decisión</span><h4>Mirar después del clic</h4><p>Cruce de la pauta con la agenda de la clínica, día por día y por asesor.</p></div></div>
-            <div class="win mini"><div class="tb"><span class="t">resultado.txt</span></div><div class="wb"><span class="odr-label">Resultado</span><h4>Diagnóstico claro</h4><p>La variación estaba en la atención por WhatsApp, no en los anuncios. La clínica recibe cada semana un informe con citas y ROI aproximado.</p></div></div>
+
+          <div class="win mini k-w"><div class="tb"><span class="t">mes-a-mes.xls</span></div><div class="wb">
+            <h4>Mes a mes · TikTok Ads</h4>
+            <div class="tbl"><table class="mtable">
+              <thead><tr><th>Qué se mide</th><th class="n">Julio</th><th class="n">Agosto</th><th class="n">Setiembre</th><th class="n">Octubre</th></tr></thead>
+              <tbody>
+                <tr><td>Inversión en TikTok Ads</td><td class="n">S/3.516</td><td class="n">S/4.380</td><td class="n">S/4.205</td><td class="n">S/4.338</td></tr>
+                <tr><td>Mensajes de WhatsApp desde los anuncios</td><td class="n">4.787</td><td class="n">4.934</td><td class="n">5.549</td><td class="n">5.199</td></tr>
+                <tr><td>Citas de campaña</td><td class="n">70</td><td class="n">64</td><td class="n">70</td><td class="n best">94</td></tr>
+                <tr><td>Tasa de conversión (citas ÷ mensajes)</td><td class="n">1,46%</td><td class="n">1,30%</td><td class="n">1,26%</td><td class="n best">1,81%</td></tr>
+                <tr><td>Costo por cita (inversión ÷ citas)</td><td class="n">S/50,22</td><td class="n">S/68,44</td><td class="n">S/60,08</td><td class="n best">S/46,15</td></tr>
+                <tr><td>ROI aproximado del mes</td><td class="n">+139%</td><td class="n">+149%</td><td class="n">+200%</td><td class="n best">+290%</td></tr>
+              </tbody>
+            </table></div>
+            <p class="cap-note">La mejora más clara es de setiembre a octubre: con el mismo precio de consulta (S/180), la tasa de conversión pasó de 1,26% a 1,81% y el costo por cita bajó de S/60,08 a S/46,15. Entre julio y setiembre, parte del aumento del ROI se explica por el alza del precio de la consulta.</p>
+          </div></div>
+
+          <p class="roi-note">El ROI aproximado de <strong>+197%</strong> significa que las 298 citas de campaña representan unos <strong>S/48.840</strong> en consultas, frente a <strong>S/16.439</strong> invertidos en TikTok: una ganancia aproximada de <strong>S/32.401</strong>. Por cada S/1 invertido regresaron unos S/2,97.</p>
+          <div class="win mini k-g"><div class="tb"><span class="t">conjuntos-jul-oct.png</span></div><div class="wb">
+            <h4>Los 3 conjuntos con más conversiones · 1 de julio – 31 de octubre de 2026</h4>
+            <figure class="shot wide"><button type="button" data-zoom><img src="img/recupera-conjuntos-jul-oct.png" alt="Grupos de anuncios en TikTok Ads Manager del 1 de julio al 31 de octubre de 2026: Alopecia_Hombres 8.043 conversiones a 0,69 soles con 5.515,37 soles de gasto; Hombres_LOOKALIKE 5.435 a 0,96 con 5.230,20; TODOS_PRODCAB 4.635 a 0,85 con 3.931,55" loading="lazy"></button><figcaption>TikTok Ads Manager · grupos de anuncios ordenados por conversiones</figcaption></figure>
+            <p class="cap-note">Cada conversión es un mensaje de WhatsApp iniciado desde el anuncio. Estos 3 conjuntos suman 18.113 de los 20.469 mensajes y S/14.677 de los S/16.439 invertidos en los 4 meses.</p>
+          </div></div>
+          <p class="label" style="margin:0">TikTok Ads · 1 de julio – 31 de octubre de 2026 · Cálculo aproximado: cada cita al valor de la consulta (S/120 hasta el 2 de agosto, S/180 desde el 3). No incluye los tratamientos que compra cada paciente.</p>
+        </div>
+      </section>
+
+      <!-- Ventana 5 · Optimización -->
+      <section class="win slide">
+        <div class="tb"><span class="t">Ventana 5 · Optimización · julio – octubre 2026</span><span class="bs"><span class="b">_</span><span class="b">□</span></span></div>
+        <div class="wb">
+          <h4 class="slide-title">Optimizar el canal y leer el funnel completo</h4>
+          <div class="grid2eq">
+            <div class="win mini k-w"><div class="tb"><span class="t">01-nueva-estructura.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-nueva-est.png" alt=""><span class="num-big">01</span><h4>Nueva estructura</h4></div>
+              <div class="ps">
+                <div class="box b-prob"><span class="odr-label">Problema</span><p>Una cuenta con 7 conjuntos de anuncios, 1 anuncio por conjunto y 3 videos reutilizados durante meses.</p></div>
+                <div class="box b-sol"><span class="odr-label">Solución</span><p>Crear una nueva estructura con segmentación por sexo + intereses diferenciados + nuevos videos + rotación creativa.</p></div>
+              </div>
+            </div></div>
+            <div class="win mini k-s"><div class="tb"><span class="t">02-optimización-de-audiencias.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-audiencias.png" alt=""><span class="num-big">02</span><h4>Optimización de audiencias</h4></div>
+              <p class="vsteps">Cuidado del cabello<i>↓</i><span class="hl">Productos para el crecimiento del cabello</span></p>
+              <span class="odr-label" style="text-align:center">Conjunto Alopecia_Hombres · costo por mensaje en el mes</span>
+              <div class="months">
+                <div class="mbox"><span>Julio</span><b>S/0,86</b></div><i>→</i>
+                <div class="mbox"><span>Agosto</span><b>S/0,61</b></div><i>→</i>
+                <div class="mbox best"><span>Setiembre</span><b>S/0,58</b></div><i>→</i>
+                <div class="mbox"><span>Octubre</span><b>S/0,77</b></div>
+              </div>
+              <span class="odr-label" style="text-align:center">Conjunto PRODCAB · abierto a hombres y mujeres desde el 24 de agosto</span>
+              <div class="months">
+                <div class="mbox"><span>Agosto</span><b>S/1,39</b></div><i>→</i>
+                <div class="mbox"><span>Setiembre</span><b>S/0,83</b></div><i>→</i>
+                <div class="mbox best"><span>Octubre</span><b>S/0,69</b></div>
+              </div>
+            </div></div>
+            <div class="win mini k-g"><div class="tb"><span class="t">03-optimización-de-creativos.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-creativos.png" alt=""><span class="num-big">03</span><h4>Optimización de creativos</h4></div>
+              <p>Se incorporaron nuevos videos y se retiraron progresivamente los que presentaban peor rendimiento.</p>
+              <span class="odr-label">Los contenidos que terminaron destacando</span>
+              <div class="bubbles"><span>DHT Hombres</span><span>Cuánto cuesta tratar la alopecia</span></div>
+            </div></div>
+            <div class="win mini k-o"><div class="tb"><span class="t">04-no-optimizar-solo-para-el-mensaje.txt</span></div><div class="wb">
+              <div class="ihead"><img class="pic-ico" src="img/ico-rc-no-opt.png" alt=""><span class="num-big">04</span><h4>No optimizar solo para el mensaje</h4></div>
+              <p>El costo por mensaje no era suficiente para evaluar el rendimiento. Por eso crucé <strong>TikTok Ads → WhatsApp → Agenda</strong>, y detecté que una variación en las citas podía producirse aunque el costo por mensaje permaneciera estable, lo que llevó a revisar el proceso de atención por WhatsApp.</p>
+              <p>En octubre, <strong>1 de cada 55 mensajes</strong> terminó en cita (en setiembre, 1 de cada 79).</p>
+            </div></div>
           </div>
+          <div class="win mini k-s"><div class="tb"><span class="t">atribución-pancake.png</span></div><div class="wb wide2" style="grid-template-columns:minmax(0,520px) minmax(0,1fr); align-items:center">
+            <figure class="shot"><button type="button" data-zoom><img src="img/recupera-chat-tiktok.png" alt="Chat en Pancake con el aviso: acaba de visitar desde un anuncio de TikTok, y las etiquetas de origen TIKTOK, NUEVO PACIENTE y META ADS" loading="lazy"></button><figcaption>Chat real del 18 de octubre de 2026 (datos del paciente difuminados)</figcaption></figure>
+            <div style="display:grid; gap:10px"><h4>Cómo se sabe que una cita vino de TikTok</h4><p>La clínica atiende WhatsApp en <strong>Pancake</strong>, un CRM conectado a TikTok Ads. Cuando alguien escribe desde un anuncio, el chat muestra el video y el aviso <em>“acaba de visitar desde un anuncio de TikTok”</em>.</p><p class="vsteps">El asesor etiqueta el chat TIKTOK<i>↓</i>La agenda guarda el origen de la cita<i>↓</i><span class="hl">Cruce diario de citas con la inversión</span></p></div>
+          </div></div>
+          <div class="win mini k-i"><div class="tb"><span class="t">conclusión.txt</span></div><div class="wb">
+            <span class="odr-label">Conclusión</span>
+            <p class="concl">Recibí una cuenta con una campaña activa y una estructura de 7 conjuntos de anuncios. A partir de este diagnóstico, diseñé y lancé una nueva estructura de campaña desde cero, con nueva segmentación y nuevas creatividades, y posteriormente optimicé ambas estructuras según su rendimiento. En octubre, la campaña logró su mejor mes: 94 citas a S/46,15 cada una.</p>
+          </div></div>
         </div>
       </section>
     </div>
@@ -1056,22 +1676,22 @@ main .win,.case-win .win,.note{transform:none!important}
     for(var x=2;x<14;x++){ g[12][x]='o'; } for(x=3;x<13;x++){ g[13][x]='o'; }
     g[2][2]=g[2][3]=g[2][12]=g[2][13]='w'; g[3][2]=g[3][3]=g[3][12]=g[3][13]='w'; M.magnet=toMap(g); })();
 
-  var TINT={o:{f:'#FF9B7A',T:'#D9542F'},b:{f:'#A9D8F5',T:'#5E9CC8'},g:{f:'#CBD5B9',T:'#7F8C6C'},y:{f:'#E9F056',T:'#B5BD27'},p:{f:'#DDB6C6',T:'#8E4F68'}};
+  var TINT={o:{f:'#8C2A30',T:'#4D0E12'},g:{f:'#E29420',T:'#B35813'},y:{f:'#4DC9AE',T:'#2073C3'},p:{f:'#E4D076',T:'#28518A'},a:{f:'#F2CD27',T:'#B8860B'}};
+  var CLS={k:'pk',y:'py',o:'po',b:'pb',s:'ps'};
   function svg(map,tint){
     var r='';
-    for(var y=0;y<16;y++){ var row=(map[y]||'').padEnd(16,'.'); for(var x=0;x<16;x++){ var col=(tint&&tint[row[x]])||C[row[x]]; if(col) r+='<rect x="'+x+'" y="'+y+'" width="1.02" height="1.02" fill="'+col+'"/>'; } }
+    for(var y=0;y<16;y++){ var row=(map[y]||'').padEnd(16,'.'); for(var x=0;x<16;x++){ var col=(tint&&tint[row[x]])||C[row[x]]; if(col) r+='<rect'+((CLS[row[x]]&&!(tint&&tint[row[x]]))?' class="'+CLS[row[x]]+'"':'')+' x="'+x+'" y="'+y+'" width="1.02" height="1.02" fill="'+col+'"/>'; } }
     return '<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" focusable="false">'+r+'</svg>';
   }
   document.querySelectorAll('[data-icon]').forEach(function(el){ var m=M[el.getAttribute('data-icon')]; if(m) el.innerHTML=svg(m,TINT[el.getAttribute('data-tint')]); });
 
 
-  /* ---------- carruseles de Plataformas y Panel de control ---------- */
-  document.querySelectorAll('[data-carousel]').forEach(function(c){
-    var track=c.querySelector('.ctrack'), prev=c.querySelector('[data-dir="-1"]'), next=c.querySelector('[data-dir="1"]');
-    function upd(){ prev.disabled=track.scrollLeft<=2; next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2; }
-    [prev,next].forEach(function(b){ b.addEventListener('click',function(){ track.scrollBy({left:Number(b.getAttribute('data-dir'))*Math.max(140,track.clientWidth*.8),behavior:'smooth'}); }); });
-    track.addEventListener('scroll',upd,{passive:true}); window.addEventListener('resize',upd); upd();
+  /* ---------- carruseles continuos: se duplica la fila para que el giro no tenga cortes ---------- */
+  document.querySelectorAll('[data-marquee]').forEach(function(t){
+    [].slice.call(t.children).forEach(function(n){ var c=n.cloneNode(true); c.setAttribute('aria-hidden','true'); t.appendChild(c); });
   });
+  /* ---------- saltar a una ventana dentro del caso abierto ---------- */
+  document.addEventListener('click',function(e){ var g=e.target.closest('[data-goto]'); if(!g) return; var el=document.getElementById(g.getAttribute('data-goto')); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); });
 
   /* ---------- abrir y cerrar casos ---------- */
   var layers=[].slice.call(document.querySelectorAll('.case-layer'));
@@ -1094,7 +1714,7 @@ main .win,.case-win .win,.note{transform:none!important}
   var viewer=document.getElementById('viewer'), vImg=document.getElementById('v-img'), stage=document.getElementById('v-stage'),
       level=document.getElementById('v-level'), vTitle=document.getElementById('v-title'), z=1, lastBtn=null;
   function apply(){ var base=stage.clientWidth-4; vImg.style.width=Math.round(base*z)+'px'; level.textContent=Math.round(z*100)+'%'; }
-  function openViewer(img,btn){ vImg.src=img.src; vImg.alt=img.alt; vTitle.textContent=img.getAttribute('src').split('/').pop(); lastBtn=btn; viewer.hidden=false; z=1; apply(); stage.scrollTop=0; stage.scrollLeft=0; document.getElementById('v-close').focus(); }
+  function openViewer(img,btn){ vImg.src=img.src; vImg.alt=img.alt; var sr=img.getAttribute('src'); vTitle.textContent=sr.indexOf('data:')===0?'captura':sr.split('/').pop(); lastBtn=btn; viewer.hidden=false; z=1; apply(); stage.scrollTop=0; stage.scrollLeft=0; document.getElementById('v-close').focus(); }
   function closeViewer(){ viewer.hidden=true; if(lastBtn) lastBtn.focus(); }
   document.getElementById('v-in').onclick=function(){ z=Math.min(4,z+.5); apply(); };
   document.getElementById('v-out').onclick=function(){ z=Math.max(1,z-.5); apply(); };
