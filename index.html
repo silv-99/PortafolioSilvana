@@ -847,6 +847,30 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
 .tb .b{transition:background-color .15s}
 .tb .b:hover{background:var(--wasabi)}
 .folder .pic{transition:transform .25s cubic-bezier(.3,1.4,.5,1)}
+
+/* ===== v13 (12-nov): ventanas con movimiento estilo windows93 ===== */
+.zoomrect{position:fixed; z-index:58; border:2px dashed var(--ink); border-radius:12px; pointer-events:none; background:color-mix(in srgb, var(--accent) 7%, transparent)}
+.anim .rv.win{translate:none; scale:.95; transition:opacity .14s steps(2,end), scale .28s cubic-bezier(.3,1.45,.5,1)}
+.anim .rv.win.in{scale:1}
+.tb [data-act]{cursor:pointer}
+.tb [data-act]:active{translate:1px 1px}
+.win.shaded{align-self:start}
+.win.shaded > :not(.tb){display:none!important}
+.win.shaded > .tb{border-bottom:0}
+.win.maxed{position:fixed!important; z-index:56; top:14px; left:14px; right:14px; bottom:calc(var(--tb-h) + 22px); margin:0!important; display:flex!important; flex-direction:column; transform:none!important; translate:none!important; scale:none!important; opacity:1!important; max-width:none; width:auto!important; height:auto!important}
+.win.maxed > .tb{flex:none}
+.win.maxed > :not(.tb){flex:1; overflow:auto; min-height:0}
+.win.maxed > .wb{align-content:safe center}
+.max-bg{position:fixed; left:0; right:0; top:0; bottom:var(--tb-h); z-index:55; background:color-mix(in srgb, var(--ink) 38%, transparent); animation:mfade .2s ease}
+@keyframes mfade{from{opacity:0}}
+.win-ph{visibility:hidden; pointer-events:none}
+@media (pointer:fine){
+  main .win > .tb,.case-win .slide > .tb{cursor:grab; user-select:none}
+  .win.dragging{opacity:.94; box-shadow:10px 12px 0 var(--ink)}
+  .win.dragging > .tb{cursor:grabbing}
+}
+.folder.opening{background:var(--t-wasabi); border-color:var(--ink)}
+html,body{overflow-x:clip}
 </style>
 
 </head>
@@ -1819,8 +1843,7 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
 <script>
 /* ---------- idioma: español / inglés ---------- */
 (function(){
-  var I=window.__I18N, D=I.D, ES=I.ES, root=document.documentElement, REV={};
-  Object.keys(D.a).forEach(function(k){ REV[D.a[k]]=k; });
+  var I=window.__I18N, D=I.D, ES=I.ES, root=document.documentElement;
   var meta=document.querySelector('meta[name="description"]');
   var TXT={es:{title:document.title, desc:meta?meta.content:'', wa:'Hola%20Silvana%2C%20vi%20tu%20portafolio%20y%20me%20gustar%C3%ADa%20conversar.', mail:'Vi%20tu%20portafolio', label:'Idioma / Language: English'},
            en:{title:'Silvana Saldaña · Portfolio', desc:'Portfolio of Silvana Saldaña Espinoza, paid media specialist: Meta Ads, Google Ads and TikTok Ads for high-ticket services.', wa:'Hi%20Silvana%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk.', mail:'I%20saw%20your%20portfolio', label:'Language / Idioma: Español'}};
@@ -1831,6 +1854,7 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
       var html=lang==='en'?D.u[k]:ES[k];
       el.innerHTML=html; if(el.querySelector('[data-icon]') && window.__renderIcons) window.__renderIcons(el);
     });
+    var REV={}; Object.keys(D.a).forEach(function(k){ REV[D.a[k]]=k; });
     ['alt','aria-label'].forEach(function(at){
       document.querySelectorAll('['+at+']').forEach(function(el){
         var v=el.getAttribute(at), w=lang==='en'?D.a[v]:REV[v]; if(w) el.setAttribute(at,w);
@@ -1868,6 +1892,16 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
   var T='.topline .ptitle,.icons-row .dicon,main > .front > .win,main > .win,main .trio > .win,#resultados .tabtitle,#resultados .res-grid > .win,#casos > .win,#contacto > .win,.case-head,.camp-head,.case-win .slide';
   var ITEM='.mini,.metric,.folder,.ct,.chips span,.bubbles span,.steps-mini li,.plat3 .gi,.mbox,.ba,.rtag,.tbl,.shot,.note,.banner,.roi-note,.versus,.serp,.box,.kvs';
   var CNT='.rbig,.bignum,.budget-num,.metric b,.ba b,.mbox b,.bigflow span,.fact b';
+  function zoomRect(a, b, ms){
+    if(!document.body.animate) return Promise.resolve();
+    var k=[a,b].map(function(r){ return {left:r.left+'px', top:r.top+'px', width:r.width+'px', height:r.height+'px'}; });
+    return Promise.all([0,1].map(function(i){
+      var el=document.createElement('div'); el.className='zoomrect'; document.body.appendChild(el);
+      var an=el.animate(k,{duration:ms||240, delay:i*50, easing:'steps(6,end)', fill:'both'});
+      return an.finished.then(function(){ el.remove(); }, function(){ el.remove(); });
+    }));
+  }
+  window.__zoomRect=zoomRect;
   var targets=[].slice.call(document.querySelectorAll(T));
   function itemsOf(t){ return [].slice.call(t.querySelectorAll(ITEM)).filter(function(it){
     for(var p=it.parentElement; p && p!==t; p=p.parentElement){ if(p.matches(ITEM)) return false; } return true; }); }
@@ -1903,6 +1937,11 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
   function reveal(t){
     var now=Date.now(); batch = now-last<140 ? batch+1 : 0; last=now;
     var base=Math.min(batch*90, 450);
+    if(t.classList.contains('win')){   /* la ventana "se abre" como en Windows: primero el rectángulo, luego ella */
+      var rr=t.getBoundingClientRect();
+      if(rr.top<innerHeight && rr.bottom>0) setTimeout(function(){ zoomRect({left:rr.left+rr.width*.42, top:rr.top+Math.min(rr.height,innerHeight)*.42, width:rr.width*.16, height:Math.min(rr.height,innerHeight)*.16}, {left:rr.left, top:rr.top, width:rr.width, height:Math.min(rr.height, innerHeight-rr.top)}, 200); }, base);
+      base+=150;
+    }
     t.style.transitionDelay=base+'ms'; t.classList.add('in'); clean(t, base+900);
     var its=[].slice.call(t.querySelectorAll('.rv-i')), delays=new Map();
     its.forEach(function(it,i){ var d=base+140+Math.min(i*55, 700); delays.set(it,d); it.style.transitionDelay=d+'ms'; it.classList.add('in'); clean(it, d+800); });
@@ -1926,6 +1965,118 @@ html.lang-fade main,html.lang-fade .case-win,html.lang-fade .topline{opacity:.15
     links.forEach(function(a,i){ a.classList.toggle('on', i===cur); }); }
   addEventListener('scroll', function(){ if(!ticking){ ticking=true; requestAnimationFrame(mark); } }, {passive:true});
   mark();
+})();
+</script>
+<script>
+/* ---------- ventanas estilo windows93 ---------- */
+(function(){
+  var root=document.documentElement;
+  var reduce=window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var zoom=(!reduce && window.__zoomRect) || function(){ return Promise.resolve(); };
+  var ES=['Minimizar','Maximizar','Cerrar','Restaurar'], EN=['Minimize','Maximize','Close','Restore'];
+  ES.forEach(function(w,i){ window.__I18N.D.a[w]=EN[i]; });
+  function lab(i){ return root.lang==='en'?EN[i]:ES[i]; }
+  function anim(el, k, o){ return (reduce || !el.animate) ? Promise.resolve() : el.animate(k,o).finished.catch(function(){}); }
+  function box(r){ return {top:r.top+'px', left:r.left+'px', width:r.width+'px', height:r.height+'px', inset:'auto'}; }
+
+  /* los botones _ □ × de cada barra ahora hacen algo */
+  document.querySelectorAll('.tb .bs span.b').forEach(function(b){
+    var i={'_':0,'□':1,'×':2}[b.textContent.trim()]; if(i==null) return;
+    b.setAttribute('role','button'); b.tabIndex=0; b.dataset.act=['min','max','close'][i]; b.setAttribute('aria-label', lab(i));
+  });
+
+  /* _ : enrolla la ventana y la deja solo con su barra */
+  function shade(w){
+    var tb=w.querySelector(':scope > .tb'), h=w.offsetHeight, th=tb.offsetHeight+6;
+    if(!w.classList.contains('shaded')){
+      anim(w,[{height:h+'px'},{height:th+'px'}],{duration:260, easing:'cubic-bezier(.4,0,.2,1)'}).then(function(){ w.classList.add('shaded'); });
+    } else {
+      w.classList.remove('shaded'); var h2=w.offsetHeight;
+      anim(w,[{height:th+'px'},{height:h2+'px'}],{duration:300, easing:'cubic-bezier(.3,1.25,.5,1)'});
+    }
+  }
+  /* □ : agranda la ventana a pantalla completa (y la regresa) */
+  function max(w){
+    if(document.querySelector('.win.maxed')) return;
+    if(w.classList.contains('shaded')) w.classList.remove('shaded');
+    var r=w.getBoundingClientRect(), cs=getComputedStyle(w);
+    var ph=document.createElement('div'); ph.className='win-ph';
+    ph.style.height=r.height+'px'; ph.style.gridColumn=cs.gridColumn; ph.style.gridRow=cs.gridRow; ph.style.margin=cs.margin;
+    w.parentNode.insertBefore(ph,w); w.__ph=ph;
+    var bg=document.createElement('div'); bg.className='max-bg'; (w.closest('.case-layer')||document.body).appendChild(bg); w.__bg=bg;
+    bg.addEventListener('click', function(){ unmax(w); });
+    w.classList.add('maxed'); var r2=w.getBoundingClientRect();
+    var bm=w.querySelector('[data-act="max"]'); if(bm){ bm.textContent='❐'; bm.setAttribute('aria-label', lab(3)); }
+    zoom(r, r2, 220);
+    anim(w,[box(r),box(r2)],{duration:300, easing:'cubic-bezier(.2,.8,.2,1)'});
+  }
+  function unmax(w){
+    if(!w.classList.contains('maxed')) return;
+    var r=w.getBoundingClientRect(), ph=w.__ph, r2=ph.getBoundingClientRect();
+    if(w.__bg){ w.__bg.remove(); w.__bg=null; }
+    var bm=w.querySelector('[data-act="max"]'); if(bm){ bm.textContent='□'; bm.setAttribute('aria-label', lab(1)); }
+    anim(w,[box(r),box(r2)],{duration:260, easing:'cubic-bezier(.4,0,.2,1)'}).then(function(){ w.classList.remove('maxed'); ph.remove(); w.__ph=null; });
+  }
+  /* × en las ventanas del inicio: tiembla como en windows93 (no se puede cerrar) */
+  function wiggle(w){
+    var p=(w.style.translate||'0px 0px').split(' '), x=parseFloat(p[0])||0, y=parseFloat(p[1])||0;
+    anim(w,[{translate:x+'px '+y+'px'},{translate:(x-8)+'px '+y+'px'},{translate:(x+6)+'px '+y+'px'},{translate:(x-4)+'px '+y+'px'},{translate:x+'px '+y+'px'}],{duration:340, easing:'ease-out'});
+  }
+  function act(b){ var w=b.closest('.win'); if(!w) return; var a=b.dataset.act;
+    if(a==='min') shade(w); else if(a==='max'){ if(w.classList.contains('maxed')) unmax(w); else max(w); } else wiggle(w); }
+  document.addEventListener('click', function(e){ var b=e.target.closest('.tb [data-act]'); if(b){ e.preventDefault(); act(b); } });
+  document.addEventListener('keydown', function(e){
+    if((e.key==='Enter'||e.key===' ') && e.target.matches && e.target.matches('[data-act]')){ e.preventDefault(); act(e.target); return; }
+    if(e.key==='Escape'){ var m=document.querySelector('.win.maxed'); if(m && document.getElementById('viewer').hidden){ e.stopImmediatePropagation(); unmax(m); } }
+  }, true);
+
+  /* abrir un caso: el rectángulo sale de la carpeta y crece hasta la ventana */
+  document.addEventListener('click', function(e){
+    var f=e.target.closest('a.folder'); if(!f || reduce || e.ctrlKey || e.metaKey || e.shiftKey) return;
+    e.preventDefault(); f.classList.add('opening');
+    var pic=f.querySelector('.pic').getBoundingClientRect(), W=Math.min(1180, innerWidth-28);
+    zoom(pic, {left:(innerWidth-W)/2, top:18, width:W, height:Math.max(200, innerHeight-110)}, 300).then(function(){
+      f.classList.remove('opening'); location.hash=f.getAttribute('href').slice(1);
+    });
+  });
+  /* cerrar un caso: la ventana se encoge y el rectángulo vuelve a su carpeta */
+  document.addEventListener('click', function(e){
+    var a=e.target.closest('.case-win > .tb a.b'); if(!a || reduce) return;
+    e.preventDefault();
+    var layer=a.closest('.case-layer'), cw=a.closest('.case-win'), r=cw.getBoundingClientRect();
+    var from={left:r.left, top:Math.max(r.top,0), width:r.width, height:Math.min(r.bottom,innerHeight)-Math.max(r.top,0)};
+    anim(cw,[{opacity:1, scale:1},{opacity:0, scale:.9}],{duration:170, easing:'ease-in'}).then(function(){
+      root.style.scrollBehavior='auto'; location.hash='casos';
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){
+        root.style.scrollBehavior='';
+        var pic=document.querySelector('.folder[href="#'+layer.id+'"] .pic');
+        if(pic) zoom(from, pic.getBoundingClientRect(), 280);
+      }); });
+    });
+  });
+
+  /* arrastrar las ventanas desde su barra (con mouse); doble clic en la barra = vuelve a su sitio */
+  if(window.matchMedia && matchMedia('(pointer:fine)').matches){
+    var z=20;
+    document.addEventListener('pointerdown', function(e){
+      if(e.button!==0) return;
+      var tb=e.target.closest('.tb'); if(!tb || e.target.closest('.b,a,button')) return;
+      var w=tb.parentElement;
+      if(!w.classList.contains('win') || w.classList.contains('case-win') || w.classList.contains('maxed') || !(w.closest('main') || w.classList.contains('slide'))) return;
+      var p=(w.style.translate||'0px 0px').split(' '), x0=parseFloat(p[0])||0, y0=parseFloat(p[1])||0, sx=e.clientX, sy=e.clientY, moved=false;
+      function mv(ev){ var dx=ev.clientX-sx, dy=ev.clientY-sy;
+        if(!moved){ if(Math.abs(dx)+Math.abs(dy)<5) return; moved=true; w.classList.add('dragging'); if(getComputedStyle(w).position==='static') w.style.position='relative'; w.style.zIndex=++z; }
+        w.style.translate=(x0+dx)+'px '+(y0+dy)+'px'; }
+      function up(){ tb.removeEventListener('pointermove',mv); tb.removeEventListener('pointerup',up); tb.removeEventListener('pointercancel',up); w.classList.remove('dragging'); }
+      try{ tb.setPointerCapture(e.pointerId); }catch(err){}
+      tb.addEventListener('pointermove',mv); tb.addEventListener('pointerup',up); tb.addEventListener('pointercancel',up);
+    });
+    document.addEventListener('dblclick', function(e){
+      var tb=e.target.closest('.tb'); if(!tb || e.target.closest('.b')) return;
+      var w=tb.parentElement, cur=w.style.translate; if(!cur || cur==='0px 0px') return;
+      w.style.translate=''; anim(w,[{translate:cur},{translate:'0px 0px'}],{duration:380, easing:'cubic-bezier(.3,1.3,.5,1)'});
+    });
+  }
 })();
 </script>
 
